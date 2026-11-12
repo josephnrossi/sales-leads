@@ -1,7 +1,7 @@
 {
  "schema": "pencil-sales-leads/1",
- "generated_et": "2026-11-11 17:10 ET",
- "generated_iso": "2026-11-11T22:09:16+00:00",
+ "generated_et": "2026-11-12 06:34 ET",
+ "generated_iso": "2026-11-12T11:33:41+00:00",
  "notice": "Gilman Brothers, The Gilman Brothers Company and the product names INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient® and ADHERE™ are trademarks or registered trademarks of The Gilman Brothers Company. Printer, retailer, restaurant and brand names are trademarks of their respective owners; listing does not imply endorsement or a business relationship beyond the linked public source. Product fit is a suggestion. Public-source research for demo and internal sales planning only — no contact details are stored.",
  "sources": [
   {
@@ -10912,6 +10912,244 @@
  ],
  "news": [
   {
+   "id": "941b65ffc4d3",
+   "date_et": "2026-11-12 06:07 ET",
+   "published_iso": "2026-11-12T11:07+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Community Impact",
+   "title": "Panera to open first Leander location Nov. 12 - Community Impact",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOc18tRjZjVGVRYWU2Ul9DdjZSWDRvQzFZcTJGcS1VdC0wU2ljV09jZEUwSUVNZzdQT2c2b0VfTnNDVFBOd3RRREpybXFrVnZZMDJDcURPc2FJZUtVTWhpMlAzb3BmeHV1MVpraEVZZm53UnZIVUdTcV9HY2lFZ2xJSzNud0xjM2pnOWNkOVFVcWtfbTNCMFdCOHI5aFZYdHh3b3FtNlpIa19DRGZYSGJ4Zw?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [
+    "Panera"
+   ],
+   "linked": []
+  },
+  {
+   "id": "650ef872ced1",
+   "date_et": "2026-11-12 03:58 ET",
+   "published_iso": "2026-11-12T08:58+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "TheBusinessDesk.com",
+   "title": "Retailer Matalan accelerates store investment with four new openings - TheBusinessDesk.com",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSzRvQV9SalFrTno2UHhLMGt6aG9WRVhKTUlzdHN3cWU0V3ZtSTZCWHFXYndwd3REMDA1Y1VUX3doMm5GTUNkNS14OFhMcTFxYVJKM1VUc3Uza0MtUmxKZVlVMUp5eFIyNzRpR3llWk1EaVk1TS1WSU1YU29mWWcxUVlZc3lSTjBwa3hoUTRZT3FfOWotVjhqdDU3NTdFa2x5dVJSZURPb1VHakhEZmotYmVUcE83d09ud2FTOWo5UmY?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "91e9f97a5c2c",
+   "date_et": "2026-11-12 03:34 ET",
+   "published_iso": "2026-11-12T08:34+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Odessa Journal",
+   "title": "Danish Retailer JYSK to Open Five New Stores in Ukraine - Oj - Odessa Journal",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSEl3MlFqYnpkS2xWZHFkeHNscU9rdUR5bnQ5ejVCSGNpRUNyc0ZaQXE2MkdKVUI5djU0SXg1SXB0dEVsd1RqelpoQVc3UkhXQnhiZkQyektvVGhGM1dUeVBGMFFLLVRCNGdlZUtmYzRhX1M3bzN6Y2NWNEs2N21ETEV0ZnhHNVJiLW55RWswVTVaMW5kSTVTV0lSRQ?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "e02cb8b23954",
+   "date_et": "2026-11-12 03:00 ET",
+   "published_iso": "2026-11-12T08:00+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "365 Retail",
+   "title": "Superdrug Opens New Store in Elephant and Castle - 365 Retail",
+   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9tWjFLaW5VaHdRX0FKYWxReTdfQ25VeTQ0cDAwRmdEbm9pWUZ2b01Bbm9JTTJDczc4NllIVERod0tqV3dndUJRQVZXRmxjcldiTTRaZk50VFh5bHhQMHJ2RkJPb05ySVFGcWs2WTdZeVJHY0x1bkY1Mkhn?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "1188a76a6a00",
+   "date_et": "2026-11-12 02:55 ET",
+   "published_iso": "2026-11-12T07:55+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Passionate In Marketing",
+   "title": "Edge by Croma expands its presence in Bengaluru with two new stores and exclusive launch offers - Passionate In Marketing",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTllREdmRFhaVUJ4djZta2c5ZVdkM2xoS3YySTRJZVg1d1FuNDZpcXlTaG5lYlhkR0l1bGFxMXVlVE5naXNuZGJYWUZUOXRvekVqYmIzc250b3JobS1FOFo3SFhGMDRIbHlfd0NQUnpLWTR1cU05MC13YWRfZ2NybnpSazVXa2FWRDVQc1dEbnhteENrVGNIVXpWLURxUjFpQnNnOGt5dkVDTnFyR185ejFNajZHTmlGbW12aTJGbzZwVDMtM1l2RndjeWV6SFE?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "035e955a54c3",
+   "date_et": "2026-11-12 02:00 ET",
+   "published_iso": "2026-11-12T07:00+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Happi | Household And Personal Products Industry",
+   "title": "K-Beauty Retailer Olive Young Will Open Five Stores in California in 2027 - Happi | Household And Personal Products Industry",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY09nVmFjdG5XaU42MGd5WjFaeEV4RGJFUnpBVVl4cVo2NVkyXzAyVGJfS1ROQ0ZPYlFLX3lBNm1VY01OZDRIOTNMYjZDRTUzc2dEeW1tQjc0QjJJaF9YVDBoN2lXa1FvTUdFNjZEVGE5bHM2LTJ0cTJVVVJadnVraGV0QktOdnRqU2h6MVlWNlhLXzc5OWJr?oc=5",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "877eeb943f9c",
+   "date_et": "2026-11-11 22:26 ET",
+   "published_iso": "2026-11-12T03:26+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Community Impact",
+   "title": "H-E-B opens store in Montgomery with BBQ restaurant - Community Impact",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVG1iRm5uV09fMjBfTXpjcldXY19kV1EyOXBzQ0lISHJ2TG4wMDh4Z3ZuVzFjOEVYSGVucEg2WUdFSkp6REFmUVdQN05RWDNfS0VxZFFQbi11QlZ4NUp0YmxBREFsZmZBdERDWUtkX0hBZ3JfSE96YXVtTDl3SUtPeUVNUzJ1dHNpeUMyLTl4Sy04cU5JRUMxa2ZibnVPYXhyS1Y2NHh0ampWMW8?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [
+    "H-E-B"
+   ],
+   "linked": []
+  },
+  {
+   "id": "c3c91be187e6",
+   "date_et": "2026-11-11 21:05 ET",
+   "published_iso": "2026-11-12T02:05+00:00",
+   "type": "remodel",
+   "segment": "C-store / fuel",
+   "source": "East Oregonian",
+   "title": "Stanfield’s Pilot completes remodel with new services - East Oregonian",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNkFvanFIMV9GUG0zQjNTb3lZNGpCbFBtSE5uZXVfSllNNjFQbG5Rd0h2VzNlR2pOcGtEZ3hEa2pURWY0TjhGcHNtTmZiZjNYVDgwVzYyZzNkcE43cDlIam41SEYxbU95LTJ0OVBxR2RDenNHNHdscHYxN0MwNDM0UnZWSkotRDM3TFVUZzBRRTZWT3Ix?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Pilot"
+   ],
+   "linked": []
+  },
+  {
+   "id": "2ab036eb06ef",
+   "date_et": "2026-11-11 19:13 ET",
+   "published_iso": "2026-11-12T00:13+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Cornell Daily Sun",
+   "title": "Smart Tart Froyo, a Jason’s Grocery & Deli Successor, Opens at Triphammer Marketplace - The Cornell Daily Sun",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWmszWkxfaDU0MTVVU3VwVGZLNXJxQ25MZVZpWV82N3I4TTR4UndJYjV6d2pkOVpmQ2RTbWdtVXpIdjJXanlJRThYMDFsSzlGU2lMeW5SaElIaWY4blFnMmdnN3BRQlRETnpZN2ZfdElCZC14QTA4VEZLTGpoeEExRUYxYVp2SEJCY2Q2TkpjNnpvVms1d0x0cmIyTUdDWEpmT21TbGc5WjFMV1haamNUUGNSWUxoSTdZWGV0aVExQVRTdw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "16d1cba82d58",
+   "date_et": "2026-11-11 19:05 ET",
+   "published_iso": "2026-11-12T00:05+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Davidson County Source",
+   "title": "Perenn Grocery Opens in Wedgewood-Houston With Market, Bakery, Café and Listening Room - Davidson County Source",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaXdUN2NhS1VyQ3kzU0gxQ1phdS11aDJJT3F5RkZUM2FMUHU4MjVadUM0cS1wM0ROcUNwWG9ITXRaM2NqYlkyWkh3M0JzTGdsSkNTd3hXTVdQV1c2ZmhiRmxpTjVPTVRvcGhhVVNjbEU5ajdyZ0JDSGhINlVkTkxYR0NvUURfR3B6aVZ4ZmcwXzdRcU1qc1ZCd2RRWFpkZ25mdVVhdGZEVlJkUEk2cjdxbFhDdUNTQ2o4TVE?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "edf7783ea264",
+   "date_et": "2026-11-11 19:01 ET",
+   "published_iso": "2026-11-12T00:01+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "365 Retail",
+   "title": "Majestic Opens 30th New Store Under Fortress in Ealing - 365 Retail",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkdCMEFCU3NTbWZlX2c3b295Ry0zUFlGTlNKcXl1Q3o0c2lULVp2TE85Y2NDY2dYTFNSUzVmcHBUUVNmZ1FlNzZnZ2ttUDB1a1ZUUVBjQVM1Rm8wSkdTZ3YwUEZ0cEFQdmllQ0g0LWszQVhjUGZJaVZKaUYxTFhYQ1MyajRmdw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "97489f06683a",
+   "date_et": "2026-11-11 18:28 ET",
+   "published_iso": "2026-11-11T23:28+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "FL Times-Union",
+   "title": "Parker's Kitchen opens first Florida convenience store in Yulee - FL Times-Union",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdEYtMm16V1g3Njk4bVdZeC1NNnJDTXRRTzdDY2p1NnRuQVBVQlJ4cjJrUWNzd0d5bTB0bzNWS3JTYm9Yb0hSbW83X01kVUZJRDlMRTBzdmJsTG5abFpjTDFDRGdFT2lKNzM5VmNMLVJxaWxsSWdfS3R2MDlFdjRwRGhjWFJfU2hSaWl0anBjNmFIcUpucnhlenJjZVh6bUQtOFFkMDRwT0pGZFVxRnEtbXR0VFNfNUZsNEFRbHpNZnJMeTFVbEFkUXBJVQ?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "e47462aeab5c",
+   "date_et": "2026-11-11 18:26 ET",
+   "published_iso": "2026-11-11T23:26+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Plainview Herald",
+   "title": "McDonald’s opens new Plainview restaurant on Fifth Street - Plainview Herald",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdDZ6X20yYnFoYnEtOHRGcGQ0d0ZCT2luWlpJWWRnWnJjQzgwX0tBdXMwZG5MSUZ5OEdvNm5SSU5qLUdzZ0JjLWxpaV96S0xBWV9acHBzdjZYWlo3SVVaMVhJejh1Y1BTbndXblY1WUY0RlNIa1NiVnU1R1hsSXRmdzBweDN1WlFEZ2t4aWt6OA?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "McDonald's"
+   ],
+   "linked": [
+    "Serigraph Inc. → McDonald's"
+   ]
+  },
+  {
+   "id": "dd95d20e6206",
+   "date_et": "2026-11-11 18:10 ET",
+   "published_iso": "2026-11-11T23:10+00:00",
+   "type": "acquisition",
+   "segment": "printer",
+   "source": "Jamestown Sun",
+   "title": "Lamar Advertising acquires Newman Signs' Outdoor Advertising division - Jamestown Sun",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbEwydVM0VzBnMHpvaGJILV8xQmlOX29pVWZlXy1zVEtBVjJkZ0dueC1SVmlucFRwRDBXMXRuS3NGektwX3U1Z1dGa0N0bF9rLWVubFRfaGpKcVVBRkJDQzJLdGJvcTJTZlFxRElfa3RCY3lhZlVfek96VlFWMEZQbXdtR3dBM2JZOVJ0bGFMYzhibzZiVGMzZW42TV9sYlJLZS1QdVEtUzI4TTg2?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "138af114b4fe",
+   "date_et": "2026-11-11 17:15 ET",
+   "published_iso": "2026-11-11T22:15+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "Yahoo Finance",
+   "title": "Parker’s Kitchen opens first Florida store in Yulee during 50th anniversary - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeEdMbGNONzdHYlVXZTFxdmpVQnZONXdMMzRiZ1EwVlhIVGJtdm5IdHJUaWZUR2wwWUxhY1VWc2Z1ck1jV0duRHVyMVNOWXhSV19UeF9vZlFqYUxRUEQ2WGNGdU1oR0tMVmdOS0F5c1hKbmRVcFljazhnS2ViMVlzbjNJYWNSQnJkSU1SSy04c3JoRXcydktvanNzSDh1Mkd0?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
    "id": "0a6260d84e3b",
    "date_et": "2026-11-11 16:51 ET",
    "published_iso": "2026-11-11T21:51+00:00",
@@ -10964,6 +11202,22 @@
    "linked": []
   },
   {
+   "id": "f5708e887a56",
+   "date_et": "2026-11-11 16:00 ET",
+   "published_iso": "2026-11-11T21:00+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "upstate business journal",
+   "title": "Harris Teeter opens Clemson location in former Bi-Lo - upstate business journal",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNa3hsTjZsQWxtaWlIbUxLeG1ZNE80UzdPNnBCbHhaTGVzZnd4azNtYXU5QWdWelMwbXotM3hoc1RVNy1oc09od2I4U0ZqeW5ESXpURXNhNkx5YUlJWmlqVnQxdEtieDhPMDdlSEczQXNJcWpPc3FGNEdZZExLLTdQbldRWnV0aE1UWWJFVkRLdGJPQmgxRWpBR1NpV0thZnMzX0Ficw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Harris Teeter"
+   ],
+   "linked": []
+  },
+  {
    "id": "b28647a98eca",
    "date_et": "2026-11-11 14:37 ET",
    "published_iso": "2026-11-11T19:37+00:00",
@@ -10997,6 +11251,20 @@
    "end_users": [
     "H-E-B"
    ],
+   "linked": []
+  },
+  {
+   "id": "8bb64dfb1254",
+   "date_et": "2026-11-11 13:35 ET",
+   "published_iso": "2026-11-11T18:35+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "www.omaghnow.co.uk",
+   "title": "Christmas comes early as Sainsbury’s gets ready to open its doors in Omagh - www.omaghnow.co.uk",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNWW9IYUtTWFJsazVLcVJfbUE1VVlPZkJ2bWd4Vy1PSlIwRlpfTjlNdjlDU3VVZk82RTJ5OG1VeTZnaVFBd3dEekNHYm94NS1ub3lFUV80QTZBZFFvYTM2TGlDVmo2YXNoQW9DVnhKUVl5RGd1YXJ1NzhjSF9DX3RnSU00NU9YYjhXS0VMbHhoTHhZR193VFl2SjZwdEhfNFdtQzA0cFRqbVpidnZoYWYweWd3VQ?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
    "linked": []
   },
   {
@@ -11215,6 +11483,22 @@
    "linked": []
   },
   {
+   "id": "013a7dba54a1",
+   "date_et": "2026-11-11 07:45 ET",
+   "published_iso": "2026-11-11T12:45+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "FOX 8 News",
+   "title": "Grocery chain expands in Northeast Ohio with new store - FOX 8 News",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTVJEV3NRWVBMcXJJQTFkRFo1Q3h2cWpqaGg3ckltSWVSY0lqVVBralVYVGNfZ2pOZGRIY1hCQjRfSUZNeFNGR0ZvcWFjdmdZRlY2cGJ4OEIxSW5vUlBDOHdIVUVSb0xEeTFGS24tamJvbHdKaGcxSElTSHJ3bG9JS3NkMNIBiAFBVV95cUxOaEFvcVpMVGV0ZnllcDFvSzd5bm9yZm54VlFUX3B6N1hzMEJvWW5xbUdUTG5DNjd3eTlubDVWdEhHOEJ6U25HcFF1MXdHeHRoZ3Zyd3RaZ1lOOTViN1lJNnd4dVdyU3RlcWdvV1pvNkxoQVg0S3RLV0NZLUdwVGUtMUJENDRVZFRV?oc=5",
+   "states": [
+    "OH"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "9ca06623e37c",
    "date_et": "2026-11-11 07:18 ET",
    "published_iso": "2026-11-11T12:18+00:00",
@@ -11260,6 +11544,20 @@
    "end_users": [
     "Sheetz"
    ],
+   "linked": []
+  },
+  {
+   "id": "ffd4122b2bed",
+   "date_et": "2026-11-11 00:33 ET",
+   "published_iso": "2026-11-11T05:33+00:00",
+   "type": "remodel",
+   "segment": "Mass / big-box retail",
+   "source": "Kalkine",
+   "title": "Baby Bunting Group Limited (ASX:BBN) Sets Out FY27 Profit Goals After Store Refresh - Kalkine",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWWo3NUxQMUJ5bl96Z3d4R3pMNXVPRDhqeFBIcU9VV05kdGFuZDhNY19FQWdlcjhzbXdXbk9ESVJjdEdoeDJRdjRFaklvLUxtZ29vU1l3STVXUWQ4TmFBd1VBQVF0WTIxZEFPaTZYc0htUmFJZ29KTWdMRmNHbXVxSF9QNndoSWU1c3RuU1QzRXBxNUJfOS1OcHhtSlczdm16dG14ZXAzMURTQW9pelhoNjVZNmNwZw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
    "linked": []
   },
   {
@@ -11398,6 +11696,24 @@
    "linked": []
   },
   {
+   "id": "b41998de4b51",
+   "date_et": "2026-11-10 15:40 ET",
+   "published_iso": "2026-11-10T20:40+00:00",
+   "type": "expansion",
+   "segment": "QSR / restaurant",
+   "source": "The Business Journals",
+   "title": "Freddy's Frozen Custard & Steakburgers eyes further expansion across the Dayton region - The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNDE4OUxCMVUzZmtTeWVXRUxva2FJckZTdHdoOXREWmkzUFYxNi1HTm1rS1ZvM3FDblAtUDlTOExMZ1hBd3NGWXF6QXJLYnZTcUlscEhuNDhTX3B5VHJOM1ZCckN0UUcxQzIyb0Nqb0dkRGo0dlVDUE10RXk2d1M2elA2RFpZMTgtMjRHMEZzVUk3RUphbmI0OVk3Q3VOS2tldHVFa2VUeEthUQ?oc=5",
+   "states": [
+    "OH"
+   ],
+   "printers": [],
+   "end_users": [
+    "Freddy's"
+   ],
+   "linked": []
+  },
+  {
    "id": "c2ab101dfe02",
    "date_et": "2026-11-10 15:35 ET",
    "published_iso": "2026-11-10T20:35+00:00",
@@ -11489,6 +11805,22 @@
    "source": "New Haven Register",
    "title": "Playa Bowls opens in Danbury, filling long-vacant Federal Road storefront - New Haven Register",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNMWJER3hta2FpTS1qUDl0emhiRVJ6dV81bk04WVphdHk4Z3dHelVmRGVHYjczWlpCMGdhMzBCWDNGUHRkWXozcUw2dlZTSTZFX2dYNVRmcXRKblp0WThvdkZxSExIdi1QSk41NnY3RDA2ckVybTBOYkVmd2x5YU5iRzBHS0NvUVE?oc=5",
+   "states": [
+    "CT"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "7afb366d9943",
+   "date_et": "2026-11-10 14:55 ET",
+   "published_iso": "2026-11-10T19:55+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Norwalk Hour",
+   "title": "Playa Bowls opens in Danbury, filling long-vacant Federal Road storefront - Norwalk Hour",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPS2tZUE1PLU45WUN3enlwSFNKMGpuNUlnVmZZRVNMd3ZLRFVKYzlVRWVScU1vYUJUOTV1WHk0NWxTc2ZaUlFlV0N1VnF1VW5veVFpU1M0b0M2blFlVGlWT0E0bWZFY3lnVFJNaTd6NEtqZEszUVlWOVFXS2dCVk5LZ0N3Yw?oc=5",
    "states": [
     "CT"
    ],
@@ -11952,6 +12284,20 @@
    "linked": []
   },
   {
+   "id": "4baf460f95c1",
+   "date_et": "2026-11-10 06:53 ET",
+   "published_iso": "2026-11-10T11:53+00:00",
+   "type": "expansion",
+   "segment": "Mass / big-box retail",
+   "source": "Talking Retail",
+   "title": "Go Local Wholesale expands retailer support team in national growth push - Talking Retail",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVGRpbWlvR182YU1mUGxkN3R0QnhSSklNZmRHOExnQ0o2U0tXTUlvZmh1dlU0LXVuM1B0OFpVUFBNNWxrWUl3RDBXMEJ6S3lMUDRuWU5DOEdTb3QwVjZqSkpmYkVtQ3JIRlIzdkt3TUxIc3Jxb2JzNWhTY1JDc1VHY2hYNDF3ZW52ekljNWFkTjlZRC1rZjJDTG9EbzZQZzc4YjdJV0RzYUZ6RzMzMDcyYnZPdDY2cHNnNi1FWnBmU1A?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "cfca09a81c27",
    "date_et": "2026-11-10 05:04 ET",
    "published_iso": "2026-11-10T10:04+00:00",
@@ -12222,11 +12568,11 @@
    "Nation's Restaurant News": "ok (0 kept)",
    "QSR Magazine": "ok (2 kept)",
    "PR Newswire": "ok (0 kept)",
-   "Google News · c-store": "ok (11 kept)",
+   "Google News · c-store": "ok (14 kept)",
    "Google News · qsr": "ok (22 kept)",
-   "Google News · grocery": "ok (23 kept)",
-   "Google News · retail": "ok (15 kept)",
-   "Google News · printer": "ok (0 kept)",
+   "Google News · grocery": "ok (22 kept)",
+   "Google News · retail": "ok (18 kept)",
+   "Google News · printer": "ok (1 kept)",
    "Google News · printer watch 1": "ok (0 kept)",
    "Google News · printer watch 2": "ok (0 kept)",
    "Google News · printer watch 3": "ok (0 kept)",
@@ -12235,12 +12581,13 @@
    "Google News · printer watch 6": "ok (0 kept)",
    "Google News · printer watch 7": "ok (1 kept)",
    "Google News · printer watch 8": "ok (0 kept)",
-   "Google News · printer watch 9": "ok (0 kept)"
+   "Google News · printer watch 9": "fail: HTTPError"
   },
   "dropped": {
-   "too old": 208,
-   "not a store/printer event": 12,
-   "non-US": 13
+   "too old": 168,
+   "not a store/printer event": 9,
+   "non-US": 12,
+   "headline names an old year": 1
   }
  }
 }
