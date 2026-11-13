@@ -1,7 +1,7 @@
 {
  "schema": "pencil-sales-leads/1",
- "generated_et": "2026-11-12 06:34 ET",
- "generated_iso": "2026-11-12T11:33:41+00:00",
+ "generated_et": "2026-11-13 07:29 ET",
+ "generated_iso": "2026-11-13T12:28:29+00:00",
  "notice": "Gilman Brothers, The Gilman Brothers Company and the product names INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient® and ADHERE™ are trademarks or registered trademarks of The Gilman Brothers Company. Printer, retailer, restaurant and brand names are trademarks of their respective owners; listing does not imply endorsement or a business relationship beyond the linked public source. Product fit is a suggestion. Public-source research for demo and internal sales planning only — no contact details are stored.",
  "sources": [
   {
@@ -10912,6 +10912,692 @@
  ],
  "news": [
   {
+   "id": "ce4daec7493c",
+   "date_et": "2026-11-13 07:09 ET",
+   "published_iso": "2026-11-13T12:09+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Retail Systems",
+   "title": "Matalan to open four new stores ahead of Christmas - Retail Systems",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZFlNZUpkeERwV3g5Xy02ck9OUEFNOHBKOUozeXFKR0NFUU9nbkFMWkdwUkVpTmxPYWxvRVdrOHQycDdjV19hbFAzZXV2UThmNFNsNXRQSGtLemlxYkVqZzB2dE1raTVCM0dKb3I2eFRRb2tyY2ZqWXRTSVd5aFVZc01PSUx0Rk9YSFplRA?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "22f729aa2802",
+   "date_et": "2026-11-13 06:32 ET",
+   "published_iso": "2026-11-13T11:32+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "RestaurantNews.com",
+   "title": "Paris Baguette Celebrates Grand Opening of New Freehold Café on November 13 - RestaurantNews.com",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHlKeldrM1kzcWVsWmRmQ3JaUERLQWJJQU9ySVJXSnpacEtkdnFobUhKcGZ4WjJsU3Bjd05vOTVqS3Q3YXQyaXVRSkNBMzN6cDNPdW9VM2t3QnZxTzh1dkNmUlpKR094aDJUbUxhdlBNT092eXNIX1U4cU1TSTFJa0RKRGtvbE5IaXBNMmJB?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "3f5f5d041dfe",
+   "date_et": "2026-11-13 06:00 ET",
+   "published_iso": "2026-11-13T11:00+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "TradingView",
+   "title": "Happy Belly Food Group's Heal Wellness QSR Announces the Grand Opening of Its 56th Location in Collingwood, Ontario - TradingView",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPM3h6SzNDLWdxWFJ1bjdVWUFUQ21GVTdhMWFaS1pFbmEyd1RRUGR5R0hZRWE1ZFA5TEItOHhtbG1Ic1hkWjZ5Qm1uTDktNldyZjVXS0pCaUpsaFM0ck9sWDQ0UjlYQTI1cU1Cbmt5VzRoQkQ2RGhkbGtJMjg3RjFBUnllM0hFNW95Z1ptTHpYY0ZsRWVZV0Zrd2lPSHpHdU81cFgyNHQwYVF6aG1Damw4UzJIdFY5cUJWZjV1b01rYzByeFdCeDFnbVlONlRlRWZ0QUtubjZpTDg2VlBMN3NsZi01MWN5VzdLSG1sV0NrcUd4R1lkRUU0ZjVpZWo1eHBhSTVTcDFGVEQ?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "1d6bebb54f49",
+   "date_et": "2026-11-13 05:32 ET",
+   "published_iso": "2026-11-13T10:32+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "WhatNow",
+   "title": "Parker’s Kitchen Opens First Florida Location in Yulee, Fla., Serving Customers in the Fast-Growing Metro Jacksonville Market - WhatNow",
+   "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNLXpYU1JkRm9TNkIwVGRnbkpoZHpMUFdkajQtRHByY0w2NFg5WTRkRzBhejh5S29xWjVJdEIyXzhzWVk4Q0QxRmJPUUhrQklOcDdFZW1nRUs0Sl9DNllOOGxRd3dVbE1CV1paZ045N2MtTGxhVFBOZ2RXbkMwUHkzNEp5bHNwM3FFbTk5ZFdEVGM0Qy1OVnQzYk5jU0NOTUdyajZzaTlRR3FQeWY2SENiQUZVY2swcUwtV0NSODJhbmFZZ05PTGR0eENOUVF5YkZvaFRuOGhKd2N1ajBjZjhJODJEUU9tV0VkcXdZNVZYdnNwMW0yOV9PdDY2UQ?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "3137fd375550",
+   "date_et": "2026-11-13 05:03 ET",
+   "published_iso": "2026-11-13T10:03+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "The Gardner News",
+   "title": "Northshore Mall has opened 5 new stores this year. See the full lineup - The Gardner News",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTUR2QllJcU92QlVvbDNMS2F3VWRnZFlDS2pVNTR4SW1tbEdRRGY4NFVzNThNYVBQNFRaZDJLd0xVak5ZVDNQWThNQktGenFUOEhsamFGaE83T3J1bkRxejI3TTlhUEtvQVU2aFJwOU1Rb0N0TVNWaE5Hekh4d05QdTdiRTNXUWtxVm1iaEpMRjZ0THZfbGZDRzQ4cWpUU2JiOEZ0aDJER0pjNXlRZTFycVlWQVk2UDRVWDAySkFsUUZINnNWenJzYmxFMkNxRVIzdzk1VE5mZzBXdw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "9af1eb2dd612",
+   "date_et": "2026-11-13 05:02 ET",
+   "published_iso": "2026-11-13T10:02+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "InteriorDaily",
+   "title": "JYSK Ukraine accelerates expansion with five new stores planned - InteriorDaily",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc19BU3l2NTk2d0FxalFvazN3MENiWnd1S3JNYXRQOG1DTE85dGt4c2NaaDIzXzMzSWVhZEdvSlcwTWRYcWV3eDhCQmUxVTBoWmlpMktYdUIzOTNTU1BQeURqOWcybWVEb2hiVGtXaU1iWnpPWTczTk9HQjNIZE0zd3V5X3JHODZpUVowY3JxV29QSWNxcVpFNkVnaHByQVJFdzgyYXZNSC1uQ3JjVlY4?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "fd21e8507f29",
+   "date_et": "2026-11-13 02:53 ET",
+   "published_iso": "2026-11-13T07:53+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "FashionNetwork - The World's Fashion Business News",
+   "title": "Matalan opens and reopens five new stores, reports strong trading for upgraded Derby - FashionNetwork - The World's Fashion Business News",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSG9jYUZiNEMxSXFqa3o2QVBqSDNlcDhpVXp6OG1rQU5KclExc0E1dDhJSVhvZXo4blBaTUxhUnJHSkZUSDJhRUt4VlhhTHpWVk1EVnRGTEc3SVM3UHA1Mmk2ckFXQlRtTXl3NUFMYTN6c05JTEZWTXhjbDFKZzJLeEhQanFjdHdUQ3RlRDM1M3ZKR1ZDOURnT1N1cVRHY19HcE1qUmNQX3dMNzdUeHg1eFpNRU5tOS1zdTduck1ZZlEtb3RSR2F6RkY4Yw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "21814ecfaeed",
+   "date_et": "2026-11-12 22:35 ET",
+   "published_iso": "2026-11-13T03:35+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "Community Impact Newspaper",
+   "title": "New Shell gas station opens on Holderrieth Road in Tomball - Community Impact Newspaper",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOb2VCYmlrZ1BJVjI2cDhVR2dwMGg2WmptU0V6b2lfWjE5eTZRaWJhWXJ2MDRhUzkwQ0RmZ3Q2ZHJzTk82X1drSXBSeHVnQjZTc0h3eFowZzNyYkhCRHlvbXl6bk1hVkQ4aU42X3ZOUVB6cjRuTFJhbjJUaHpFWjhOQ21MWDhadjBnODZoQVNIUEF6SFljSmtJSEhhTl9zMFhUMnlLbDY0RDFUOUxINTA3bllPYw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Shell"
+   ],
+   "linked": []
+  },
+  {
+   "id": "1e5647440b87",
+   "date_et": "2026-11-12 22:20 ET",
+   "published_iso": "2026-11-13T03:20+00:00",
+   "type": "closing",
+   "segment": "QSR / restaurant",
+   "source": "Breakfast With Nick",
+   "title": "Columbus Restaurant News: Manjul Coffee, Dog Haus, Wild Eggs open; Saucy Brew Works closing - Breakfast With Nick",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOZlZSamhMQjdJNVNfc3d5eEtyNk9fYkJTSWlpVUw2TGlyVkV3bFJaYkdvWk50eXZteFp4eElKSWROMTFNODE2Y0ZmNmVzTmEwb2FlSUxpSjRIX3BjV25Yb1ozaUpCU2RDMTdfM2dTeTlwNkdPR0pOd3hBS3E2TmctTnVPQ1pUcUIwY0NWbnBqb3g2VG42V0Vj?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "8acd4369cf6f",
+   "date_et": "2026-11-12 18:19 ET",
+   "published_iso": "2026-11-12T23:19+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "NEWS10 ABC",
+   "title": "Hudson Falls café moving to new space, opening drive-thru - NEWS10 ABC",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNMGdVQ042S01uNVBnQVB3M01Nd0NTekZOMFlFRER5ZXJiVW1FRUoyeTVLUGRzVjItU2tzZmNzUTc4cFZTcWR1eG81aDRwMkVCSHpCck9IS2RzVVl2LXBmM2ZrOTBuSTJ2RzlmbGt3cGtMb0JXT0s0SFFieVV6ODY1MjNaUEpBTDZFNmt0WUhoc3dkblBUMWlSS0t2dF9CMkdla0sxcmtRZGMwazBrWEN4ZW5aONIBswFBVV95cUxNMGdVQ042S01uNVBnQVB3M01Nd0NTekZOMFlFRER5ZXJiVW1FRUoyeTVLUGRzVjItU2tzZmNzUTc4cFZTcWR1eG81aDRwMkVCSHpCck9IS2RzVVl2LXBmM2ZrOTBuSTJ2RzlmbGt3cGtMb0JXT0s0SFFieVV6ODY1MjNaUEpBTDZFNmt0WUhoc3dkblBUMWlSS0t2dF9CMkdla0sxcmtRZGMwazBrWEN4ZW5aOA?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "45fda87186b4",
+   "date_et": "2026-11-12 18:04 ET",
+   "published_iso": "2026-11-12T23:04+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "MyChesCo",
+   "title": "Kennett Food Co-op Opens After Eight Years of Community Effort - MyChesCo",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWXZXUDBBMWtZMjlMQWlDdm50dlk5VG1SVkdESW1nR3I1TmFSVGxLRXlPek14WTUwc3hsUk1YNDNQODdRXzE4UlJZektDQXdCd01LLWV5SXhweWJmQzdyRlNnUEgyOHVNUEY0R1pWcHBGRDNyRkxhZ1M1RkxGdUpHNnR6aW1ROWtwRkdHcFhDNmFTYW9KOUV0MEpwRkFqVENFMDNncGNQVQ?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "1edcb83c6431",
+   "date_et": "2026-11-12 17:47 ET",
+   "published_iso": "2026-11-12T22:47+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Daily Hive",
+   "title": "Vancouver's first budget-friendly FreshCo grocery store opens in former Toys 'R' Us, beneath landmark BowMac sign - Daily Hive",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNEJ4TkFvdTVENzg1ZnlKWW1nUTAybVNoRnp3MnY5TUJiQTgwNm5ZWXpoaUozbGtiZ0RrMWxpZENPRXl4S3RDZ1lOOFJxZFp0YnN5Qi00d0VQSmQtSEE4VzE1SHNEWkZaTXdxUUw2a3Z1Q2FQQm1ZTlpSWi16UnhHLXJDXzJZRjdNNGJCZzFIT1M?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "55c4437a48f3",
+   "date_et": "2026-11-12 17:22 ET",
+   "published_iso": "2026-11-12T22:22+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Narcity",
+   "title": "Another Costco store in Ontario is opening this month and it has a gas station - Narcity",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY24xNzNETGZQeXViRER0SURwOC01RmNEak5RZHMyclVjekR2c1djMHc5b0FTSGM0Tm8ySlBmWExEM3BvTjJjTU9DaVE0VnNPYnF6TUZqUzA3aVRLN0hfNmRzSXFmLV9BUURCQVdSc1RrLWZIdlluVlY2UVBlQlcwVGduNEp0RGROcEE?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Costco"
+   ],
+   "linked": []
+  },
+  {
+   "id": "b5fdcc4406aa",
+   "date_et": "2026-11-12 17:18 ET",
+   "published_iso": "2026-11-12T22:18+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "New York Post",
+   "title": "Popular SoCal grocery chain expanding to Bay Area with massive new location - New York Post",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxObXgyc0xUMUV0VzZMdXdZdlp1R0l4MjE4Y2RMZGRIUWhWVjg5WC11VWpIN3NWV1hIQjFzYmF1UEx6N1hVdDRWWTdfb3ZEZjJCcWpfSU5mdEhXNmlHQWZJaUxnU1puQ2w5a2c3eElveEtrb1JDTXJQeHF3dTlURzh1Y1pLSzlYT0pTTXBhV2w1MVMyQUIzbHBqYXk3cnctLVFzWVBiUA?oc=5",
+   "states": [
+    "NY"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "423a5afa2c45",
+   "date_et": "2026-11-12 17:10 ET",
+   "published_iso": "2026-11-12T22:10+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "PennLive.com",
+   "title": "Dauphin County-based discount retailer opens another store in Pa. - PennLive.com",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQeWphZjRNcF9KX3pIWEVNdDBkNzc0aFVYZ0M0SmJ6R0tnb2FUY1VoRVFsSUx4bHZ4NHB6dEZsRHRTaDFoT2xldGhQNHZlX1pPRXpMRGR3QXBMSHZxbDhaY1lldUtlQlpjSFBEejZDOF85TVk0cVh1VFFucTI5V2xfLWQxeng3bkFuZll2VjFqdFU0OXVFQy0ycDVHQW9USkZIWldqQ3dmLTZkcWMzb0NOUw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "5ded35ba270d",
+   "date_et": "2026-11-12 16:21 ET",
+   "published_iso": "2026-11-12T21:21+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Daily Freeman",
+   "title": "Chick-fil-A restaurant opens in town of Ulster - Daily Freeman",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMWFCQVdDRExjN3dBdFh4YVdwRWNKZFp6SC1JemhxYkg3NmpybFhSY3RoYnNKSFFid3BGNDMzMVlCSlFnRmN5STBNTnNacHlnaEY3Zm9ZcW95OXhvRzQ3SjY1d2Utb3IwQVhoa1l0YjBtenAtem1pV0xQbnhNNTI1elNaajJ6MGxnYndoZlIwb28?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Chick-fil-A"
+   ],
+   "linked": [
+    "Miller Zell → Chick-fil-A"
+   ]
+  },
+  {
+   "id": "183298ee822f",
+   "date_et": "2026-11-12 16:18 ET",
+   "published_iso": "2026-11-12T21:18+00:00",
+   "type": "closing",
+   "segment": "C-store / fuel",
+   "source": "St. Johns Citizen",
+   "title": "Beachwalk restaurant owner who raised development concerns announces closure, asks prayers for wife - St. Johns Citizen",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObXJ4eGRMMVNVM1d5TUNYaUNlTFE1ZklmNVdYSmZzSmJnMmdnWEl5clNtdWdLOFVlZ0I3RzJZUXluYXlDejZpVmVRd3VjWXhjd1VhaXBuN3Zxa3NWbVRFcTVLZ3hBbzdpX3NDTUdNbnNIQmpLQkY1Vlh0RllPN2FKZ2k0MWxUT3Zlb0tSVllGVTVlYmpzQ3pLdkNYNTZxcFZlQUlBNUlvQU9YaTRKUG9zbERpZUVyRXlMTkJ1bkx3?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "4b042df58da8",
+   "date_et": "2026-11-12 15:44 ET",
+   "published_iso": "2026-11-12T20:44+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "CoStar",
+   "title": "News | Walmart opens first new Oklahoma Supercenter in a decade - CoStar",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQdW9aQVFrNmFXcW1zTVVrWUEtdVk2MHRHVk9SeVhjNnh5UFZ5Qy15RE9IS0tHRTVwWVhLUGI2eUFsYkUtV01NZ2xaZGYtNVpfMS05bFd1WHIzb1BVbWhCRVA5WjVlaVgtLVc4SDJkcjFFMlUyZVJidzdXNEtUYi1iVjNsalFMUWdST1hPcTdxSnM1ZGRBVmlVQWpjMjVkaGM?oc=5",
+   "states": [
+    "OK"
+   ],
+   "printers": [],
+   "end_users": [
+    "Walmart"
+   ],
+   "linked": [
+    "BluEdge → Walmart",
+    "Miller Zell → Walmart"
+   ]
+  },
+  {
+   "id": "4b15d656425f",
+   "date_et": "2026-11-12 15:30 ET",
+   "published_iso": "2026-11-12T20:30+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Supermarket News",
+   "title": "Aldi opens 10 in October - Supermarket News",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBVbVR1SGNwU3RrWWMzU3FvdFJDNVgzQW9ndlpxNWptZEpyM0dBdTdsWlFuV2JVMC1fTEkzdG5vVnhtZzhSZU5RSlJPNXBiNEpTT3lYQklIZGdObzVSd3M2WlFlc2Q4dHBXcmY1M1N1OVVSQ2h2RGc?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Aldi"
+   ],
+   "linked": [
+    "Miller Zell → ALDI"
+   ]
+  },
+  {
+   "id": "0b972a698eb0",
+   "date_et": "2026-11-12 14:19 ET",
+   "published_iso": "2026-11-12T19:19+00:00",
+   "type": "expansion",
+   "segment": "QSR / restaurant",
+   "source": "The Business Journals",
+   "title": "New restaurant arrivals hit Westside as national chain adds 8th location - The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOQjczRlRmSVNVRXB1VWdUTk5kenRrWngxd2dDSDJOaUg5OUxka2xwRWNlY21XelVtalF1QTNHT0JiNWM1T1IxMlR3bkM4ZTU1YlBvSDdmMmFWWEZhVWkyNmZWek9vaTVJT2w2R1E4TkptdEM5S2Rvb19vWVNhUWdyZENNejh0ZDhnWlZUejgtd0lWbFI2UUJmM25RVzdiQ2lJRkZwMHVZZ3pxdlJMTlBGQw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "08230e5517fa",
+   "date_et": "2026-11-12 12:52 ET",
+   "published_iso": "2026-11-12T17:52+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "The Holland Sentinel",
+   "title": "7-Eleven is opening a location in Holland. Here's when and where - The Holland Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZlFJc2VuSVR6Z2FabVE1NmZLVk9IRlNRek9RdHVnQ3BxZDljZHZVX0U1d18teC02M1RCQ1RMNkpjblItOU1SQTZtSUpwYXg1UkljZmk2RFBfMEtmTFVMMUJuQkdmN0t0akE4MHpCQ0IzUk5Gam5oT1AydGhpOFFXOE1BV05yLXVSS0JXdS1BSno3em44bGdvSW9EVlQ1Ni00c2FYZHJ3Q055cFN1ZnVzc1plcEc3RlF4dmtCMGpSVTh0RUJSYUY1aU1PN3BGb0tINlE?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "7-Eleven"
+   ],
+   "linked": [
+    "Marketing Alliance Group (MAG) → 7-Eleven"
+   ]
+  },
+  {
+   "id": "d4b8202daa65",
+   "date_et": "2026-11-12 12:51 ET",
+   "published_iso": "2026-11-12T17:51+00:00",
+   "type": "expansion",
+   "segment": "Grocery",
+   "source": "Abasto, Food and Beverage Industry News",
+   "title": "Food Lion Accelerates 2026 Expansion in Georgia - Abasto, Food and Beverage Industry News",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQV05RNnpFYzNYUDB5TEZsQWxrczA5THM4Z2ttUmdqX0ZCNVZxdzk1SGRhaTVzbFJrdmtVcS1qaUp5RGhlVzNMQzk0ODVTWjU2NHRlRTRjMzU3NnR3U2ZZSWxaWU9VTWlRcU9DMUpScU9ZZXd0VEs0YkFabzlZSVJqRg?oc=5",
+   "states": [
+    "GA"
+   ],
+   "printers": [],
+   "end_users": [
+    "Food Lion"
+   ],
+   "linked": [
+    "Salem One → Food Lion"
+   ]
+  },
+  {
+   "id": "54f608c99c64",
+   "date_et": "2026-11-12 12:15 ET",
+   "published_iso": "2026-11-12T17:15+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "DailyVoice.com",
+   "title": "New Jenkintown Burger Joint Celebrates Grand Opening With Free Giveaways, Charity Event - DailyVoice.com",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPOW03RzJrNnEta3p2OUVQZzAtaEg1VklBVGxHV3ZPZHZEdkRTS0VDeld0aEV5cm1nVHF4TkdlbmZQcXdjS2lQUEVtdDFGVlFUd2tCU2dxY19UaDNQQXdiU0QxRFJqOWZmZG01eUh2U3RkSFJtSjRPUWNUbE1vYy1XTUVudzZ3VVVSV0NFVWtn?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "f09a0b6e739a",
+   "date_et": "2026-11-12 11:42 ET",
+   "published_iso": "2026-11-12T16:42+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Patch",
+   "title": "Nashua QDOBA To Mark Grand Opening With Giveaways, DJ, and School Donation - Patch",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMG9yaVZkM0VSZHh3U0ttQU1DbEphQ0FaNmVqVnNiMXFQZ1daQjR3bXRVQ042NDhNWHhUWWpQd25qTDJVNkdUOW9WLTJ1c0F3OXZkVmE4TmhFOWdCWnVmdGZKUUFuWllDNFlsdzA0allnWmd6WG5xVk9BcEZzYUVIWlNSMVFkYUVnS2hCX3BHbkIwaVBwclRHZFhKd2FKQmJF0gHCAUFVX3lxTE9vSVlBTTZpMVJPckhleXAwOFhPODZEWWVHdlBGcm95VlBSNGlQWDRUTXFPZFFjRDE2R0o3Zm9aZW9fdERaRzZSRGM4YkNpc0JSeXhSZ1ZLUjVUVFZ5bThyR2p3UWpPbjd5U1RxZURQZjlCQTN5Rkpadlo4NlJ4U19OUS1XU2hzd2lWa09UVjE0dDNjSktGcTNGUlc3QlNkYWFKcGNza1poR1FYdWtEaTM5UTgyTlpfcXBQMDdDZWhzNmV3?oc=5",
+   "states": [
+    "NH"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "f0d0f87ec224",
+   "date_et": "2026-11-12 11:24 ET",
+   "published_iso": "2026-11-12T16:24+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Times Record News",
+   "title": "New restaurant opens in Wichita Falls - Times Record News",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQS3htT3JiMHk0ODBOOEFBN2FnWXVpNjU2Uk54R21DZUp2LXBXN3p1cnJheXNDWjJ6b0V6cTJfQUk3a09JZVRrS1pRQ2FFZ0Q0TWlSc3JDVjR3Qk1tbXNmajR4cjYwbVE2T2NEWVF3UFNMRk5oUW45SFl3d2VKTHVLdmE4bElqSk95UWhfUW5vNDNpbDVWcFhDOW5LckxFT2lZSms4cnB3LTctclAyQ0xvM2hCRTJmNmJQcFQwXw?oc=5",
+   "states": [
+    "KS",
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "c1b8721890e3",
+   "date_et": "2026-11-12 11:09 ET",
+   "published_iso": "2026-11-12T16:09+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "QSR Magazine",
+   "title": "Carrot to Open Seventh NYC Location",
+   "url": "https://www.qsrmagazine.com/growth/carrot-to-open-seventh-nyc-location/",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "7ce837717e14",
+   "date_et": "2026-11-12 10:51 ET",
+   "published_iso": "2026-11-12T15:51+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Finger Lakes Daily News",
+   "title": "Bass Pro Shops Celebrates Victor Grand Opening Thursday - Finger Lakes Daily News",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMTBPaW50RmlYNzRrYmxUU3V2aldkYVY3Q0hlME51THRRUzZTa2pjR1ZFSk10UVBxS1RCMjF4RXpIbnR2ckp6TkpZd3lZZU1ybjBaSU5pQV9JMlBRWk5OTzlfcmdSNnBnMHdrUVVoQ1JRbmQxS0l5aE9mZ1NOQkh0UDZ4SmhRRmFZNTRFOFFKWGlwVFFSQWNWSlNZNHprUVNC?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Bass Pro"
+   ],
+   "linked": []
+  },
+  {
+   "id": "5d29b388d153",
+   "date_et": "2026-11-12 10:19 ET",
+   "published_iso": "2026-11-12T15:19+00:00",
+   "type": "remodel",
+   "segment": "C-store / fuel",
+   "source": "Fast Casual",
+   "title": "Carrot Express rebrands, opens 7th New York City location - Fast Casual",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUFNxXzlBRzV2a1FNVWRObWEzeDFoMWs4bW9jODk5QVF2bzh3U3c4UXEyVFJsWVZWOVE3S0pvaVNxaGVvQ2ZvdUdnaHJmSWVoV0g1bTlEeVNnbTMxQXFJOXplM19reXpWM1c1Wm1iWjdVajZkNHB2Nk1PZGt1TG5zUlZNaDBvempTWElOR3RvYTdKbW8?oc=5",
+   "states": [
+    "NY"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "612723ba8186",
+   "date_et": "2026-11-12 10:16 ET",
+   "published_iso": "2026-11-12T15:16+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Sarasota Herald-Tribune",
+   "title": "New Trader Joe’s opens in Sarasota. Here’s what shoppers will find - Sarasota Herald-Tribune",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeGc5bWoyM2NVeWJ3d3Q1QmtSRmtJSHZvRWdaTE9UdXpFVC0xQ2J0X0pVRzcxaW9NNTJXQnJrdG5FMUl2QjlPajg0bzlrb043bTVFV3h0Q2M4d2hpaG5wOVN0TkJJdjBSa3hJMVNmWmRLTjRtZ2ZPRzF2VnlITVR5RzRmNWR5c0ZlUXRsS1lDOFFqS2o3d2c5NmZYU0tpNWFzU0pWcG01Y1BnaUFLQnByMGhCaEljV040ZVZZOVBjczlBc0w0X2pqVUhiU19KYmltb1RF?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Trader Joe's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "6e9fc1a99910",
+   "date_et": "2026-11-12 10:01 ET",
+   "published_iso": "2026-11-12T15:01+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "QSR Magazine",
+   "title": "Hyper Energy Opens in Lee’s Summit, Missouri",
+   "url": "https://www.qsrmagazine.com/news/hyper-energy-opens-in-lees-summit-missouri/",
+   "states": [
+    "MO"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "7b611319922e",
+   "date_et": "2026-11-12 09:52 ET",
+   "published_iso": "2026-11-12T14:52+00:00",
+   "type": "expansion",
+   "segment": "QSR / restaurant",
+   "source": "QSR Magazine",
+   "title": "Chick-fil-A Adds Permanent Spicy Sauce to Menu, Launches Holiday Treats",
+   "url": "https://www.qsrmagazine.com/news/chick-fil-a-adds-permanent-spicy-sauce-to-menu-launches-holiday-treats/",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Chick-fil-A"
+   ],
+   "linked": [
+    "Miller Zell → Chick-fil-A"
+   ]
+  },
+  {
+   "id": "33d62ae28fe8",
+   "date_et": "2026-11-12 09:49 ET",
+   "published_iso": "2026-11-12T14:49+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "NACS",
+   "title": "RaceTrac Opens First Location in Memphis - NACS",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTUxZRmQ2cnFqWnB6aVRBU3ZjOGJUd1NSNDdTaXF4cGNZWmdjdzhiUmtaaVRZWnVzcTliME1nS0JEZ1Ftcl9IOXNWVWNRTjdydWNUSDF3V2tpZE1xNUMzbjZOMnJyS0lVSTkwOWFxT2J0aGhsU0pKRFdmd1FFY1ZyZ2lma2tPNnRnSEl5cFNzUWJiUnctaFZKOHRsZ2t4Y1R4bmFuZVB3?oc=5",
+   "states": [
+    "TN"
+   ],
+   "printers": [],
+   "end_users": [
+    "RaceTrac"
+   ],
+   "linked": []
+  },
+  {
+   "id": "61c5c316c803",
+   "date_et": "2026-11-12 09:00 ET",
+   "published_iso": "2026-11-12T14:00+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Halifax Courier",
+   "title": "Supermarket's licence bid for new store in Calderdale village - Halifax Courier",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV2xKLWJMbUFQSUU3SU0tMFozeDdLTHhSai1PUUZ5dW02VnNwbm92dlRLYlUzWEV4NXF3Q2tWaXVBdFp4blJvUnR0OWdBXzljZldWRllFeERrODZfckFKcklfMnFvTTZSd1dFbFVkSHAzclg1anh0MzkzR25iSG5Cb0d3Njk0ZUNLdmEtYllOQ21GVGpFNzlUTGZaQ2NoUHktXzYxdWJTVDNYc0VDWjdV?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "b3e87aefebae",
+   "date_et": "2026-11-12 08:56 ET",
+   "published_iso": "2026-11-12T13:56+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "C-Store Dive",
+   "title": "Parker’s opens first Florida c-store - C-Store Dive",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTlNrZERvM1VFbGxfR3hCU2NqRmgxRThvR200eF9Ea0gxTG95RDEwanQ4WXpubjcySkR5YW9lcllHdENkT2dOWmJWcU1xT1F5ZEw1VDFsZXd6YU5xQjJIeENpbGZXTnIyYkt5Q080V2RnUUNNZ2dsRlVOdllkSWhDdw?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "bb6043b7cba0",
+   "date_et": "2026-11-12 08:40 ET",
+   "published_iso": "2026-11-12T13:40+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "C-Store Dive",
+   "title": "Parker’s opens first Florida c-store",
+   "url": "https://www.cstoredive.com/news/parkers-opens-first-florida-c-store/874435/",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "28c626578cd1",
+   "date_et": "2026-11-12 07:41 ET",
+   "published_iso": "2026-11-12T12:41+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "WWLTV.com",
+   "title": "River Ridge's first ALDI opens this week. What to know - WWLTV.com",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQWNQdEZ5OFE0TWdaMG1MMXF1RGhkNVhJX3NFbGJUXzU3RHRya2VTNTNPZGNOMHJnQjdRNlRqcnVybmFzQV9QYnNtT3FQd0VQc3Bna1RSSnJGa19XTFJsVF9JQWZ1ZnRxSGVVbUh0U1psM3prV3RvWXE1MGRFUWZoM21JUWtnSEFURnVaTzV6dExRU0lHYXNZWEJ1WUJtNmdGNTBteDR3U0pZZWxTZFY4OXRxNkNzVm9rZ2ZMOWxFQjlOclozaUgxMkI3d2p6bzBYVV9SWUVacw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "ALDI"
+   ],
+   "linked": [
+    "Miller Zell → ALDI"
+   ]
+  },
+  {
+   "id": "960a1cbe7cca",
+   "date_et": "2026-11-12 07:40 ET",
+   "published_iso": "2026-11-12T12:40+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Madrid Secreto",
+   "title": "Costco Delights Its Madrid Customers: Prepares to Open a Third Store with Its Own Gas Station - Madrid Secreto",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tNFlpLURTcldCM3REd2tLN2UyUm5yVnNjU1gxRWRSUXhWSG45RFJwbVNQaTdLRk5BSUFPNHlGVnlmYS1naml5a1I2RnJramFQR2g5X09oc3pYcFprdDNUMFl5VHd1N2oz?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Costco"
+   ],
+   "linked": []
+  },
+  {
+   "id": "96f06406f29d",
+   "date_et": "2026-11-12 07:33 ET",
+   "published_iso": "2026-11-12T12:33+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "UA.NEWS",
+   "title": "The JYSK chain is expanding in Ukraine: where the new stores will open - UA.NEWS",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdVB1Mi15LW81ZTU4bmVTZFhxSWF5SGNodkVtenkxOElMTEllQXJLQV9tNEsySFM2c0ZKRGtXcS1ZN0JYUV9PTTBVLTMyZzJEb2lwT1YxdEg1NmxpckRTLXpDOGVsbjAxYTl0WjJxSEhfWkJBX2hwemNHdVlmSlEyQmJMODI3c2UwOWpxVmRIR1lxT2trQUkxa21xcw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "e6d22cd4fcb3",
+   "date_et": "2026-11-12 07:16 ET",
+   "published_iso": "2026-11-12T12:16+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Completely Retail News",
+   "title": "Waitrose opens 15,000 sq ft supermarket in Hale Barns, Greater Manchester - Completely Retail News",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdl80YkdrSWZJWHZaYjVTSkoyNS0zQlUyaFZqYzAtVC1na1kteTJZaG1xQUYtZWRrTDNZNWNYZE9sSmdPTG9DNlVjM00tQU5iMUNQWUZhem1rc0tfSzktRFFHczl4UTlocEw2QWRRU2ZBX3NOQTRnVC1aRnpOMDBHS0k4NXhlRDBQZHF0Ql92bF94UUMwUGp4TmxhU1p0Ulc3NnhBYmUtbFJ5YTVR?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "12073ebfc000",
+   "date_et": "2026-11-12 07:15 ET",
+   "published_iso": "2026-11-12T12:15+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Shelby Report",
+   "title": "Kroger Atlanta Opens $39M Marketplace In Locust Grove - The Shelby Report",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSk1aZVpEQ2VSb1RWYXpyY0ZiNXc3YnVuT2JiLVI1anhjYzVLMVAzZDdCZDZ0Z1cweTYwUFYwZEhRNUlUTW5VNnZwR1hoSHJRVXgwZ1RlTkxLLXFjYmFJdVhOQXZDZGJaVVAyZm00c0hjZ1dYRFZuYVdsMllMNDNCWEtTZTZTcVhVVXZlSFdRS1ViSTFKRVkw?oc=5",
+   "states": [
+    "GA"
+   ],
+   "printers": [],
+   "end_users": [
+    "Kroger"
+   ],
+   "linked": [
+    "Baesman Group → Kroger"
+   ]
+  },
+  {
+   "id": "fb945eba1913",
+   "date_et": "2026-11-12 06:46 ET",
+   "published_iso": "2026-11-12T11:46+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Business Journals",
+   "title": "Kroger to open $40M store in nation's fifth-fastest-growing city - The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU0hTUE9jMUd2anR4VlN3ZVgtMUpyRVpZQVREcl9JOXhpbjVRYjNhWlV3MTdST2w4UnlSU2d5b3VHaW85WnUxcjJxTHdYZU9DemlIdXVYQVFOemZsRzdIaHFDNGY3U0tfbkZqNkZJbHFqckFFdy1LZ1ZrVC1sZFhTOE9PWEJKUUFpSjl4b2NKbnp6emNvRTZzdktZaTI4ZDVJa05QNnNOekZfalQ5?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Kroger"
+   ],
+   "linked": [
+    "Baesman Group → Kroger"
+   ]
+  },
+  {
+   "id": "d2a34b94a271",
+   "date_et": "2026-11-12 06:46 ET",
+   "published_iso": "2026-11-12T11:46+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Grocery Gazette",
+   "title": "Waitrose opens new supermarket in Greater Manchester - Grocery Gazette",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ0RBQ1c2MnRSYlZYNUlIMmdPOExLMUVBYkpYVEZuRkVnSWpsZGZqRG10c1ZSUVo0Ni1WZ1FDZlZ2bjQ2RFppaFk0ckhYT1dRYUhjdU9yUUhKZWlCdEJrdGRNcE5EcmRYVHBrYjBWSV9nR2F0YTJVTmZQdFNWSTdHanRETkNLUjZaa1NVc2hZcndySC0tQjVLcmFzb0hrZw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "18efb09735d9",
+   "date_et": "2026-11-12 06:21 ET",
+   "published_iso": "2026-11-12T11:21+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Bucks Free Press",
+   "title": "Lidl confirms opening date for new Buckinghamshire supermarket - Bucks Free Press",
+   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOalU0Tmg2R3JDQkRTTHRQU3dmUlZIYUhSUDRQaXExZTdlcDNMSUFzbmhkX0NSclRzX2lacjQybDNQSGE3VHZ4cmN0SkRmdWJNRWh5X1AydXhSdTJPc29DeFliZ21BdG1Wd3p4OExVSHBlYi1hQkU1SG1xbFBjLTRPYktVcFJoT3lqVkFZZ2lHSXVoNDhDdjZKemc1aw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Lidl"
+   ],
+   "linked": []
+  },
+  {
    "id": "941b65ffc4d3",
    "date_et": "2026-11-12 06:07 ET",
    "published_iso": "2026-11-12T11:07+00:00",
@@ -10927,6 +11613,41 @@
    "end_users": [
     "Panera"
    ],
+   "linked": []
+  },
+  {
+   "id": "c1b4c2eee483",
+   "date_et": "2026-11-12 06:00 ET",
+   "published_iso": "2026-11-12T11:00+00:00",
+   "type": "expansion",
+   "segment": "Mass / big-box retail",
+   "source": "The Business Journals",
+   "title": "Walmart's real estate director dishes on investment, going all-in on Central Florida - The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNjVVRWVBZlZETUFHVWRYTTRxOWp1QnNMZWtSOWJZSENEbGVGQ3NQWUhrZlMwZW85RmFrUjBqakRyZU1wUDlncU5CWGl5M2NtZjJrZ09RZGg3cDBRMU1NSjhjQ09CVlhzbHBMdjdvRi1hNnVvTkxtb29HeTFUT1JScEJUay0tZWpMNGJQa0p6R04td3BXd25XYU11Vm0zcEJUYlg1OU1PZG1xZw?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Walmart"
+   ],
+   "linked": [
+    "BluEdge → Walmart",
+    "Miller Zell → Walmart"
+   ]
+  },
+  {
+   "id": "3470a0c386f2",
+   "date_et": "2026-11-12 05:29 ET",
+   "published_iso": "2026-11-12T10:29+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Комерсант Український",
+   "title": "JYSK to Open Five New Stores in Ukraine: The Chain’s Plans for Winter and Spring - Комерсант Український",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPREtVTnkwWEVaQW4xRjg0UlJlRU02eGtiWXFETHcyYWdwb0REOGZOanowbGNSQU9YNkpUNlFQZVh1WWFVNm43UUFWVHRRV1pwOEZFdUt1OFJxZTR1SlQ5T2ltUGdWYWY4S0dITjdWQ25ta0VnMU0xYkF2ZEhxY2M2YWQ2bnQwSG1oVHp3eWRKSVcxMEtoZjhzVzZLVXJrUllXQktR?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
    "linked": []
   },
   {
@@ -11011,6 +11732,24 @@
    "segment": "Grocery",
    "source": "Community Impact",
    "title": "H-E-B opens store in Montgomery with BBQ restaurant - Community Impact",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVG1iRm5uV09fMjBfTXpjcldXY19kV1EyOXBzQ0lISHJ2TG4wMDh4Z3ZuVzFjOEVYSGVucEg2WUdFSkp6REFmUVdQN05RWDNfS0VxZFFQbi11QlZ4NUp0YmxBREFsZmZBdERDWUtkX0hBZ3JfSE96YXVtTDl3SUtPeUVNUzJ1dHNpeUMyLTl4Sy04cU5JRUMxa2ZibnVPYXhyS1Y2NHh0ampWMW8?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [
+    "H-E-B"
+   ],
+   "linked": []
+  },
+  {
+   "id": "bc97b324e33d",
+   "date_et": "2026-11-11 22:26 ET",
+   "published_iso": "2026-11-12T03:26+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Community Impact Newspaper",
+   "title": "H-E-B opens store in Montgomery with BBQ restaurant - Community Impact Newspaper",
    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVG1iRm5uV09fMjBfTXpjcldXY19kV1EyOXBzQ0lISHJ2TG4wMDh4Z3ZuVzFjOEVYSGVucEg2WUdFSkp6REFmUVdQN05RWDNfS0VxZFFQbi11QlZ4NUp0YmxBREFsZmZBdERDWUtkX0hBZ3JfSE96YXVtTDl3SUtPeUVNUzJ1dHNpeUMyLTl4Sy04cU5JRUMxa2ZibnVPYXhyS1Y2NHh0ampWMW8?oc=5",
    "states": [
     "TX"
@@ -11140,6 +11879,24 @@
    "source": "Yahoo Finance",
    "title": "Parker’s Kitchen opens first Florida store in Yulee during 50th anniversary - Yahoo Finance",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeEdMbGNONzdHYlVXZTFxdmpVQnZONXdMMzRiZ1EwVlhIVGJtdm5IdHJUaWZUR2wwWUxhY1VWc2Z1ck1jV0duRHVyMVNOWXhSV19UeF9vZlFqYUxRUEQ2WGNGdU1oR0tMVmdOS0F5c1hKbmRVcFljazhnS2ViMVlzbjNJYWNSQnJkSU1SSy04c3JoRXcydktvanNzSDh1Mkd0?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Parker's"
+   ],
+   "linked": []
+  },
+  {
+   "id": "f839b8be8e38",
+   "date_et": "2026-11-11 17:15 ET",
+   "published_iso": "2026-11-11T22:15+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "Action News Jax",
+   "title": "Parker’s Kitchen opens first Florida store in Yulee during 50th anniversary - Action News Jax",
+   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQm8zd0FCMk9aOVFIemtOZ0xPU0FMdVhVZUpReDZEMnVaZFF5QlFMY3BwU0ZHSGhxaWVwVm03OE9QZVhRQUxVUmRMUHVRX1FWaVJ3czFYYjI0SnAyVnBwcUN6XzNKcjlrZ1pwc0JnaVgtbVdrcXV2N3IzNFhqd0Q5OEVId1NEMzNQVEZya1VSUXY1Y085WDF5Y3FUY3JHRzBjX2J0RVphS2ppV0ZKU1pXazlBXzZTNUM5U0tYdFVGdlJTeHRONThrUG1PVzRwTS00aHFkb1lNNUcxRndQSGVEQU5XeWttWnB6eW1j0gHrAUFVX3lxTE5CbzN3QUIyT1o5UUh6a05nTE9TQUx1WFVlSlF4NkQydVpkUXlCUUxjcHBTRkdIaHFpZXBWbTc4T1BlWFFBTFVSZExQdVFfUVZpUndzMVhiMjRKcDJWcHBxQ3pfM0pyOWtnWnBzQmdpWC1tV2txdXY3cjM0WGp3RDk4RUh3U0QzM1BURnJrVVJRdjVjTzlYMXljcVRjckdHMGNfYnRFWmFLamlXRkpTWldrOUFfNlM1QzlTS1h0VUZ2UlN4dE41OGtQbU9XNHBNLTRocWRvWU01RzFGd1BIZURBTld5a21acHp5bWM?oc=5",
    "states": [
     "FL"
    ],
@@ -11334,6 +12091,20 @@
    "linked": []
   },
   {
+   "id": "ebd3aee22c96",
+   "date_et": "2026-11-11 13:00 ET",
+   "published_iso": "2026-11-11T18:00+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Community Impact Newspaper",
+   "title": "Desi Masala grocery store, restaurant now open in Georgetown - Community Impact Newspaper",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMWZWMDJXdW91SDFvSG1GbnVuX3RRQVpNTFZWd3RXS2pBVXZjT2JXd0dzR1R3LTl3clIwZ09FRHlPR1NmX0hmZWtCeFhzT3p2aEV5X3hHTW9uVG1IQ1J0OXpLVFBxaFJySFVIV2tSZkhaSVFDazZHaG9aUzhtbzVwZkpvejhlYnJJYzRNMmhvdW9ITm42Z1A2YVB1cE1kRm12OHZGYW8tM3U5OUxs?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "3ee4dbd7e025",
    "date_et": "2026-11-11 12:25 ET",
    "published_iso": "2026-11-11T17:25+00:00",
@@ -11358,6 +12129,22 @@
    "source": "QSR Magazine",
    "title": "Handel’s Celebrates 200th Opening in Camarillo, California",
    "url": "https://www.qsrmagazine.com/news/handels-celebrates-200th-opening-in-camarillo-california/",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "ee9fd08c6a62",
+   "date_et": "2026-11-11 10:49 ET",
+   "published_iso": "2026-11-11T15:49+00:00",
+   "type": "expansion",
+   "segment": "Mass / big-box retail",
+   "source": "Chain Store Age",
+   "title": "K-beauty retailer Olive Young to expand Southern California footprint - Chain Store Age",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxORG5PaTk0WHNxOGNpWl9la2hROGplSUtmRmhXV2NCdnJnV08wZXJzTDk1TkFCQnhhVnlZc0I1MVJNTmk4NXpmaG9fX0xuWlRjQlEyMnVsWGxhOGdKb0NpX1lvSjNhbjQ0bW53N08wTGtuck9yZmVUOGFjUzFkbkFzUEVhR0lya1FwR0w0Z2NOYWxYbzNUYXlR?oc=5",
    "states": [
     "CA"
    ],
@@ -11463,6 +12250,22 @@
    "printers": [],
    "end_users": [
     "Bass Pro"
+   ],
+   "linked": []
+  },
+  {
+   "id": "a7d22b64d5ff",
+   "date_et": "2026-11-11 07:56 ET",
+   "published_iso": "2026-11-11T12:56+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "The Sun",
+   "title": "TJ Maxx opens new store as bargain hunters welcome TWO major retail additions to shopping center - The Sun",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE0ybEMyUlJpQTdjdlZCazBoMlZLR1NGdjB2b1Iya01rMGF0cTdrVDhsV0FjZmdWbWJ0enFPRmpiLS1tU1VYZk1VRF9TZTdqRGJJSUQ0MDRVZ1FIMjhnN2NUUVJIdGFNczNlTXJWeA?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "TJ Maxx"
    ],
    "linked": []
   },
@@ -12561,18 +13364,18 @@
   "sources": {
    "Printing Impressions": "ok (0 kept)",
    "Sign Builder Illustrated": "ok (0 kept)",
-   "C-Store Dive": "ok (1 kept)",
-   "Restaurant Dive": "ok (1 kept)",
+   "C-Store Dive": "ok (2 kept)",
+   "Restaurant Dive": "ok (0 kept)",
    "Retail Dive": "ok (0 kept)",
-   "Grocery Dive": "ok (2 kept)",
+   "Grocery Dive": "ok (1 kept)",
    "Nation's Restaurant News": "ok (0 kept)",
-   "QSR Magazine": "ok (2 kept)",
+   "QSR Magazine": "ok (4 kept)",
    "PR Newswire": "ok (0 kept)",
-   "Google News · c-store": "ok (14 kept)",
-   "Google News · qsr": "ok (22 kept)",
-   "Google News · grocery": "ok (22 kept)",
-   "Google News · retail": "ok (18 kept)",
-   "Google News · printer": "ok (1 kept)",
+   "Google News · c-store": "ok (16 kept)",
+   "Google News · qsr": "ok (14 kept)",
+   "Google News · grocery": "ok (17 kept)",
+   "Google News · retail": "ok (22 kept)",
+   "Google News · printer": "fail: HTTPError",
    "Google News · printer watch 1": "ok (0 kept)",
    "Google News · printer watch 2": "ok (0 kept)",
    "Google News · printer watch 3": "ok (0 kept)",
@@ -12581,13 +13384,13 @@
    "Google News · printer watch 6": "ok (0 kept)",
    "Google News · printer watch 7": "ok (1 kept)",
    "Google News · printer watch 8": "ok (0 kept)",
-   "Google News · printer watch 9": "fail: HTTPError"
+   "Google News · printer watch 9": "ok (0 kept)"
   },
   "dropped": {
-   "too old": 168,
-   "not a store/printer event": 9,
-   "non-US": 12,
-   "headline names an old year": 1
+   "too old": 205,
+   "non-US": 11,
+   "not a store/printer event": 5,
+   "headline names an old year": 2
   }
  }
 }
