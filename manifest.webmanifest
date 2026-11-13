@@ -1,7 +1,7 @@
 {
   "name": "Gilman Sales Leads",
   "short_name": "Sales Leads",
-  "description": "Target printers, end users and chain-store news by state. Public-source facts only.",
+  "description": "Smart B2B lead finder for Gilman foam board: ranked, verified printers, display makers, OEMs and retailers.",
   "id": "/sales-leads/",
   "start_url": "/sales-leads/",
   "scope": "/sales-leads/",

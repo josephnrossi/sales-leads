@@ -1,26 +1,23 @@
-/* Gilman Sales Leads v2 — standalone PWA (state tile map, leads with equipment & Gilman fit, resource library, chain & printer news).
-   Reads same-origin sales-leads-data.json (generated daily by /workspace/sales-leads/daily_leads.py).
-   Public-source facts only. Offline copy lives in its own IndexedDB database: sales-leads-app. */
+/* Gilman Sales Leads v3: B2B smart lead finder. One row per company, ranked by a transparent Fit Score,
+   matched to the best Gilman product, with a verification badge and opportunity signals.
+   Reads same-origin sales-leads-data.json (built daily by /workspace/sales-leads/v3/build_v3.py).
+   Public company facts only. Offline copy lives in its own IndexedDB database: sales-leads-app (never deleted). */
 (() => {
-  const VER = 'v2';
+  const VER = 'v3';
   const STALE_MS = 36 * 60 * 60 * 1000;
   const POLL_MS = 60 * 60 * 1000;
   const FILE = 'sales-leads-data.json';
   const IDB_NAME = 'sales-leads-app';
-  const TABS = ['map', 'leads', 'fit', 'news', 'about'];
-  const WIDE = matchMedia('(min-width: 1000px)');
-  const TABLE_MQ = matchMedia('(min-width: 700px)'); // matches the CSS switch from cards to table
-  const NOTICE_FALLBACK = 'Gilman Brothers, The Gilman Brothers Company and its product names (INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient®, ADHERE™) are trademarks or registered trademarks of The Gilman Brothers Company. Other company and brand names are trademarks of their respective owners; listing does not imply endorsement. Product fit is a suggestion. Public-source research for internal sales planning only.';
-
-  const $ = (s, r = document) => r.querySelector(s);
-  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-  const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '';
-
-  let data = null, usedOffline = false, staleDemo = false, dbp, poll = null;
-  let view = { tab: 'map', region: 'All', size: 'all', metric: 'targets', mapMode: 'tiles', state: '',
-    lProduct: 'all', lState: 'all', lTier: 'all', lType: 'all', lEvid: false, lPB: 'all', lCB: 'all', open: '', lMax: 80, nState: 'all', nType: 'all', nSeg: 'all' };
-
-  /* tile map: [state, col, row] — 11 columns x 8 rows */
+  const TABS = ['leads', 'map', 'signals', 'about'];
+  const PAGE = 40;
+  const NOTICE_FALLBACK = 'Gilman Brothers, The Gilman Brothers Company and its product names (INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient®) are trademarks or registered trademarks of The Gilman Brothers Company. Other company and brand names are trademarks of their respective owners; listing does not imply endorsement. Product fit is a suggestion. Public-source research for internal sales planning only.';
+  const OEM_FALLBACK = 'Printer and cutter brand names (EFI, VUTEk, Durst, HP, Canon, Fujifilm, Zünd, Kongsberg, MultiCam, Colex and others) are trademarks of their respective owners. No OEM endorsement is implied.';
+  const TYPES = [['all', 'All buyers'], ['printer', 'Printers'], ['oem', 'Display makers'], ['retailer', 'Retailers'], ['equipment_oem', 'Equipment partners']];
+  const TYPE_LAB = { printer: 'Printer / converter', oem: 'OEM · fabricator / display maker', retailer: 'Retailer / brand', equipment_oem: 'Equipment OEM (channel partner)' };
+  const TYPE_SHORT = { printer: 'Printer', oem: 'Display maker', retailer: 'Retailer', equipment_oem: 'Equip. partner' };
+  const MINS = [0, 40, 50, 60, 70];
+  const SIGS = [['all', 'All'], ['news', 'News'], ['social', 'Social']];
+  const CAT_LAB = { install: 'Install', rollout: 'Rollout', pop: 'POP / display', tradeshow: 'Trade show', sustain: 'Sustainability', hiring: 'Hiring', growth: 'Growth', opening: 'Opening', remodel: 'Remodel', expansion: 'Expansion', acquisition: 'Acquisition', closing: 'Closing', other: 'News' };
   const TILES = [['AK',0,0],['ME',10,0],['VT',9,1],['NH',10,1],
     ['WA',0,2],['ID',1,2],['MT',2,2],['ND',3,2],['MN',4,2],['IL',5,2],['WI',6,2],['MI',7,2],['NY',8,2],['RI',9,2],['MA',10,2],
     ['OR',0,3],['NV',1,3],['WY',2,3],['SD',3,3],['IA',4,3],['IN',5,3],['OH',6,3],['PA',7,3],['NJ',8,3],['CT',9,3],
@@ -28,31 +25,26 @@
     ['AZ',1,5],['NM',2,5],['KS',3,5],['AR',4,5],['TN',5,5],['NC',6,5],['SC',7,5],['DC',8,5],
     ['OK',3,6],['LA',4,6],['MS',5,6],['AL',6,6],['GA',7,6],
     ['HI',0,7],['TX',3,7],['FL',8,7]];
-  const REGIONS = ['All', 'Northeast', 'South', 'Midwest', 'West'];
-  const SIZES = [['all', 'All sizes'], ['s1_19', '1–19'], ['s20_99', '20–99'], ['s100', '100+']];
-  const METRICS = [['targets', 'Target printers (100+ emp.)'], ['census', 'Census: printers & sign shops']];
-  const NEWS_TYPES = ['opening', 'remodel', 'acquisition', 'expansion', 'closing', 'other'];
-  const TIER_LAB = { A: 'A · rigid / flatbed shown', B: 'B · graphics shown', C: 'C · check site' };
-  const OEM_FALLBACK = 'Printer and cutter brand names (EFI, VUTEk, Durst, HP, Canon, Océ, Fujifilm, Inca, Agfa, swissQprint, Zünd, Kongsberg, MultiCam, Colex, Summa and others) are trademarks of their respective owners. Equipment facts come from public sources and may be out of date; no OEM endorsement is implied.';
-  const BRAND_LAB = { Zund: 'Zünd' };
-  const bl = b => BRAND_LAB[b] || b;
-  const NONE = '__none';
-  const RES_ORDER = ['Zund', 'Kongsberg', 'Colex', 'MultiCam', 'Onsrud', 'Elitron', 'Any cutter', 'HP', 'Fujifilm', 'Canon', 'Durst', ''];
+  const REGION = { Northeast: 'CT ME MA NH RI VT NJ NY PA', Midwest: 'IL IN MI OH WI IA KS MN MO NE ND SD', South: 'DE DC FL GA MD NC SC VA WV AL KY MS TN AR LA OK TX', West: 'AZ CO ID MT NV NM UT WY AK CA HI OR WA' };
+  const regionOf = st => Object.keys(REGION).find(r => REGION[r].split(' ').includes(st)) || '';
 
+  const $ = (s, r = document) => r.querySelector(s);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const safeUrl = u => /^https?:\/\//i.test(String(u || '')) ? String(u) : '';
+  const ext = (u, label, cls = 'src') => safeUrl(u) ? `<a class="${cls}" href="${esc(u)}" target="_blank" rel="noopener">${label}</a>` : '';
 
+  let data = null, usedOffline = false, staleDemo = false, dbp, poll = null;
+  let view = { tab: 'leads', type: 'all', q: '', product: 'all', state: 'all', region: 'all', min: 0, ver: false, max: PAGE, open: '', sig: 'all', filters: false };
 
-  /* ---------- IndexedDB (separate database; additive only) ---------- */
+  /* ---------- IndexedDB (separate database; additive only, never deleted) ---------- */
   function openDB() {
     if (dbp) return dbp;
     dbp = new Promise((resolve, reject) => {
       const r = indexedDB.open(IDB_NAME, 1);
-      r.onupgradeneeded = () => {
-        const db = r.result;
+      r.onupgradeneeded = () => { const db = r.result;
         if (!db.objectStoreNames.contains('meta')) db.createObjectStore('meta', { keyPath: 'id' });
-        if (!db.objectStoreNames.contains('news')) db.createObjectStore('news', { keyPath: 'id' });
-      };
-      r.onsuccess = () => resolve(r.result);
-      r.onerror = () => reject(r.error);
+        if (!db.objectStoreNames.contains('news')) db.createObjectStore('news', { keyPath: 'id' }); };
+      r.onsuccess = () => resolve(r.result); r.onerror = () => reject(r.error);
     });
     return dbp;
   }
@@ -64,457 +56,240 @@
       t.oncomplete = () => resolve(out); t.onerror = () => reject(t.error);
     }));
   }
-  async function saveSnapshot(payload) {
-    try {
-      await tx('meta', 'readwrite', s => { s.put({ id: 'file-cache', payload, fetchedAt: new Date().toISOString() }); });
-      await tx('news', 'readwrite', s => { for (const n of payload.news || []) if (n && n.id) s.put(n); });
-    } catch (e) { console.warn('idb save', e); }
-  }
-  async function loadSnapshot() {
-    try {
-      const meta = await tx('meta', 'readonly', s => req(s.get('file-cache')));
-      const news = await tx('news', 'readonly', s => req(s.getAll())) || [];
-      return { payload: meta && meta.payload, news };
-    } catch (e) { return { payload: null, news: [] }; }
-  }
-  function mergeNews(fileNews, saved) {
-    const m = new Map();
-    for (const n of saved || []) if (n && n.id) m.set(n.id, n);
-    for (const n of fileNews || []) if (n && n.id) m.set(n.id, n);
-    const cutoff = Date.now() - 120 * 864e5; // keep four months on the device
-    return [...m.values()].filter(n => { const t = Date.parse(n.published_iso); return isFinite(t) && t > cutoff && t < Date.now() + 6 * 36e5; })
-      .sort((a, b) => String(b.published_iso).localeCompare(String(a.published_iso)));
-  }
+  async function saveSnapshot(payload) { try { await tx('meta', 'readwrite', s => { s.put({ id: 'file-cache', payload, fetchedAt: new Date().toISOString() }); }); } catch (e) { console.warn('idb save', e); } }
+  async function loadSnapshot() { try { const m = await tx('meta', 'readonly', s => req(s.get('file-cache'))); return m && m.payload; } catch (e) { return null; } }
 
-  /* ---------- helpers ---------- */
-  const states = () => (data && data.census && data.census.states) || [];
-  const stateRec = st => states().find(s => s.state === st);
-  const printers = () => (data && data.printers) || [];
-  const leads = () => (data && data.leads) || [];
-  const news = () => (data && data.news) || [];
-  /* ---------- equipment & Gilman fit (new optional keys; v1 files without them still work) ---------- */
-  let pIdx = null, pIdxFor = null;
-  function printerRec(name) {
-    if (pIdxFor !== data) { pIdx = new Map(printers().map(p => [p.company, p])); pIdxFor = data; }
-    return pIdx.get(name);
-  }
-  const eqOf = name => { const p = printerRec(name); return (p && p.equipment) || null; };
-  const resources = () => (data && data.gilman_resources) || [];
-  const resById = id => resources().find(r => r.id === id);
-  const hasEquip = () => printers().some(p => p.equipment);
-  function eqBrands(name, kind) { const e = eqOf(name); return e ? [...new Set((e[kind] || []).map(x => x.brand))] : []; }
-  const badge = c => c === 'confirmed' ? '<span class="cf cf-c" title="Confirmed by a public source">✓ confirmed</span>' : '<span class="cf cf-l" title="Likely: older, indirect or affiliate source">~ likely</span>';
-  function eqChips(name, compact) {
-    const e = eqOf(name);
-    if (!e) return '';
-    const one = x => `<span class="eq ${x.confidence === 'confirmed' ? 'eq-c' : 'eq-l'}"><b>${esc(bl(x.brand))}</b>${compact ? '' : ' ' + esc(x.model)}<i aria-label="${esc(x.confidence)}">${x.confidence === 'confirmed' ? '✓' : '~'}</i></span>`;
-    const row = (lab, arr) => `<div class="eqrow"><span class="eqk">${lab}</span>${arr.length ? arr.map(one).join('') : '<span class="eq eq-n">Not yet found</span>'}</div>`;
-    return `<div class="eqchips">${row('Prints', e.printers || [])}${row('Cuts', e.cutters || [])}</div>`;
-  }
-  function fitPanel(name) {
-    const p = printerRec(name); if (!p) return '';
-    const e = p.equipment || { printers: [], cutters: [] }, f = p.gilman_fit || { resources: [], talking_points: [], barrier_removers: [], unverified: [] };
-    const item = x => `<li class="eqi"><div><b>${esc(bl(x.brand))}</b> ${esc(x.model)} ${badge(x.confidence)}${x.note ? `<div class="sub">${esc(x.note)}</div>` : ''}</div>${safeUrl(x.source_url) ? `<a class="srcbtn" href="${esc(x.source_url)}" target="_blank" rel="noopener" aria-label="Source for ${esc(bl(x.brand))} ${esc(x.model)}">Source ↗</a>` : ''}</li>`;
-    const list = (arr, lab) => arr.length ? `<ul class="eqlist">${arr.map(item).join('')}</ul>` : `<p class="none">${lab} not yet found in public sources. Ask on the first call.</p>`;
-    const BR = (data.barrier_removers || []), UV = (data.equipment_unverified || []);
-    const res = f.resources.map(resById).filter(Boolean);
-    return `<div class="fitpanel">
-      <h4>Equipment</h4>
-      <div class="sub">Printers</div>${list(e.printers || [], 'Printers')}
-      <div class="sub">Digital cutters / routers</div>${list(e.cutters || [], 'Cutters')}
-      <h4>Gilman fit · talking points</h4>
-      <ul class="tps">${f.talking_points.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
-      ${res.length ? `<h4>Gilman resources for this shop</h4><ul class="reslinks">${res.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener"><span class="rk rk-${esc(r.kind)}">${esc(r.kind)}</span>${esc(r.title)}</a></li>`).join('')}</ul>` : ''}
-      ${f.barrier_removers.length ? `<h4>Barrier removers</h4><ul class="brs">${f.barrier_removers.map(id => BR.find(b => b.id === id)).filter(Boolean).map(b => `<li>${esc(b.text)}</li>`).join('')}</ul>` : ''}
-      ${f.unverified.length ? f.unverified.map(id => UV.find(u => u.id === id)).filter(Boolean).map(u => `<div class="unv"><b>Unverified:</b> “${esc(u.claim)}”. ${esc(u.status)}</div>`).join('') : ''}
-    </div>`;
-  }
-  function isStale() {
-    if (staleDemo) return true;
-    const t = data && Date.parse(data.generated_iso);
-    if (!t || !isFinite(t)) return true;
-    return Date.now() - t > STALE_MS;
-  }
-  function fmtDate(iso) {
-    const d = new Date(iso);
-    if (isNaN(+d)) return '—';
-    try { return d.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET'; } catch (e) { return iso; }
-  }
-  const fmtN = n => (n == null || n === '') ? '—' : Number(n).toLocaleString('en-US');
-  function censusValue(s) {
-    if (!s || !s.core) return 0;
-    return view.size === 'all' ? s.core.est : (s.core[view.size] || 0);
-  }
-  function tileValue(st) {
-    const s = stateRec(st);
-    if (view.metric === 'targets') return printers().filter(p => p.state === st).length;
-    return censusValue(s);
-  }
-  function inRegion(st) { const s = stateRec(st); return view.region === 'All' || (s && s.region === view.region); }
+  /* ---------- data helpers ---------- */
+  const companies = () => (data && data.companies) || [];
+  const byId = id => companies().find(c => c.id === id);
+  const signals = () => (data && data.signals) || [];
+  const isV3 = () => Array.isArray(data && data.companies);
+  function isStale() { if (staleDemo) return true; const t = data && Date.parse(data.generated_iso); return !t || !isFinite(t) || Date.now() - t > STALE_MS; }
+  function fmtDate(iso) { const d = new Date(iso); if (isNaN(+d)) return '—';
+    return d.toLocaleString('en-US', { timeZone: 'America/New_York', month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' ET'; }
+  const shortDate = s => { const d = new Date(String(s).slice(0, 10) + 'T12:00:00'); return isNaN(+d) ? '' : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: d.getFullYear() === new Date().getFullYear() ? undefined : 'numeric' }); };
+  const scoreCls = s => s >= 70 ? 'hi' : s >= 50 ? 'md' : 'lo';
+  const badgeHtml = b => `<span class="vb vb-${esc((b || 'Unverified').toLowerCase())}">${b === 'Verified' ? '✓ ' : b === 'Partial' ? '◐ ' : '○ '}${esc(b || 'Unverified')}</span>`;
+  const sizeTxt = c => c.type === 'printer' || c.type === 'oem' ? (c.size.employees ? `${Number(c.size.employees).toLocaleString()} emp.` : '') : (c.size.label || '').replace(' employees', ' emp.');
 
-  /* ---------- rendering ---------- */
-  function seg(id, items, cur, attr) {
-    const el = $('#' + id); if (!el) return;
-    el.innerHTML = items.map(([v, l]) => `<button type="button" data-${attr}="${esc(v)}" class="${v === cur ? 'on' : ''}" aria-pressed="${v === cur}">${esc(l)}</button>`).join('');
+  function filtered() {
+    const q = view.q.trim().toLowerCase();
+    return companies().filter(c => (view.type === 'all' ? c.type !== 'equipment_oem' : c.type === view.type)
+      && (view.product === 'all' || (c.best && c.best.product === view.product))
+      && (view.state === 'all' || c.state === view.state)
+      && (view.region === 'all' || regionOf(c.state) === view.region)
+      && c.score >= view.min && (!view.ver || c.verification.badge === 'Verified')
+      && (!q || c.name.toLowerCase().includes(q) || (c.best && c.best.product.toLowerCase().includes(q)) || (c.state || '').toLowerCase() === q));
   }
-  const sizeLab = () => (SIZES.find(z => z[0] === view.size) || [, ''])[1];
-  function tileLabel(st, v) {
-    const s = stateRec(st);
-    return `${s ? s.name : st}: ${view.metric === 'targets' ? v + ' target printers' : fmtN(v) + ' printers & sign shops (' + sizeLab() + ')'}`;
+  function activeFilters() { return (view.product !== 'all') + (view.state !== 'all') + (view.region !== 'all') + (view.min > 0) + view.ver; }
+
+  /* ---------- leads ---------- */
+  function card(c, i) {
+    const loc = [c.city, c.state].filter(Boolean).join(', ');
+    return `<li class="lcard" data-open="${esc(c.id)}" tabindex="0" role="button" aria-label="${esc(c.name)}, Fit Score ${c.score}">
+      <div class="lc-top"><span class="rank">${i + 1}</span><div class="lc-name"><h3>${esc(c.name)}</h3>
+        <div class="lc-meta"><span class="tp tp-${esc(c.type)}">${esc(TYPE_SHORT[c.type] || c.type)}</span>${loc ? `<span>${esc(loc)}</span>` : ''}${sizeTxt(c) ? `<span>${esc(sizeTxt(c))}</span>` : ''}</div></div>
+        <div class="score sc-${scoreCls(c.score)}" aria-hidden="true"><b>${c.score}</b><small>fit</small></div></div>
+      <div class="lc-prod"><span class="prod">${esc(c.best ? c.best.product : '')}</span>${badgeHtml(c.verification.badge)}</div>
+      <p class="lc-why">${esc(c.why[0] || '')}</p></li>`;
   }
-  function renderMap() {
-    seg('slMetric', [['targets', 'Printers'], ['census', 'Census']], view.metric, 'metric');
-    seg('slRegion', REGIONS.map(r => [r, r === 'All' ? 'All regions' : r]), view.region, 'region');
-    seg('slSize', SIZES, view.size, 'size');
-    seg('slMapMode', [['tiles', 'Map'], ['list', 'List']], view.mapMode, 'mode');
-    const map = $('#slMap'); if (!map) return;
-    const vals = TILES.filter(([st]) => inRegion(st)).map(([st]) => tileValue(st));
-    const max = Math.max(1, ...vals);
-    map.innerHTML = TILES.map(([st, c, r]) => {
-      const v = tileValue(st), on = inRegion(st);
-      const pct = v ? Math.round(14 + 70 * Math.sqrt(v / max)) : 0;
-      const lab = tileLabel(st, v);
-      return `<button type="button" class="tile${on ? '' : ' dim'}${view.state === st ? ' sel' : ''}${pct > 50 ? ' hot' : ''}" data-st="${st}" style="grid-column:${c + 1};grid-row:${r + 1};--p:${pct}%" aria-label="${esc(lab)}" title="${esc(lab)}"><b>${st}</b><small>${v ? fmtN(v) : '·'}</small></button>`;
-    }).join('');
-    const list = $('#slStateList');
-    const rows = TILES.map(([st]) => st).filter(inRegion).map(st => ({ st, v: tileValue(st), name: (stateRec(st) || {}).name || st }))
-      .sort((a, b) => b.v - a.v || a.name.localeCompare(b.name));
-    list.innerHTML = rows.map(r => `<li><button type="button" data-st="${r.st}" class="${view.state === r.st ? 'sel' : ''}"><span class="sl-st">${r.st}</span><span class="sl-nm">${esc(r.name)}</span><span class="sl-v">${r.v ? fmtN(r.v) : '—'}</span><i style="--w:${Math.round(100 * r.v / max)}%"></i></button></li>`).join('');
-    const wide = WIDE.matches; // tablets in landscape: map and ranked list side by side
-    $('#slMapWrap').hidden = !wide && view.mapMode !== 'tiles';
-    list.hidden = !wide && view.mapMode !== 'list';
-    $('#slMapMode').hidden = wide;
-    $('#slPanHint').hidden = wide || view.mapMode !== 'tiles';
-    const tot = vals.reduce((a, b) => a + b, 0);
-    const where = view.region === 'All' ? 'the U.S.' : 'the ' + view.region + '.';
-    $('#slMapNote').textContent = view.metric === 'targets'
-      ? `${tot} target printers (more than 100 employees, wide-format / rigid graphics) in ${where} Tap a state for its card.`
-      : `${fmtN(tot)} commercial printing, screen printing and sign manufacturing establishments (${sizeLab()} employees), Census CBP ${data && data.census ? data.census.year : ''}. Tap a state for its card.`;
-  }
-  function renderCard() {
-    const card = $('#slCard'), back = $('#sheetBack');
-    const st = view.state;
-    if (!st) { card.hidden = true; back.hidden = true; card.innerHTML = ''; document.body.classList.remove('sheet-open'); return; }
-    card.hidden = false; back.hidden = false; document.body.classList.add('sheet-open');
-    const s = stateRec(st) || { name: st, naics: {}, region: '' };
-    const lab = (data && data.census && data.census.naics) || {};
-    const rows = ['323111', '323113', '339950'].map(k => { const n = (s.naics || {})[k] || {}; return `<tr><td>${esc(lab[k] || k)} <span class="code">${k}</span></td><td>${fmtN(n.est)}</td><td>${fmtN(n.s1_19)}</td><td>${fmtN(n.s20_99)}</td><td>${fmtN(n.s100)}</td></tr>`; }).join('');
-    const ps = printers().filter(p => p.state === st).sort((a, b) => (a.tier || 'Z').localeCompare(b.tier || 'Z') || (parseInt(b.employees) || 0) - (parseInt(a.employees) || 0));
-    const ns = news().filter(n => (n.states || []).includes(st)).slice(0, 12);
-    card.innerHTML = `
-      <div class="grab" aria-hidden="true"></div>
-      <div class="card-head"><h2>${esc(s.name)} <span class="reg">${esc(s.region || '')}</span></h2>
-        <button type="button" class="ibtn" id="slCardClose" aria-label="Close the state card">✕</button></div>
-      <div class="card-body">
-        <button type="button" class="btn wide" id="slCardLeads">Show ${esc(st)} leads</button>
-        <h4>Census County Business Patterns ${data && data.census ? esc(data.census.year) : ''} · establishments by employee size</h4>
-        <div class="table-wrap small"><table class="ctable"><thead><tr><th>Industry (NAICS)</th><th>All</th><th>1–19</th><th>20–99</th><th>100+</th></tr></thead><tbody>${rows}</tbody></table></div>
-        <p class="fine">A few size classes are withheld by Census, so rows can add up to less than All.</p>
-        ${safeUrl(data && data.census && data.census.source_url) ? `<a class="srclink" href="${esc(data.census.source_url)}" target="_blank" rel="noopener">Source: U.S. Census Bureau CBP ↗</a>` : ''}
-        <h4>Target printers in ${esc(st)} (${ps.length})</h4>
-        ${ps.length ? `<ul class="plist">${ps.map(p => `<li><div><b>${esc(p.company)}</b> · ${esc(p.city)}, ${esc(p.state)} · ${esc(p.employees)} employees <span class="chip tier-${esc(p.tier)}">${esc(TIER_LAB[p.tier] || p.tier)}</span></div>
-          <div class="sub">${p.products && p.products.length ? 'Fit (suggested): ' + esc(p.products.join(', ')) + ' · ' : ''}${p.end_user_count ? p.end_user_count + (p.end_user_count === 1 ? ' evidenced end user · ' : ' evidenced end users · ') : ''}headcount ${esc(p.headcount_exact || '')}</div>
-          <div class="links">${safeUrl(p.headcount_url) ? `<a href="${esc(p.headcount_url)}" target="_blank" rel="noopener">Headcount source ↗</a>` : ''}${safeUrl(p.capability_evidence_url) ? `<a href="${esc(p.capability_evidence_url)}" target="_blank" rel="noopener">Capability page ↗</a>` : ''}</div></li>`).join('')}</ul>`
-          : `<p class="empty">No printers over 100 employees with verified wide-format / rigid graphics work are listed in ${esc(st)} yet.</p>`}
-        <h4>News mentioning ${esc(st)} (${ns.length})</h4>
-        ${ns.length ? `<ul class="news small">${ns.map(newsItem).join('')}</ul>` : `<p class="empty">No recent openings, remodels or printer news found for ${esc(st)}.</p>`}
-      </div>`;
-  }
-  function filteredLeads() {
-    return leads().filter(l => (view.lProduct === 'all' || l.product === view.lProduct) && (view.lState === 'all' || l.state === view.lState)
-      && (view.lTier === 'all' || l.tier === view.lTier) && (view.lType === 'all' || l.end_user_type === view.lType) && (!view.lEvid || l.end_user)
-      && brandOk(l.printer, 'printers', view.lPB) && brandOk(l.printer, 'cutters', view.lCB))
-      .sort((a, b) => (b.end_user ? 1 : 0) - (a.end_user ? 1 : 0) || String(a.tier).localeCompare(String(b.tier)) || a.printer.localeCompare(b.printer) || a.product.localeCompare(b.product));
-  }
-  const leadKey = l => l.printer + '|' + l.product + '|' + (l.end_user || '');
-  function brandOk(name, kind, want) {
-    if (want === 'all') return true;
-    const b = eqBrands(name, kind).filter(x => x !== 'Unknown');
-    return want === NONE ? b.length === 0 : b.includes(want);
-  }
-  function fillBrandSel(id, kind, cur, allLab) {
-    const el = $('#' + id); if (!el) return;
-    const eb = (data && data.equipment_brands && data.equipment_brands[kind]) || [];
-    el.hidden = !hasEquip();
-    const key = eb.join('|');
-    if (el.dataset.built !== key) {
-      el.innerHTML = `<option value="all">${esc(allLab)}</option>` + eb.map(o => `<option value="${esc(o)}">${esc(bl(o))}</option>`).join('') + `<option value="${NONE}">Not yet found</option>`;
-      el.dataset.built = key;
-    }
-    el.value = cur === NONE || eb.includes(cur) ? cur : 'all';
+  function renderLeads() {
+    const types = TYPES.map(([k, l]) => `<button type="button" data-type="${k}" class="${view.type === k ? 'on' : ''}" aria-pressed="${view.type === k}">${l}</button>`).join('');
+    $('#slTypeSeg').innerHTML = types;
+    const prods = [...new Set(companies().map(c => c.best && c.best.product).filter(Boolean))];
+    fillSel('slFProduct', prods.map(p => [p, p]), view.product, 'All products');
+    fillSel('slFState', [...new Set(companies().map(c => c.state).filter(Boolean))].sort().map(s => [s, s]), view.state, 'All states');
+    fillSel('slFRegion', Object.keys(REGION).map(r => [r, r]), view.region, 'All regions');
+    fillSel('slFMin', MINS.slice(1).map(m => [String(m), m + '+']), view.min ? String(view.min) : 'all', 'Any score');
+    $('#slFVer').classList.toggle('on', view.ver); $('#slFVer').setAttribute('aria-pressed', view.ver);
+    $('#slFilters').hidden = !view.filters; $('#slFBtn').setAttribute('aria-expanded', view.filters);
+    const n = activeFilters(); $('#slFCount').textContent = n ? ` · ${n}` : '';
+    if ($('#slQ').value !== view.q) $('#slQ').value = view.q;
+    const rows = filtered();
+    const ver = rows.filter(c => c.verification.badge === 'Verified').length;
+    $('#slCount').textContent = `${rows.length} leads · ${ver} verified · ranked by Fit Score`;
+    $('#slList').innerHTML = rows.length ? rows.slice(0, view.max).map((c, i) => card(c, i)).join('') + (rows.length > view.max ? `<li class="more"><button type="button" class="btn wide" data-more>Show ${Math.min(PAGE, rows.length - view.max)} more</button></li>` : '')
+      : '<li class="empty">No leads match these filters. Lower the minimum score or reset filters.</li>';
   }
   function fillSel(id, opts, cur, allLab) {
-    const el = $('#' + id); if (!el) return;
-    const key = opts.join('|');
-    if (el.dataset.built !== key) {
-      el.innerHTML = `<option value="all">${esc(allLab)}</option>` + opts.map(o => `<option value="${esc(o)}">${esc(o)}</option>`).join('');
-      el.dataset.built = key;
+    const el = $('#' + id);
+    el.innerHTML = `<option value="all">${esc(allLab)}</option>` + opts.map(([v, l]) => `<option value="${esc(v)}"${String(v) === String(cur) ? ' selected' : ''}>${esc(l)}</option>`).join('');
+  }
+
+  /* ---------- detail sheet ---------- */
+  const resIcon = r => r === 'pass' ? '✓' : r === 'fail' ? '✗' : r === 'partial' ? '◐' : '–';
+  function detail(c) {
+    const loc = [c.city, c.state].filter(Boolean).join(', ');
+    const b = c.best || {};
+    const factors = c.factors.map(f => `<li><div class="fx"><span>${esc(f.label)}</span><b>${f.pts}/${f.max}</b></div><div class="bar"><i style="width:${Math.round(100 * f.pts / f.max)}%"></i></div><div class="sub">${esc(f.why)}</div></li>`).join('');
+    const eqRow = (lab, arr) => `<div class="eqrow"><span class="eqk">${lab}</span>${arr.length ? arr.map(x => `<a class="eq eq-${x.conf === 'confirmed' ? 'c' : x.conf === 'dated' ? 'd' : 'l'}" href="${esc(safeUrl(x.url))}" target="_blank" rel="noopener" title="${esc(x.conf)}${x.year ? ' · ' + x.year : ''}"><b>${esc(x.brand === 'Zund' ? 'Zünd' : x.brand)}</b> ${esc(x.model)}<i>${x.conf === 'confirmed' ? '✓' : x.conf === 'dated' ? x.year : '~'}</i></a>`).join('') : '<span class="eq eq-n">Not yet found</span>'}</div>`;
+    let rel = '';
+    if (c.type === 'printer' || c.type === 'oem') {
+      rel += `<h4>Equipment</h4><div class="eqchips">${eqRow('Prints', c.equipment.printers)}${eqRow('Cuts', c.equipment.cutters)}</div><p class="fine">✓ confirmed · ~ likely · year = dated (before 2020)</p>`;
+      if (c.end_users.length) rel += `<h4>Retail / brand work</h4><ul class="rel">${c.end_users.map(e => { const r = companies().find(x => x.type === 'retailer' && x.name === e.name); return `<li>${r ? `<button type="button" class="lnk" data-open="${esc(r.id)}">${esc(e.name)}</button>` : esc(e.name)}<span class="sub">${esc(e.evidence)}${e.specific ? '' : ' · homepage only'}</span>${ext(e.url, 'Source ↗')}</li>`; }).join('')}</ul>`;
     }
-    el.value = opts.includes(cur) ? cur : 'all';
-  }
-  const strCls = l => 'str-' + esc(String(l.strength).split(' ')[0].toLowerCase());
-  const srcLink = l => safeUrl(l.source_url) ? `<a class="srclink" href="${esc(l.source_url)}" target="_blank" rel="noopener" aria-label="Open source for ${esc(l.printer)}${l.end_user ? ' and ' + esc(l.end_user) : ''}">Source ↗</a>` : '—';
-  function renderLeads() {
-    const L = leads();
-    fillSel('slFProduct', (data && data.products && data.products.filter(p => L.some(l => l.product === p))) || [...new Set(L.map(l => l.product))], view.lProduct, 'All Gilman products');
-    fillSel('slFState', [...new Set(L.map(l => l.state))].sort(), view.lState, 'All states');
-    fillSel('slFTier', ['A', 'B', 'C'], view.lTier, 'All tiers');
-    fillSel('slFType', [...new Set(L.map(l => l.end_user_type).filter(Boolean))].sort(), view.lType, 'All end-user types');
-    fillBrandSel('slFPB', 'printers', view.lPB, 'All printer brands');
-    fillBrandSel('slFCB', 'cutters', view.lCB, 'All cutter brands');
-    const ev = $('#slFEvid'); ev.classList.toggle('on', view.lEvid); ev.setAttribute('aria-pressed', String(view.lEvid));
-    const rows = filteredLeads();
-    $('#slLeadCount').textContent = `${rows.length} rows · ${new Set(rows.map(r => r.printer)).size} printers · ${new Set(rows.filter(r => r.end_user).map(r => r.end_user)).size} end users`;
-    const MAX = Math.max(80, view.lMax || 80), EQ = hasEquip(), CARDS = !TABLE_MQ.matches; // build only the layout on screen
-    const key = leadKey;
-    const fitBtn = l => EQ ? `<button type="button" class="fitbtn" data-fit="${esc(key(l))}" aria-expanded="${view.open === key(l)}">${view.open === key(l) ? 'Hide Gilman fit ▴' : 'Equipment & Gilman fit ▾'}</button>${view.open === key(l) ? fitPanel(l.printer) : ''}` : '';
-    const more = rows.length > MAX ? `Showing ${MAX} of ${rows.length}. <button type="button" class="btn morebtn" data-more="1">Show ${Math.min(80, rows.length - MAX)} more</button>` : '';
-    $('#slLeadBody').innerHTML = CARDS ? '' : rows.length ? rows.slice(0, MAX).map(l => `<tr>
-        <td class="prod">${esc(l.product)}<span class="sug">suggested</span></td>
-        <td><b>${esc(l.printer)}</b><div class="sub">${esc(l.state)} · ${esc(l.employees)} emp. · Tier ${esc(l.tier)}</div>${fitBtn(l)}</td>
-        ${EQ ? `<td class="eqcell">${eqChips(l.printer, true)}</td>` : ''}
-        <td>${l.end_user ? `<b>${esc(l.end_user)}</b><div class="sub">${esc(l.end_user_type)}</div>` : '<span class="none">None found yet</span>'}</td>
-        <td><span class="chip ${strCls(l)}">${esc(l.strength)}</span></td>
-        <td>${srcLink(l)}</td></tr>`).join('') + (more ? `<tr><td colspan="6" class="empty">${more}</td></tr>` : '')
-      : `<tr><td colspan="6" class="empty">No leads match these filters.</td></tr>`;
-    const th = $('#slEqTh'); if (th) th.hidden = !EQ;
-    $('#slLeadCards').innerHTML = !CARDS ? '' : rows.length ? rows.slice(0, MAX).map(l => `<li class="lcard">
-        <div class="lc-top"><span class="lc-prod">${esc(l.product)}</span><span class="sug">suggested fit</span><span class="chip ${strCls(l)}">${esc(l.strength)}</span></div>
-        <div class="lc-row"><span class="lc-k">Printer</span><span><b>${esc(l.printer)}</b><span class="sub"> · ${esc(l.state)} · ${esc(l.employees)} emp. · Tier ${esc(l.tier)}</span></span></div>
-        ${EQ ? `<div class="lc-row lc-eq"><span class="lc-k">Equipment</span>${eqChips(l.printer)}</div>` : ''}
-        <div class="lc-row"><span class="lc-k">End user</span><span>${l.end_user ? `<b>${esc(l.end_user)}</b><span class="sub"> · ${esc(l.end_user_type)}</span>` : '<span class="none">None found yet</span>'}</span></div>
-        <div class="lc-src">${srcLink(l)}</div>${fitBtn(l)}</li>`).join('') + (more ? `<li class="empty">${more}</li>` : '')
-      : `<li class="empty">No leads match these filters.</li>`;
-  }
-  /* resource library: Gilman resources grouped by equipment brand, with the leads that run that equipment */
-  function renderFit() {
-    const el = $('#slFitBody'); if (!el) return;
-    if (!hasEquip()) { el.innerHTML = '<p class="empty">This data file has no equipment layer yet.</p>'; return; }
-    const users = {}; // brand -> [{name, conf, model}]
-    for (const p of printers()) for (const k of ['printers', 'cutters']) for (const x of ((p.equipment || {})[k] || [])) {
-      (users[x.brand] = users[x.brand] || []).push({ name: p.company, conf: x.confidence, model: x.model, state: p.state });
+    if (c.type === 'retailer') {
+      if (c.printers.length) rel += `<h4>Buys POP through</h4><ul class="rel">${c.printers.map(p => `<li><button type="button" class="lnk" data-open="${esc(p.id)}">${esc(p.name)}</button><span class="sub">${esc(p.evidence)} · fit ${p.score} · ${esc(p.badge)}</span>${ext(p.url, 'Proof ↗')}</li>`).join('')}</ul>`;
+      else if (c.route_via) rel += `<h4>Route through</h4><p class="fine">${esc(c.route_note)}</p><ul class="rel">${c.route_via.map(p => `<li><button type="button" class="lnk" data-open="${esc(p.id)}">${esc(p.name)}</button><span class="sub">${esc(p.state)} · fit ${p.score}</span></li>`).join('')}</ul>`;
     }
-    const leadN = name => leads().filter(l => l.printer === name).length;
-    const who = (b) => { const u = users[b] || []; return u.length ? `<details class="who"><summary>${u.length} lead printer${u.length > 1 ? 's' : ''} run ${esc(bl(b))}</summary><ul>${u.map(x => `<li><b>${esc(x.name)}</b> <span class="sub">${esc(x.state)} · ${esc(x.model)} · ${leadN(x.name)} lead rows</span> ${badge(x.conf)}</li>`).join('')}</ul></details>` : `<p class="sub">No lead printers found with ${esc(bl(b))} yet.</p>`; };
-    const groups = RES_ORDER.map(o => [o, resources().filter(r => (r.oem || '') === o)]).filter(([, rs]) => rs.length);
-    const covered = new Set(RES_ORDER);
-    const uncovered = Object.keys(users).filter(b => !covered.has(b) && b !== 'Unknown').sort((a, b) => users[b].length - users[a].length);
-    const UV = data.equipment_unverified || [], BR = data.barrier_removers || [], M = data.equipment_meta || {};
-    const c = M.counts || {};
-    el.innerHTML = `
-      <p class="fine">${esc(c.confirmed || 0)} printers with confirmed equipment · ${esc(c.likely || 0)} likely · ${esc(c.not_found || 0)} not yet found. Researched ${esc(M.researched_et || '')} from public sources.</p>
-      <section class="rcard"><h3>Barrier removers</h3><ul class="brs">${BR.map(b => `<li>${esc(b.text)} ${safeUrl(b.url) ? `<a class="srcbtn" href="${esc(b.url)}" target="_blank" rel="noopener" aria-label="Source: ${esc(b.text.slice(0, 40))}">↗</a>` : ''}</li>`).join('')}</ul></section>
-      ${UV.map(u => `<div class="unv"><b>Unverified:</b> “${esc(u.claim)}”. ${esc(u.status)}</div>`).join('')}
-      ${groups.map(([o, rs]) => `<section class="rcard"><h3>${o ? esc(bl(o)) : 'All equipment · specs & library'}</h3>
-        <ul class="reslinks">${rs.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener"><span class="rk rk-${esc(r.kind)}">${esc(r.kind)}</span>${esc(r.title)}</a></li>`).join('')}</ul>
-        ${o && o !== 'Any cutter' ? who(o) : ''}</section>`).join('')}
-      ${uncovered.length ? `<section class="rcard"><h3>Equipment with no Gilman guide yet</h3><p class="sub">Ask Gilman for settings, or start from the Zünd and Kongsberg tables.</p>${uncovered.map(b => `<div class="ug"><b>${esc(bl(b))}</b>${who(b)}</div>`).join('')}</section>` : ''}`;
+    if (c.type === 'equipment_oem' && c.installed_at && c.installed_at.length) rel += `<h4>Installed at lead shops</h4><ul class="rel">${c.installed_at.map(n => { const x = companies().find(y => y.name === n); return `<li>${x ? `<button type="button" class="lnk" data-open="${esc(x.id)}">${esc(n)}</button>` : esc(n)}</li>`; }).join('')}</ul>`;
+    const sigs = (c.signals || []).length ? `<h4>Signals</h4><ul class="rel">${c.signals.map(s => `<li><span class="cat">${esc(CAT_LAB[s.cat] || s.cat)}</span> ${esc(shortDate(s.date))} · ${esc(s.platform)}<div class="sub">${esc(s.fit)}</div>${ext(s.url, 'Post ↗')}</li>`).join('')}</ul>` : '';
+    const soc = Object.entries(c.social || {}).map(([k, v]) => { const u = k === 'x' ? `https://x.com/${v.handle}` : k === 'linkedin' ? `https://www.linkedin.com/company/${v.handle}/` : k === 'instagram' ? `https://www.instagram.com/${v.handle}/` : k === 'facebook' ? `https://www.facebook.com/${v.handle}` : k === 'youtube' ? `https://www.youtube.com/${v.handle}` : k === 'tiktok' ? `https://www.tiktok.com/${v.handle}` : '';
+      return `<a class="soc" href="${esc(u)}" target="_blank" rel="noopener" title="${esc(v.how)}${v.last_post ? ' · last post ' + v.last_post : ''}">${esc({ x: 'X', linkedin: 'LinkedIn', instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube', tiktok: 'TikTok' }[k])}${k === 'x' && v.active === false ? ' (inactive)' : ''}</a>`; }).join('');
+    const checks = c.verification.checks.map(k => `<li class="ck ck-${esc(k.result)}"><span class="ci">${resIcon(k.result)}</span><div><b>${esc(k.what)}</b><div class="sub">${esc(k.detail)}${k.date ? ' · ' + esc(k.date) : ''}</div></div>${ext(k.url, '↗', 'src sq')}</li>`).join('');
+    return `<div class="sh-head"><button type="button" class="ibtn" data-close aria-label="Close">←</button>
+        <div class="sh-t"><h2>${esc(c.name)}</h2><div class="lc-meta"><span class="tp tp-${esc(c.type)}">${esc(TYPE_LAB[c.type])}</span>${loc ? `<span>${esc(loc)}</span>` : ''}${c.size.label ? `<span>${esc(c.size.label)}</span>` : ''}</div></div>
+        <div class="score big sc-${scoreCls(c.score)}"><b>${c.score}</b><small>fit</small></div></div>
+      <div class="sh-body">
+        ${c.rename_note ? `<p class="note">${esc(c.rename_note.note)} ${ext(c.rename_note.url, 'Source ↗')}</p>` : ''}
+        <h4>Why this lead</h4><ul class="why">${c.why.map(w => `<li>${esc(w)}</li>`).join('')}</ul>
+        <div class="bestbox"><div class="bb-h"><span>Best Gilman product</span>${ext(b.url, b.product ? esc(b.product) + ' ↗' : '', 'prod big')}</div>
+          <p><b>${esc(b.why_fit || '')}.</b> ${esc(b.value_prop || '')}</p>
+          ${b.proof ? `<p class="proof">Proof: ${ext(b.proof.url, esc(b.proof.title) + ' ↗')} <span class="sub">(${esc(b.proof.why)})</span></p>` : ''}
+          ${b.alt && b.alt.length ? `<p class="sub">Also fits: ${b.alt.map(esc).join(', ')}</p>` : ''}</div>
+        ${rel}${sigs}
+        <h4>Verification ${badgeHtml(c.verification.badge)}</h4><p class="fine">${esc(c.verification.summary)}</p><ul class="checks">${checks}</ul>
+        ${soc ? `<h4>Official accounts</h4><div class="socs">${soc}</div>` : `<h4>Official accounts</h4><p class="fine">${c.social_checked ? 'None found: no official account is linked from the company site or verified.' : 'Not checked yet for this company.'}</p>`}
+        <details class="fxd"><summary>Score breakdown</summary><ul class="factors">${factors}</ul></details>
+        ${c.website ? `<p>${ext(c.website, 'Company website ↗', 'btn wide')}</p>` : ''}
+      </div>`;
   }
-  function filteredNews() {
-    return news().filter(n => (view.nState === 'all' || (n.states || []).includes(view.nState)) && (view.nType === 'all' || n.type === view.nType)
-      && (view.nSeg === 'all' || n.segment === view.nSeg));
+  function openLead(id, push = true) {
+    const c = id && byId(id);
+    view.open = c ? id : '';
+    const sh = $('#slSheet');
+    if (!c) { sh.hidden = true; $('#sheetBack').hidden = true; document.body.classList.remove('sheet-open'); if (push) pushHist(); return; }
+    sh.innerHTML = detail(c); sh.hidden = false; $('#sheetBack').hidden = false; document.body.classList.add('sheet-open'); sh.scrollTop = 0;
+    if (push) pushHist();
+    const f = sh.querySelector('[data-close]'); if (f) f.focus({ preventScroll: true });
   }
-  function newsItem(n) {
-    const u = safeUrl(n.url);
-    return `<li class="ni"><div class="ni-top"><span class="chip type-${esc(n.type)}">${esc(n.type)}</span><span class="ni-seg">${esc(n.segment)}</span>
-      <span class="ni-date">${esc(fmtDate(n.published_iso))}</span></div>
-      <div class="ni-title">${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(n.title)}</a>` : esc(n.title)}</div>
-      <div class="sub">${esc(n.source || '')}${(n.states || []).length ? ' · ' + esc(n.states.join(', ')) : ''}${(n.printers || []).length ? ' · printer: ' + esc(n.printers.join(', ')) : ''}${(n.end_users || []).length ? ' · ' + esc(n.end_users.join(', ')) : ''}</div>
-      ${(n.linked || []).length ? `<div class="linked">Known link: ${esc(n.linked.slice(0, 3).join(' · '))}</div>` : ''}</li>`;
+
+  /* ---------- map ---------- */
+  function renderMap() {
+    const min = view.min || 50; $('#slMapMin').textContent = min;
+    const cnt = {}; companies().filter(c => c.score >= min && c.state && c.type !== 'equipment_oem').forEach(c => { cnt[c.state] = (cnt[c.state] || 0) + 1; });
+    const max = Math.max(1, ...Object.values(cnt));
+    $('#slMap').innerHTML = TILES.map(([st, x, y]) => { const n = cnt[st] || 0; const lv = n ? Math.min(4, 1 + Math.floor(3 * n / max)) : 0;
+      return `<button type="button" class="tile lv${lv}" style="grid-column:${x + 1};grid-row:${y + 1}" data-st="${st}" aria-label="${st}: ${n} leads"><b>${st}</b><span>${n || ''}</span></button>`; }).join('');
+    $('#slLegend').innerHTML = `<span class="tile lv0">0</span><span class="tile lv1">few</span><span class="tile lv4">most (${max})</span>`;
   }
-  function renderNews() {
-    const N = news();
-    fillSel('slNState', [...new Set(N.flatMap(n => n.states || []))].sort(), view.nState, 'All states');
-    fillSel('slNType', NEWS_TYPES.filter(t => N.some(n => n.type === t)), view.nType, 'All types');
-    fillSel('slNSeg', [...new Set(N.map(n => n.segment).filter(Boolean))].sort(), view.nSeg, 'All segments');
-    const rows = filteredNews();
-    $('#slNewsCount').textContent = `${rows.length} of ${N.length} items`;
-    $('#slNewsList').innerHTML = rows.length ? rows.slice(0, 250).map(newsItem).join('') : `<li class="empty">No news matches these filters.</li>`;
+
+  /* ---------- signals ---------- */
+  function renderSignals() {
+    $('#slSigSeg').innerHTML = SIGS.map(([k, l]) => `<button type="button" data-sig="${k}" class="${view.sig === k ? 'on' : ''}" aria-pressed="${view.sig === k}">${l}</button>`).join('');
+    const rows = signals().filter(s => view.sig === 'all' || s.kind === view.sig);
+    $('#slSigCount').textContent = `${rows.length} signals tied to a lead or target chain`;
+    $('#slSigList').innerHTML = rows.slice(0, 120).map(s => `<li class="sig"><div class="sg-top"><span class="cat c-${esc(s.type)}">${esc(CAT_LAB[s.type] || s.type)}</span><span class="sub">${esc(shortDate(s.date))} · ${esc(s.source)}</span></div>
+      <a class="sg-t" href="${esc(safeUrl(s.url))}" target="_blank" rel="noopener">${esc(s.title)}</a>${s.fit ? `<div class="sub">${esc(s.fit)}</div>` : ''}
+      <div class="sg-co">${s.companies.map(x => `<button type="button" class="chip" data-open="${esc(x.id)}">${esc(x.name)}</button>`).join('')}</div></li>`).join('') || '<li class="empty">No signals yet.</li>';
   }
+
+  /* ---------- about ---------- */
   function themePref() { try { const t = localStorage.getItem('slaTheme'); return t === 'light' || t === 'dark' ? t : 'auto'; } catch (e) { return 'auto'; } }
-  function applyTheme() {
-    const p = themePref();
-    document.documentElement.dataset.theme = p === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : p;
-  }
+  function applyTheme() { const p = themePref(); document.documentElement.dataset.theme = p === 'auto' ? (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : p; }
   function renderAbout() {
-    $('#slVersion').textContent = VER;
-    $('#slAboutUpdated').textContent = data ? fmtDate(data.generated_iso) : '—';
-    seg('slTheme', [['auto', 'Match device'], ['light', 'Light'], ['dark', 'Dark']], themePref(), 'theme');
+    $('#slVersion').textContent = VER; $('#slAboutUpdated').textContent = data ? fmtDate(data.generated_iso) : '—';
+    const m = (data && data.verification_meta) || { counts: {}, by_type: {} };
+    $('#slAboutStats').innerHTML = [['Companies', m.companies], ['Verified', m.counts.Verified || 0], ['Partial', m.counts.Partial || 0], ['Unverified', m.counts.Unverified || 0], ['Removed', m.removed || 0], ['Checked', m.checked || '—']].map(([k, v]) => `<div><dt>${k}</dt><dd>${esc(v)}</dd></div>`).join('');
+    const sc = (data && data.scoring) || {};
+    $('#slBadges').innerHTML = sc.badges ? `<ul class="legend-l">${Object.entries(sc.badges).map(([k, v]) => `<li>${badgeHtml(k)} ${esc(v)}</li>`).join('')}</ul><p class="fine">${esc(m.method || '')} ${esc(m.distributors || '')}</p>` : '';
+    const tbl = (t, rows) => rows ? `<h4>${t}</h4><ul class="formula">${rows.map(([k, l, mx]) => `<li><b>${mx}</b><span>${esc(l)}</span></li>`).join('')}</ul>` : '';
+    $('#slScoring').innerHTML = tbl('Printers and display makers', sc.printer) + tbl('Retailers / brands', sc.retailer) + tbl('Equipment OEMs', sc.equipment_oem) + '<p class="fine">Scores add to 100. Social signals carry only 5 points so a quiet account never sinks a strong shop.</p>';
+    const rm = (data && data.removed) || [];
+    $('#slRemovedN').textContent = rm.length;
+    $('#slRemoved').innerHTML = rm.map(r => `<li><b>${esc(r.name)}</b> <span class="sub">${esc(r.reason)}</span> ${ext(r.url, 'Source ↗')}</li>`).join('');
+    const tp = themePref();
+    $('#slTheme').innerHTML = [['auto', 'Auto'], ['light', 'Light'], ['dark', 'Dark']].map(([k, l]) => `<button type="button" data-theme="${k}" class="${tp === k ? 'on' : ''}">${l}</button>`).join('');
     $('#slNotice').textContent = (data && data.notice) || NOTICE_FALLBACK;
-    const on = $('#slOemNotice'); if (on) on.textContent = (data && data.equipment_notice) || OEM_FALLBACK;
-    if (data && Array.isArray(data.sources)) $('#slSources').innerHTML = data.sources.map(s => `<li>${safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}<div class="sub">${esc(s.use || '')}</div></li>`).join('');
-    if (data) $('#slAboutStats').innerHTML = [['Target printers', printers().length], ['Lead rows', leads().length], ['News items', news().length], ['Census year', data.census && data.census.year], ['Stale after', '36 hours'], ['Offline copy', 'Saved on this device']]
-      .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
+    $('#slOemNotice').textContent = (data && data.equipment_notice) || OEM_FALLBACK;
   }
+
+  /* ---------- render / load ---------- */
   function render() {
     document.body.classList.toggle('stale', !!data && isStale());
-    document.body.classList.toggle('offline', !!usedOffline);
-    $('#slUpdated').textContent = data ? `Updated ${fmtDate(data.generated_iso)}` : 'Loading…';
-    TABS.forEach(t => {
-      const b = $(`#tabs [data-tab="${t}"]`); b.classList.toggle('on', view.tab === t); b.setAttribute('aria-selected', String(view.tab === t));
-      $('#view-' + t).hidden = view.tab !== t;
-    });
-    renderAbout();
+    document.body.classList.toggle('offline', usedOffline);
+    $('#slUpdated').textContent = data ? 'Updated ' + fmtDate(data.generated_iso) : 'Loading…';
+    TABS.forEach(t => { $('#view-' + t).hidden = view.tab !== t; const b = $(`#tabs button[data-tab="${t}"]`); b.classList.toggle('on', view.tab === t); b.setAttribute('aria-selected', view.tab === t); });
     if (!data) return;
-    renderMap(); renderCard();
-    if (view.tab === 'leads' || WIDE.matches) renderLeads(); // lazy: only build what is on screen
-    if (view.tab === 'fit') renderFit();
-    if (view.tab === 'news') renderNews();
+    if (!isV3()) { $('#slList').innerHTML = '<li class="empty">This data file has no v3 company list yet. Pull to refresh after the next daily update.</li>'; renderAbout(); return; }
+    if (view.tab === 'leads') renderLeads();
+    if (view.tab === 'map') renderMap();
+    if (view.tab === 'signals') renderSignals();
+    if (view.tab === 'about') renderAbout();
   }
-
   async function pullFile() {
-    usedOffline = false;
     try {
-      const res = await fetch(FILE + '?t=' + Date.now(), { cache: 'no-store' });
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      const payload = await res.json();
-      if (!payload || payload.schema !== 'pencil-sales-leads/1' || !Array.isArray(payload.leads)) throw new Error('sales-leads-data.json has an unexpected shape');
-      await saveSnapshot(payload);
-      const snap = await loadSnapshot();
-      data = Object.assign({}, payload, { news: mergeNews(payload.news, snap.news) });
-      render();
-      return true;
+      const r = await fetch(FILE + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      const d = await r.json();
+      if (!d || d.schema !== 'pencil-sales-leads/1') throw new Error('bad schema');
+      data = d; usedOffline = false; saveSnapshot(d);
     } catch (e) {
-      usedOffline = true;
       const snap = await loadSnapshot();
-      if (snap.payload) data = Object.assign({}, snap.payload, { news: mergeNews(snap.payload.news, snap.news) });
-      render();
-      return false;
+      if (snap && !data) { data = snap; usedOffline = true; } else if (data) usedOffline = true;
     }
-  }
-  function csvText() {
-    const rows = filteredLeads();
-    const headers = ['product', 'printer', 'state', 'region', 'employees', 'tier', 'end_user', 'end_user_type', 'strength', 'evidence', 'source_url', 'printer_source_url', 'printer_equipment', 'cutter_equipment', 'talking_point'];
-    const escC = v => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-    const eqs = (name, k) => { const e = eqOf(name); return e ? (e[k] || []).map(x => `${bl(x.brand)} ${x.model} (${x.confidence})`).join('; ') || 'not yet found' : ''; };
-    const tp = name => { const p = printerRec(name); return (p && p.gilman_fit && p.gilman_fit.talking_points[0]) || ''; };
-    const val = (r, h) => h === 'printer_equipment' ? eqs(r.printer, 'printers') : h === 'cutter_equipment' ? eqs(r.printer, 'cutters') : h === 'talking_point' ? tp(r.printer) : r[h];
-    return { n: rows.length, csv: [headers.join(',')].concat(rows.map(r => headers.map(h => escC(val(r, h))).join(','))).join('\r\n') };
-  }
-  const CSV_NAME = 'gilman-sales-leads.csv';
-  function csvFile(csv) { try { return new File([csv], CSV_NAME, { type: 'text/csv' }); } catch (e) { return null; } }
-  function canShareCsv() {
-    const f = csvFile('a');
-    try { return !!(f && navigator.canShare && navigator.canShare({ files: [f] })); } catch (e) { return false; }
-  }
-  /* Export: a blob download (works in Android Chrome and installed PWAs; the file lands in Downloads).
-     If the browser cannot download blobs, fall back to the Web Share sheet with the CSV file attached. */
-  async function exportCsv(opts = {}) {
-    const { n, csv } = csvText();
-    const blob = new Blob(['\ufeff' + csv], { type: 'text/csv;charset=utf-8' });
-    const a = document.createElement('a');
-    if (!opts.share && 'download' in a) {
-      a.href = URL.createObjectURL(blob); a.download = CSV_NAME; a.rel = 'noopener';
-      document.body.appendChild(a); a.click();
-      setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
-      toast(`Exported ${n} rows to ${CSV_NAME}`);
-      return { n, via: 'download' };
-    }
-    const f = csvFile(csv);
-    if (f && canShareCsv()) {
-      try { await navigator.share({ files: [f], title: 'Gilman sales leads' }); return { n, via: 'share' }; }
-      catch (e) { if (e && e.name === 'AbortError') return { n, via: 'cancelled' }; }
-    }
-    window.open(URL.createObjectURL(blob), '_blank');
-    return { n, via: 'open' };
-  }
-  let toastT;
-  function toast(msg) {
-    const t = $('#toast'); if (!t) return;
-    t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 2600);
+    render(); if (view.open) openLead(view.open, false);
   }
 
-  /* history: every tab change and every open state card is its own history entry, so the Android back button
-     (and browser back) closes the card first, then walks back through tabs, instead of leaving the app */
-  const histState = () => ({ sla: 1, tab: view.tab, state: view.state || '' });
-  function pushHist(replace) {
-    const url = '#' + view.tab + (view.state ? '/' + view.state : '');
-    try { history[replace ? 'replaceState' : 'pushState'](histState(), '', url); } catch (e) { /* sandboxed */ }
+  /* ---------- CSV ---------- */
+  const CSV_NAME = 'gilman-sales-leads-v3.csv';
+  function csvText() {
+    const q = v => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
+    const head = ['rank', 'company', 'type', 'city', 'state', 'size', 'fit_score', 'verification', 'best_product', 'why_1', 'why_2', 'proof_url', 'website'];
+    const rows = filtered().map((c, i) => [i + 1, c.name, TYPE_LAB[c.type], c.city, c.state, c.size.label, c.score, c.verification.badge, c.best && c.best.product, c.why[0], c.why[1], c.best && c.best.proof && c.best.proof.url, c.website]);
+    return { csv: [head, ...rows].map(r => r.map(q).join(',')).join('\n') + '\n', n: rows.length };
   }
-  let pendingBack = false, deferPush = false; // a UI close is stepping back over the card's entry
-  function setTab(t, push = true) {
-    if (!TABS.includes(t)) t = 'map';
-    const changed = t !== view.tab || view.state;
-    view.tab = t; view.state = '';
-    if (push && changed) { if (pendingBack) deferPush = true; else pushHist(false); }
-    render();
-    window.scrollTo(0, 0);
-  }
-  function selectState(st, push = true) {
-    const cur = view.state;
-    if (!st && cur) {
-      // closing the card from the UI: step back over the card's own history entry when it is the current one
-      view.state = ''; render();
-      if (push && history.state && history.state.sla && history.state.state === cur) { pendingBack = true; history.back(); }
-      return;
+  async function exportCsv() {
+    const { csv, n } = csvText();
+    const blob = new Blob([csv], { type: 'text/csv' });
+    let file = null; try { file = new File([csv], CSV_NAME, { type: 'text/csv' }); } catch (e) { /* old Safari */ }
+    if (file && navigator.canShare && navigator.share && navigator.canShare({ files: [file] }) && matchMedia('(pointer: coarse)').matches) {
+      try { await navigator.share({ files: [file], title: CSV_NAME }); return; } catch (e) { if (e && e.name === 'AbortError') return; }
     }
-    if (!st) return;
-    view.tab = 'map'; view.state = st;
-    if (push) { if (pendingBack) deferPush = true; else pushHist(!!cur); } // switching state-to-state replaces, so one back press always closes the card
-    render();
-    const c = $('#slCard'); if (c) c.scrollTop = 0;
+    const a = document.createElement('a');
+    if ('download' in a) { a.href = URL.createObjectURL(blob); a.download = CSV_NAME; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000); toast(`Exported ${n} leads`); }
   }
-  function fromHash() {
-    const [t, st] = location.hash.slice(1).split('/');
-    return { tab: TABS.includes(t) ? t : 'map', state: st && /^[A-Z]{2}$/.test(st) && (!data || stateRec(st)) ? st : '' };
-  }
+  function toast(msg) { const t = $('#toast'); t.textContent = msg; t.hidden = false; clearTimeout(toast.h); toast.h = setTimeout(() => { t.hidden = true; }, 2200); }
+
+  /* ---------- history ---------- */
+  function hashFor() { return '#' + view.tab + (view.open ? '/' + view.open : ''); }
+  function pushHist(replace) { const h = hashFor(); if (location.hash === h) return; try { history[replace ? 'replaceState' : 'pushState']({ tab: view.tab, open: view.open }, '', h); } catch (e) { /* file:// */ } }
+  function setTab(t, push = true) { if (!TABS.includes(t)) t = 'leads'; view.tab = t; view.open = ''; openLead('', false); render(); if (push) pushHist(); window.scrollTo(0, 0); }
+  function fromHash() { const [t, id] = location.hash.replace('#', '').split('/'); view.tab = TABS.includes(t) ? t : 'leads'; view.open = id || ''; }
+
   function bind() {
-    $('#slRefresh').addEventListener('click', () => pullFile());
+    $('#slRefresh').addEventListener('click', () => pullFile().then(() => toast('Up to date')));
     $('#tabs').addEventListener('click', e => { const b = e.target.closest('button[data-tab]'); if (b) setTab(b.dataset.tab); });
-    const segClick = (id, attr, key, after) => $('#' + id).addEventListener('click', e => { const b = e.target.closest(`button[data-${attr}]`); if (!b) return; view[key] = b.dataset[attr]; if (after) after(); render(); });
-    segClick('slRegion', 'region', 'region', () => { if (view.state && !inRegion(view.state)) view.state = ''; });
-    segClick('slSize', 'size', 'size', () => { view.metric = 'census'; });
-    segClick('slMetric', 'metric', 'metric');
-    segClick('slMapMode', 'mode', 'mapMode');
-    $('#slTheme').addEventListener('click', e => { const b = e.target.closest('button[data-theme]'); if (!b) return; try { if (b.dataset.theme === 'auto') localStorage.removeItem('slaTheme'); else localStorage.setItem('slaTheme', b.dataset.theme); } catch (err) { /* private mode */ } applyTheme(); render(); });
-    const pick = e => { const b = e.target.closest('button[data-st]'); if (b) selectState(view.state === b.dataset.st ? '' : b.dataset.st); };
-    $('#slMap').addEventListener('click', pick);
-    $('#slStateList').addEventListener('click', pick);
-    $('#sheetBack').addEventListener('click', () => selectState(''));
-    $('#slCard').addEventListener('click', e => {
-      if (e.target.closest('#slCardClose')) selectState('');
-      else if (e.target.closest('#slCardLeads')) { view.lState = view.state; view.state = ''; view.tab = 'leads'; pushHist(true); render(); window.scrollTo(0, 0); }
-    });
-    const sel = (id, key) => $('#' + id).addEventListener('change', e => { view[key] = e.target.value; view.lMax = 80; render(); });
-    sel('slFProduct', 'lProduct'); sel('slFState', 'lState'); sel('slFTier', 'lTier'); sel('slFType', 'lType'); sel('slFPB', 'lPB'); sel('slFCB', 'lCB');
-    const fitToggle = e => { if (e.target.closest('button[data-more]')) { view.lMax = (view.lMax || 80) + 80; renderLeads(); return; } const b = e.target.closest('button[data-fit]'); if (!b) return; view.open = view.open === b.dataset.fit ? '' : b.dataset.fit; renderLeads();
-      const nb = document.querySelector(`#view-leads button[data-fit="${CSS.escape(b.dataset.fit)}"]`); if (nb && view.open) nb.scrollIntoView({ block: 'nearest' }); };
-    $('#slLeadCards').addEventListener('click', fitToggle); $('#slLeadBody').addEventListener('click', fitToggle);
-    sel('slNState', 'nState'); sel('slNType', 'nType'); sel('slNSeg', 'nSeg');
-    $('#slFEvid').addEventListener('click', () => { view.lEvid = !view.lEvid; render(); });
+    $('#slTypeSeg').addEventListener('click', e => { const b = e.target.closest('button[data-type]'); if (!b) return; view.type = b.dataset.type; view.max = PAGE; render(); });
+    $('#slSigSeg').addEventListener('click', e => { const b = e.target.closest('button[data-sig]'); if (!b) return; view.sig = b.dataset.sig; render(); });
+    $('#slFBtn').addEventListener('click', () => { view.filters = !view.filters; render(); });
+    let qt; $('#slQ').addEventListener('input', e => { clearTimeout(qt); qt = setTimeout(() => { view.q = e.target.value; view.max = PAGE; render(); }, 120); });
+    const sel = (id, key, num) => $('#' + id).addEventListener('change', e => { const v = e.target.value; view[key] = num ? (v === 'all' ? 0 : +v) : v; view.max = PAGE; render(); });
+    sel('slFProduct', 'product'); sel('slFState', 'state'); sel('slFRegion', 'region'); sel('slFMin', 'min', true);
+    $('#slFVer').addEventListener('click', () => { view.ver = !view.ver; view.max = PAGE; render(); });
+    $('#slFReset').addEventListener('click', () => { Object.assign(view, { product: 'all', state: 'all', region: 'all', min: 0, ver: false, q: '', type: 'all', max: PAGE }); render(); });
     $('#slExport').addEventListener('click', () => exportCsv());
-    const sh = $('#slShare'); sh.hidden = !canShareCsv(); sh.addEventListener('click', () => exportCsv({ share: true }));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && view.state) selectState(''); });
-    window.addEventListener('popstate', e => {
-      if (pendingBack) { pendingBack = false; if (deferPush) { deferPush = false; pushHist(false); } return; }
-      const h = (e.state && e.state.sla) ? e.state : fromHash();
-      view.tab = h.tab; view.state = h.state || ''; render();
-    });
+    const opener = e => { const m = e.target.closest('[data-more]'); if (m) { view.max += PAGE; render(); return; }
+      if (e.target.closest('a')) return; const o = e.target.closest('[data-open]'); if (o) openLead(o.dataset.open); };
+    $('#slList').addEventListener('click', opener); $('#slSigList').addEventListener('click', opener);
+    $('#slList').addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[data-open]')) { e.preventDefault(); openLead(e.target.dataset.open); } });
+    $('#slSheet').addEventListener('click', e => { if (e.target.closest('[data-close]')) { history.length > 1 && history.state && history.state.open ? history.back() : openLead(''); return; } opener(e); });
+    $('#sheetBack').addEventListener('click', () => openLead(''));
+    $('#slMap').addEventListener('click', e => { const b = e.target.closest('[data-st]'); if (!b) return; view.state = b.dataset.st; view.min = view.min || 50; view.type = 'all'; view.filters = true; setTab('leads'); });
+    $('#slTheme').addEventListener('click', e => { const b = e.target.closest('button[data-theme]'); if (!b) return; try { if (b.dataset.theme === 'auto') localStorage.removeItem('slaTheme'); else localStorage.setItem('slaTheme', b.dataset.theme); } catch (err) { /* private mode */ } applyTheme(); render(); });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && view.open) openLead(''); });
+    window.addEventListener('popstate', () => { fromHash(); render(); openLead(view.open, false); });
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (themePref() === 'auto') applyTheme(); });
-    WIDE.addEventListener('change', () => render());
-    TABLE_MQ.addEventListener('change', () => render());
     document.addEventListener('visibilitychange', () => { if (!document.hidden && data && isStale()) pullFile(); });
   }
   function boot() {
-    applyTheme(); bind();
-    const h = fromHash(); view.tab = h.tab;
-    // base entry is always a plain tab, so back from a deep-linked card lands in the app, not outside it
-    pushHist(true);
-    if (h.state) { view.state = h.state; pushHist(false); }
-    render(); pullFile();
-    poll = setInterval(pullFile, POLL_MS);
-    if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(e => console.warn('sw', e));
+    staleDemo = /[?&]stale=1/.test(location.search);
+    fromHash(); bind(); render(); pushHist(true);
+    loadSnapshot().then(s => { if (s && !data) { data = s; render(); if (view.open) openLead(view.open, false); } });
+    pullFile();
+    poll = setInterval(() => { if (!document.hidden) pullFile(); }, POLL_MS);
+    if ('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('sw.js').catch(() => {});
+    window.SalesLeads = { version: VER, data: () => data, view: () => ({ ...view }), setView: v => { Object.assign(view, v); render(); }, setTab, openLead, filtered, csvText, byId };
   }
-
-  window.SalesLeads = {
-    version: VER,
-    refresh: pullFile,
-    demoStale(on) { staleDemo = !!on; render(); },
-    data: () => data,
-    view: () => Object.assign({}, view),
-    setView(v) { Object.assign(view, v || {}); render(); },
-    setTab, selectState, exportCsv, csvText, canShareCsv, filteredLeads, filteredNews, isStale: () => !!data && isStale(),
-    openFit(printer, product) { const F = filteredLeads(), i = F.findIndex(x => x.printer === printer && (!product || x.product === product)); view.open = i >= 0 ? leadKey(F[i]) : ''; if (i >= view.lMax) view.lMax = Math.ceil((i + 1) / 80) * 80; render(); return i >= 0; }, printerRec,
-  };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })();

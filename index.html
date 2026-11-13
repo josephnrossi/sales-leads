@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Gilman Sales Leads</title>
-<meta name="description" content="Target printers, end users and chain-store news by state. Public-source facts only.">
+<meta name="description" content="Smart B2B lead finder for Gilman foam board: ranked printers, display makers, OEMs and retailers with verified public sources.">
 <meta name="theme-color" content="#4f46e5" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#16161d" media="(prefers-color-scheme: dark)">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -24,51 +24,37 @@
   <span id="slStale" class="stale-badge" title="The data file is more than 36 hours old">Stale</span>
   <button type="button" class="ibtn" id="slRefresh" aria-label="Refresh data" title="Refresh now">⟳</button>
 </header>
-<div id="slOffline" class="offline-note" role="status">Showing the last saved copy. The live file could not be reached, so connect to the internet to refresh.</div>
+<div id="slOffline" class="offline-note" role="status">Showing the last saved copy. Connect to the internet to refresh.</div>
 
 <main id="main">
-  <section id="view-map" class="view" aria-label="Map">
-    <div class="map-top"><div class="seg" id="slMetric" aria-label="Color the map by"></div><div class="seg" id="slMapMode" aria-label="Map or list"></div></div>
-    <div class="seg" id="slRegion" aria-label="Region"></div>
-    <div class="seg" id="slSize" aria-label="Census size class (employees)"></div>
-    <div class="map-wrap" id="slMapWrap"><div class="map" id="slMap" role="group" aria-label="State tile map"></div></div>
-    <p class="fine pan-hint" id="slPanHint">Swipe the map sideways for the East Coast, or tap List.</p>
-    <ul class="state-list" id="slStateList" aria-label="States" hidden></ul>
-    <p class="fine" id="slMapNote"></p>
-  </section>
-
-  <section id="view-leads" class="view" aria-label="Leads" hidden>
-    <div class="tools">
-      <select id="slFProduct" aria-label="Filter by Gilman product"></select>
-      <select id="slFState" aria-label="Filter by state"></select>
-      <select id="slFTier" aria-label="Filter by tier"></select>
-      <select id="slFType" aria-label="Filter by end-user type"></select>
-      <select id="slFPB" aria-label="Filter by printer brand" hidden></select>
-      <select id="slFCB" aria-label="Filter by cutter brand" hidden></select>
-      <button type="button" class="btn" id="slFEvid" aria-pressed="false">With end user only</button>
-      <button type="button" class="btn" id="slExport">Export CSV</button>
-      <button type="button" class="btn" id="slShare" hidden>Share CSV</button>
+  <section id="view-leads" class="view" aria-label="Leads">
+    <div class="searchrow">
+      <input id="slQ" type="search" placeholder="Search companies" aria-label="Search companies" autocomplete="off">
+      <button type="button" class="btn" id="slFBtn" aria-expanded="false" aria-controls="slFilters">Filters<b id="slFCount"></b></button>
     </div>
-    <p class="fine" id="slLeadCount"></p>
-    <div class="table-wrap" id="slTableWrap"><table class="ltable" id="slLeadTable">
-      <thead><tr><th>Gilman product</th><th>Printer</th><th id="slEqTh">Equipment</th><th>End user</th><th>Strength</th><th>Source</th></tr></thead>
-      <tbody id="slLeadBody"></tbody></table></div>
-    <ul class="lcards" id="slLeadCards" aria-label="Leads"></ul>
-  </section>
-
-  <section id="view-fit" class="view" aria-label="Gilman resources by equipment" hidden>
-    <h2 class="vh">Gilman resources by equipment</h2>
-    <div id="slFitBody"></div>
-  </section>
-
-  <section id="view-news" class="view" aria-label="News" hidden>
-    <div class="tools">
-      <select id="slNState" aria-label="Filter news by state"></select>
-      <select id="slNType" aria-label="Filter news by type"></select>
-      <select id="slNSeg" aria-label="Filter news by segment"></select>
+    <div id="slTypeSeg" class="seg chips" aria-label="Lead type"></div>
+    <div id="slFilters" class="filters" hidden>
+      <label>Gilman product<select id="slFProduct"></select></label>
+      <label>State<select id="slFState"></select></label>
+      <label>Region<select id="slFRegion"></select></label>
+      <label>Minimum Fit Score<select id="slFMin"></select></label>
+      <button type="button" class="btn" id="slFVer" aria-pressed="false">✓ Verified only</button>
+      <button type="button" class="btn" id="slFReset">Reset</button>
     </div>
-    <p class="fine" id="slNewsCount"></p>
-    <ul class="news" id="slNewsList"></ul>
+    <div class="countrow"><p class="fine" id="slCount"></p><button type="button" class="lnk" id="slExport">Export CSV</button></div>
+    <ol class="lcards" id="slList" aria-label="Ranked leads"></ol>
+  </section>
+
+  <section id="view-map" class="view" aria-label="Map" hidden>
+    <p class="fine">Leads per state (Fit Score ≥ <b id="slMapMin"></b>). Tap a state to see its leads.</p>
+    <div class="map-wrap"><div class="map" id="slMap" role="group" aria-label="State tile map"></div></div>
+    <div class="legend" id="slLegend"></div>
+  </section>
+
+  <section id="view-signals" class="view" aria-label="Signals" hidden>
+    <div id="slSigSeg" class="seg chips" aria-label="Signal type"></div>
+    <p class="fine" id="slSigCount"></p>
+    <ul class="sigs" id="slSigList"></ul>
   </section>
 
   <section id="view-about" class="view" aria-label="About" hidden>
@@ -76,29 +62,31 @@
       <img src="icons/icon.svg" alt="" width="56" height="56">
       <div><h2>Gilman Sales Leads</h2><p class="fine">Version <b id="slVersion"></b> · data updated <b id="slAboutUpdated">—</b></p></div>
     </div>
+    <p class="fine">A B2B lead finder for Gilman foam board. Every company is scored from public, verified facts and matched to the Gilman product that fits its work.</p>
+    <h3>Verification</h3>
     <dl class="kv" id="slAboutStats"></dl>
+    <div id="slBadges"></div>
+    <h3>How the Fit Score works</h3>
+    <div id="slScoring"></div>
+    <details class="removed"><summary>Removed after back-verification (<span id="slRemovedN">0</span>)</summary><ul id="slRemoved"></ul></details>
     <h3>Appearance</h3>
     <div class="seg" id="slTheme" aria-label="Theme"></div>
-    <h3>Sources</h3>
-    <ul class="sources" id="slSources"></ul>
-    <p class="fine">Tiers: A = the printer's own site shows rigid-board or flatbed work; B = site shows POP, display or sign graphics; C = on the Wide-format Impressions list but the site could not be checked. Strength: case study and project pages are stronger evidence than a logo on a client wall. Every product fit is a suggestion.</p>
     <h3>Install on your phone</h3>
-    <p class="fine"><b>Android (Chrome):</b> open the link, tap the ⋮ menu, then “Install app” (or “Add to Home screen”). It opens full screen from its own icon and works offline. <b>iPhone / iPad (Safari):</b> tap Share, then “Add to Home Screen”.</p>
+    <p class="fine"><b>iPhone / iPad (Safari):</b> tap Share, then “Add to Home Screen”. <b>Android (Chrome):</b> tap ⋮, then “Install app”. It works offline from its own icon.</p>
     <h3>Legal</h3>
     <p class="notice" id="slNotice"></p>
     <p class="notice" id="slOemNotice"></p>
-    <p class="fine">Public-source facts only, each with a source link. No contact names, emails, phone numbers or private notes are stored.</p>
+    <p class="fine">Public company facts only, each with a source link. No contact names, emails, phone numbers, individual names or private notes are stored. LinkedIn and social facts come from public company pages; no login was used.</p>
   </section>
 </main>
 
 <div id="sheetBack" hidden></div>
-<aside id="slCard" class="sheet" role="dialog" aria-modal="false" aria-label="State card" hidden></aside>
+<aside id="slSheet" class="sheet" role="dialog" aria-modal="true" aria-label="Lead detail" hidden></aside>
 
 <nav id="tabs" role="tablist" aria-label="Sections">
-  <button type="button" role="tab" data-tab="map"><i aria-hidden="true">🗺️</i><span>Map</span></button>
   <button type="button" role="tab" data-tab="leads"><i aria-hidden="true">🎯</i><span>Leads</span></button>
-  <button type="button" role="tab" data-tab="fit"><i aria-hidden="true">🧰</i><span>Resources</span></button>
-  <button type="button" role="tab" data-tab="news"><i aria-hidden="true">📰</i><span>News</span></button>
+  <button type="button" role="tab" data-tab="map"><i aria-hidden="true">🗺️</i><span>Map</span></button>
+  <button type="button" role="tab" data-tab="signals"><i aria-hidden="true">📡</i><span>Signals</span></button>
   <button type="button" role="tab" data-tab="about"><i aria-hidden="true">ⓘ</i><span>About</span></button>
 </nav>
 <div id="toast" role="status" aria-live="polite" hidden></div>
