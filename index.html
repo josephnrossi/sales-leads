@@ -43,15 +43,22 @@
       <select id="slFState" aria-label="Filter by state"></select>
       <select id="slFTier" aria-label="Filter by tier"></select>
       <select id="slFType" aria-label="Filter by end-user type"></select>
+      <select id="slFPB" aria-label="Filter by printer brand" hidden></select>
+      <select id="slFCB" aria-label="Filter by cutter brand" hidden></select>
       <button type="button" class="btn" id="slFEvid" aria-pressed="false">With end user only</button>
       <button type="button" class="btn" id="slExport">Export CSV</button>
       <button type="button" class="btn" id="slShare" hidden>Share CSV</button>
     </div>
     <p class="fine" id="slLeadCount"></p>
     <div class="table-wrap" id="slTableWrap"><table class="ltable" id="slLeadTable">
-      <thead><tr><th>Gilman product</th><th>Printer</th><th>End user</th><th>Strength</th><th>Source</th></tr></thead>
+      <thead><tr><th>Gilman product</th><th>Printer</th><th id="slEqTh">Equipment</th><th>End user</th><th>Strength</th><th>Source</th></tr></thead>
       <tbody id="slLeadBody"></tbody></table></div>
     <ul class="lcards" id="slLeadCards" aria-label="Leads"></ul>
+  </section>
+
+  <section id="view-fit" class="view" aria-label="Gilman resources by equipment" hidden>
+    <h2 class="vh">Gilman resources by equipment</h2>
+    <div id="slFitBody"></div>
   </section>
 
   <section id="view-news" class="view" aria-label="News" hidden>
@@ -79,6 +86,7 @@
     <p class="fine"><b>Android (Chrome):</b> open the link, tap the ⋮ menu, then “Install app” (or “Add to Home screen”). It opens full screen from its own icon and works offline. <b>iPhone / iPad (Safari):</b> tap Share, then “Add to Home Screen”.</p>
     <h3>Legal</h3>
     <p class="notice" id="slNotice"></p>
+    <p class="notice" id="slOemNotice"></p>
     <p class="fine">Public-source facts only, each with a source link. No contact names, emails, phone numbers or private notes are stored.</p>
   </section>
 </main>
@@ -89,6 +97,7 @@
 <nav id="tabs" role="tablist" aria-label="Sections">
   <button type="button" role="tab" data-tab="map"><i aria-hidden="true">🗺️</i><span>Map</span></button>
   <button type="button" role="tab" data-tab="leads"><i aria-hidden="true">🎯</i><span>Leads</span></button>
+  <button type="button" role="tab" data-tab="fit"><i aria-hidden="true">🧰</i><span>Resources</span></button>
   <button type="button" role="tab" data-tab="news"><i aria-hidden="true">📰</i><span>News</span></button>
   <button type="button" role="tab" data-tab="about"><i aria-hidden="true">ⓘ</i><span>About</span></button>
 </nav>

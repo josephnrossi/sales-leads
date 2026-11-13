@@ -1,14 +1,15 @@
-/* Gilman Sales Leads v1 — standalone PWA (state tile map, leads, chain & printer news).
+/* Gilman Sales Leads v2 — standalone PWA (state tile map, leads with equipment & Gilman fit, resource library, chain & printer news).
    Reads same-origin sales-leads-data.json (generated daily by /workspace/sales-leads/daily_leads.py).
    Public-source facts only. Offline copy lives in its own IndexedDB database: sales-leads-app. */
 (() => {
-  const VER = 'v1';
+  const VER = 'v2';
   const STALE_MS = 36 * 60 * 60 * 1000;
   const POLL_MS = 60 * 60 * 1000;
   const FILE = 'sales-leads-data.json';
   const IDB_NAME = 'sales-leads-app';
-  const TABS = ['map', 'leads', 'news', 'about'];
+  const TABS = ['map', 'leads', 'fit', 'news', 'about'];
   const WIDE = matchMedia('(min-width: 1000px)');
+  const TABLE_MQ = matchMedia('(min-width: 700px)'); // matches the CSS switch from cards to table
   const NOTICE_FALLBACK = 'Gilman Brothers, The Gilman Brothers Company and its product names (INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient®, ADHERE™) are trademarks or registered trademarks of The Gilman Brothers Company. Other company and brand names are trademarks of their respective owners; listing does not imply endorsement. Product fit is a suggestion. Public-source research for internal sales planning only.';
 
   const $ = (s, r = document) => r.querySelector(s);
@@ -17,7 +18,7 @@
 
   let data = null, usedOffline = false, staleDemo = false, dbp, poll = null;
   let view = { tab: 'map', region: 'All', size: 'all', metric: 'targets', mapMode: 'tiles', state: '',
-    lProduct: 'all', lState: 'all', lTier: 'all', lType: 'all', lEvid: false, nState: 'all', nType: 'all', nSeg: 'all' };
+    lProduct: 'all', lState: 'all', lTier: 'all', lType: 'all', lEvid: false, lPB: 'all', lCB: 'all', open: '', lMax: 80, nState: 'all', nType: 'all', nSeg: 'all' };
 
   /* tile map: [state, col, row] — 11 columns x 8 rows */
   const TILES = [['AK',0,0],['ME',10,0],['VT',9,1],['NH',10,1],
@@ -32,6 +33,11 @@
   const METRICS = [['targets', 'Target printers (100+ emp.)'], ['census', 'Census: printers & sign shops']];
   const NEWS_TYPES = ['opening', 'remodel', 'acquisition', 'expansion', 'closing', 'other'];
   const TIER_LAB = { A: 'A · rigid / flatbed shown', B: 'B · graphics shown', C: 'C · check site' };
+  const OEM_FALLBACK = 'Printer and cutter brand names (EFI, VUTEk, Durst, HP, Canon, Océ, Fujifilm, Inca, Agfa, swissQprint, Zünd, Kongsberg, MultiCam, Colex, Summa and others) are trademarks of their respective owners. Equipment facts come from public sources and may be out of date; no OEM endorsement is implied.';
+  const BRAND_LAB = { Zund: 'Zünd' };
+  const bl = b => BRAND_LAB[b] || b;
+  const NONE = '__none';
+  const RES_ORDER = ['Zund', 'Kongsberg', 'Colex', 'MultiCam', 'Onsrud', 'Elitron', 'Any cutter', 'HP', 'Fujifilm', 'Canon', 'Durst', ''];
 
 
 
@@ -86,6 +92,43 @@
   const printers = () => (data && data.printers) || [];
   const leads = () => (data && data.leads) || [];
   const news = () => (data && data.news) || [];
+  /* ---------- equipment & Gilman fit (new optional keys; v1 files without them still work) ---------- */
+  let pIdx = null, pIdxFor = null;
+  function printerRec(name) {
+    if (pIdxFor !== data) { pIdx = new Map(printers().map(p => [p.company, p])); pIdxFor = data; }
+    return pIdx.get(name);
+  }
+  const eqOf = name => { const p = printerRec(name); return (p && p.equipment) || null; };
+  const resources = () => (data && data.gilman_resources) || [];
+  const resById = id => resources().find(r => r.id === id);
+  const hasEquip = () => printers().some(p => p.equipment);
+  function eqBrands(name, kind) { const e = eqOf(name); return e ? [...new Set((e[kind] || []).map(x => x.brand))] : []; }
+  const badge = c => c === 'confirmed' ? '<span class="cf cf-c" title="Confirmed by a public source">✓ confirmed</span>' : '<span class="cf cf-l" title="Likely: older, indirect or affiliate source">~ likely</span>';
+  function eqChips(name, compact) {
+    const e = eqOf(name);
+    if (!e) return '';
+    const one = x => `<span class="eq ${x.confidence === 'confirmed' ? 'eq-c' : 'eq-l'}"><b>${esc(bl(x.brand))}</b>${compact ? '' : ' ' + esc(x.model)}<i aria-label="${esc(x.confidence)}">${x.confidence === 'confirmed' ? '✓' : '~'}</i></span>`;
+    const row = (lab, arr) => `<div class="eqrow"><span class="eqk">${lab}</span>${arr.length ? arr.map(one).join('') : '<span class="eq eq-n">Not yet found</span>'}</div>`;
+    return `<div class="eqchips">${row('Prints', e.printers || [])}${row('Cuts', e.cutters || [])}</div>`;
+  }
+  function fitPanel(name) {
+    const p = printerRec(name); if (!p) return '';
+    const e = p.equipment || { printers: [], cutters: [] }, f = p.gilman_fit || { resources: [], talking_points: [], barrier_removers: [], unverified: [] };
+    const item = x => `<li class="eqi"><div><b>${esc(bl(x.brand))}</b> ${esc(x.model)} ${badge(x.confidence)}${x.note ? `<div class="sub">${esc(x.note)}</div>` : ''}</div>${safeUrl(x.source_url) ? `<a class="srcbtn" href="${esc(x.source_url)}" target="_blank" rel="noopener" aria-label="Source for ${esc(bl(x.brand))} ${esc(x.model)}">Source ↗</a>` : ''}</li>`;
+    const list = (arr, lab) => arr.length ? `<ul class="eqlist">${arr.map(item).join('')}</ul>` : `<p class="none">${lab} not yet found in public sources. Ask on the first call.</p>`;
+    const BR = (data.barrier_removers || []), UV = (data.equipment_unverified || []);
+    const res = f.resources.map(resById).filter(Boolean);
+    return `<div class="fitpanel">
+      <h4>Equipment</h4>
+      <div class="sub">Printers</div>${list(e.printers || [], 'Printers')}
+      <div class="sub">Digital cutters / routers</div>${list(e.cutters || [], 'Cutters')}
+      <h4>Gilman fit · talking points</h4>
+      <ul class="tps">${f.talking_points.map(t => `<li>${esc(t)}</li>`).join('')}</ul>
+      ${res.length ? `<h4>Gilman resources for this shop</h4><ul class="reslinks">${res.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener"><span class="rk rk-${esc(r.kind)}">${esc(r.kind)}</span>${esc(r.title)}</a></li>`).join('')}</ul>` : ''}
+      ${f.barrier_removers.length ? `<h4>Barrier removers</h4><ul class="brs">${f.barrier_removers.map(id => BR.find(b => b.id === id)).filter(Boolean).map(b => `<li>${esc(b.text)}</li>`).join('')}</ul>` : ''}
+      ${f.unverified.length ? f.unverified.map(id => UV.find(u => u.id === id)).filter(Boolean).map(u => `<div class="unv"><b>Unverified:</b> “${esc(u.claim)}”. ${esc(u.status)}</div>`).join('') : ''}
+    </div>`;
+  }
   function isStale() {
     if (staleDemo) return true;
     const t = data && Date.parse(data.generated_iso);
@@ -179,8 +222,26 @@
   }
   function filteredLeads() {
     return leads().filter(l => (view.lProduct === 'all' || l.product === view.lProduct) && (view.lState === 'all' || l.state === view.lState)
-      && (view.lTier === 'all' || l.tier === view.lTier) && (view.lType === 'all' || l.end_user_type === view.lType) && (!view.lEvid || l.end_user))
+      && (view.lTier === 'all' || l.tier === view.lTier) && (view.lType === 'all' || l.end_user_type === view.lType) && (!view.lEvid || l.end_user)
+      && brandOk(l.printer, 'printers', view.lPB) && brandOk(l.printer, 'cutters', view.lCB))
       .sort((a, b) => (b.end_user ? 1 : 0) - (a.end_user ? 1 : 0) || String(a.tier).localeCompare(String(b.tier)) || a.printer.localeCompare(b.printer) || a.product.localeCompare(b.product));
+  }
+  const leadKey = l => l.printer + '|' + l.product + '|' + (l.end_user || '');
+  function brandOk(name, kind, want) {
+    if (want === 'all') return true;
+    const b = eqBrands(name, kind).filter(x => x !== 'Unknown');
+    return want === NONE ? b.length === 0 : b.includes(want);
+  }
+  function fillBrandSel(id, kind, cur, allLab) {
+    const el = $('#' + id); if (!el) return;
+    const eb = (data && data.equipment_brands && data.equipment_brands[kind]) || [];
+    el.hidden = !hasEquip();
+    const key = eb.join('|');
+    if (el.dataset.built !== key) {
+      el.innerHTML = `<option value="all">${esc(allLab)}</option>` + eb.map(o => `<option value="${esc(o)}">${esc(bl(o))}</option>`).join('') + `<option value="${NONE}">Not yet found</option>`;
+      el.dataset.built = key;
+    }
+    el.value = cur === NONE || eb.includes(cur) ? cur : 'all';
   }
   function fillSel(id, opts, cur, allLab) {
     const el = $('#' + id); if (!el) return;
@@ -199,24 +260,55 @@
     fillSel('slFState', [...new Set(L.map(l => l.state))].sort(), view.lState, 'All states');
     fillSel('slFTier', ['A', 'B', 'C'], view.lTier, 'All tiers');
     fillSel('slFType', [...new Set(L.map(l => l.end_user_type).filter(Boolean))].sort(), view.lType, 'All end-user types');
+    fillBrandSel('slFPB', 'printers', view.lPB, 'All printer brands');
+    fillBrandSel('slFCB', 'cutters', view.lCB, 'All cutter brands');
     const ev = $('#slFEvid'); ev.classList.toggle('on', view.lEvid); ev.setAttribute('aria-pressed', String(view.lEvid));
     const rows = filteredLeads();
     $('#slLeadCount').textContent = `${rows.length} rows · ${new Set(rows.map(r => r.printer)).size} printers · ${new Set(rows.filter(r => r.end_user).map(r => r.end_user)).size} end users`;
-    const MAX = 300;
-    const more = rows.length > MAX ? `Showing ${MAX} of ${rows.length}. Narrow the filters or export CSV for all.` : '';
-    $('#slLeadBody').innerHTML = rows.length ? rows.slice(0, MAX).map(l => `<tr>
+    const MAX = Math.max(80, view.lMax || 80), EQ = hasEquip(), CARDS = !TABLE_MQ.matches; // build only the layout on screen
+    const key = leadKey;
+    const fitBtn = l => EQ ? `<button type="button" class="fitbtn" data-fit="${esc(key(l))}" aria-expanded="${view.open === key(l)}">${view.open === key(l) ? 'Hide Gilman fit ▴' : 'Equipment & Gilman fit ▾'}</button>${view.open === key(l) ? fitPanel(l.printer) : ''}` : '';
+    const more = rows.length > MAX ? `Showing ${MAX} of ${rows.length}. <button type="button" class="btn morebtn" data-more="1">Show ${Math.min(80, rows.length - MAX)} more</button>` : '';
+    $('#slLeadBody').innerHTML = CARDS ? '' : rows.length ? rows.slice(0, MAX).map(l => `<tr>
         <td class="prod">${esc(l.product)}<span class="sug">suggested</span></td>
-        <td><b>${esc(l.printer)}</b><div class="sub">${esc(l.state)} · ${esc(l.employees)} emp. · Tier ${esc(l.tier)}</div></td>
+        <td><b>${esc(l.printer)}</b><div class="sub">${esc(l.state)} · ${esc(l.employees)} emp. · Tier ${esc(l.tier)}</div>${fitBtn(l)}</td>
+        ${EQ ? `<td class="eqcell">${eqChips(l.printer, true)}</td>` : ''}
         <td>${l.end_user ? `<b>${esc(l.end_user)}</b><div class="sub">${esc(l.end_user_type)}</div>` : '<span class="none">None found yet</span>'}</td>
         <td><span class="chip ${strCls(l)}">${esc(l.strength)}</span></td>
-        <td>${srcLink(l)}</td></tr>`).join('') + (more ? `<tr><td colspan="5" class="empty">${more}</td></tr>` : '')
-      : `<tr><td colspan="5" class="empty">No leads match these filters.</td></tr>`;
-    $('#slLeadCards').innerHTML = rows.length ? rows.slice(0, MAX).map(l => `<li class="lcard">
+        <td>${srcLink(l)}</td></tr>`).join('') + (more ? `<tr><td colspan="6" class="empty">${more}</td></tr>` : '')
+      : `<tr><td colspan="6" class="empty">No leads match these filters.</td></tr>`;
+    const th = $('#slEqTh'); if (th) th.hidden = !EQ;
+    $('#slLeadCards').innerHTML = !CARDS ? '' : rows.length ? rows.slice(0, MAX).map(l => `<li class="lcard">
         <div class="lc-top"><span class="lc-prod">${esc(l.product)}</span><span class="sug">suggested fit</span><span class="chip ${strCls(l)}">${esc(l.strength)}</span></div>
         <div class="lc-row"><span class="lc-k">Printer</span><span><b>${esc(l.printer)}</b><span class="sub"> · ${esc(l.state)} · ${esc(l.employees)} emp. · Tier ${esc(l.tier)}</span></span></div>
+        ${EQ ? `<div class="lc-row lc-eq"><span class="lc-k">Equipment</span>${eqChips(l.printer)}</div>` : ''}
         <div class="lc-row"><span class="lc-k">End user</span><span>${l.end_user ? `<b>${esc(l.end_user)}</b><span class="sub"> · ${esc(l.end_user_type)}</span>` : '<span class="none">None found yet</span>'}</span></div>
-        <div class="lc-src">${srcLink(l)}</div></li>`).join('') + (more ? `<li class="empty">${more}</li>` : '')
+        <div class="lc-src">${srcLink(l)}</div>${fitBtn(l)}</li>`).join('') + (more ? `<li class="empty">${more}</li>` : '')
       : `<li class="empty">No leads match these filters.</li>`;
+  }
+  /* resource library: Gilman resources grouped by equipment brand, with the leads that run that equipment */
+  function renderFit() {
+    const el = $('#slFitBody'); if (!el) return;
+    if (!hasEquip()) { el.innerHTML = '<p class="empty">This data file has no equipment layer yet.</p>'; return; }
+    const users = {}; // brand -> [{name, conf, model}]
+    for (const p of printers()) for (const k of ['printers', 'cutters']) for (const x of ((p.equipment || {})[k] || [])) {
+      (users[x.brand] = users[x.brand] || []).push({ name: p.company, conf: x.confidence, model: x.model, state: p.state });
+    }
+    const leadN = name => leads().filter(l => l.printer === name).length;
+    const who = (b) => { const u = users[b] || []; return u.length ? `<details class="who"><summary>${u.length} lead printer${u.length > 1 ? 's' : ''} run ${esc(bl(b))}</summary><ul>${u.map(x => `<li><b>${esc(x.name)}</b> <span class="sub">${esc(x.state)} · ${esc(x.model)} · ${leadN(x.name)} lead rows</span> ${badge(x.conf)}</li>`).join('')}</ul></details>` : `<p class="sub">No lead printers found with ${esc(bl(b))} yet.</p>`; };
+    const groups = RES_ORDER.map(o => [o, resources().filter(r => (r.oem || '') === o)]).filter(([, rs]) => rs.length);
+    const covered = new Set(RES_ORDER);
+    const uncovered = Object.keys(users).filter(b => !covered.has(b) && b !== 'Unknown').sort((a, b) => users[b].length - users[a].length);
+    const UV = data.equipment_unverified || [], BR = data.barrier_removers || [], M = data.equipment_meta || {};
+    const c = M.counts || {};
+    el.innerHTML = `
+      <p class="fine">${esc(c.confirmed || 0)} printers with confirmed equipment · ${esc(c.likely || 0)} likely · ${esc(c.not_found || 0)} not yet found. Researched ${esc(M.researched_et || '')} from public sources.</p>
+      <section class="rcard"><h3>Barrier removers</h3><ul class="brs">${BR.map(b => `<li>${esc(b.text)} ${safeUrl(b.url) ? `<a class="srcbtn" href="${esc(b.url)}" target="_blank" rel="noopener" aria-label="Source: ${esc(b.text.slice(0, 40))}">↗</a>` : ''}</li>`).join('')}</ul></section>
+      ${UV.map(u => `<div class="unv"><b>Unverified:</b> “${esc(u.claim)}”. ${esc(u.status)}</div>`).join('')}
+      ${groups.map(([o, rs]) => `<section class="rcard"><h3>${o ? esc(bl(o)) : 'All equipment · specs & library'}</h3>
+        <ul class="reslinks">${rs.map(r => `<li><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener"><span class="rk rk-${esc(r.kind)}">${esc(r.kind)}</span>${esc(r.title)}</a></li>`).join('')}</ul>
+        ${o && o !== 'Any cutter' ? who(o) : ''}</section>`).join('')}
+      ${uncovered.length ? `<section class="rcard"><h3>Equipment with no Gilman guide yet</h3><p class="sub">Ask Gilman for settings, or start from the Zünd and Kongsberg tables.</p>${uncovered.map(b => `<div class="ug"><b>${esc(bl(b))}</b>${who(b)}</div>`).join('')}</section>` : ''}`;
   }
   function filteredNews() {
     return news().filter(n => (view.nState === 'all' || (n.states || []).includes(view.nState)) && (view.nType === 'all' || n.type === view.nType)
@@ -249,6 +341,7 @@
     $('#slAboutUpdated').textContent = data ? fmtDate(data.generated_iso) : '—';
     seg('slTheme', [['auto', 'Match device'], ['light', 'Light'], ['dark', 'Dark']], themePref(), 'theme');
     $('#slNotice').textContent = (data && data.notice) || NOTICE_FALLBACK;
+    const on = $('#slOemNotice'); if (on) on.textContent = (data && data.equipment_notice) || OEM_FALLBACK;
     if (data && Array.isArray(data.sources)) $('#slSources').innerHTML = data.sources.map(s => `<li>${safeUrl(s.url) ? `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}</a>` : esc(s.name)}<div class="sub">${esc(s.use || '')}</div></li>`).join('');
     if (data) $('#slAboutStats').innerHTML = [['Target printers', printers().length], ['Lead rows', leads().length], ['News items', news().length], ['Census year', data.census && data.census.year], ['Stale after', '36 hours'], ['Offline copy', 'Saved on this device']]
       .map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('');
@@ -263,7 +356,10 @@
     });
     renderAbout();
     if (!data) return;
-    renderMap(); renderCard(); renderLeads(); renderNews();
+    renderMap(); renderCard();
+    if (view.tab === 'leads' || WIDE.matches) renderLeads(); // lazy: only build what is on screen
+    if (view.tab === 'fit') renderFit();
+    if (view.tab === 'news') renderNews();
   }
 
   async function pullFile() {
@@ -288,9 +384,12 @@
   }
   function csvText() {
     const rows = filteredLeads();
-    const headers = ['product', 'printer', 'state', 'region', 'employees', 'tier', 'end_user', 'end_user_type', 'strength', 'evidence', 'source_url', 'printer_source_url'];
+    const headers = ['product', 'printer', 'state', 'region', 'employees', 'tier', 'end_user', 'end_user_type', 'strength', 'evidence', 'source_url', 'printer_source_url', 'printer_equipment', 'cutter_equipment', 'talking_point'];
     const escC = v => { const s = String(v == null ? '' : v); return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s; };
-    return { n: rows.length, csv: [headers.join(',')].concat(rows.map(r => headers.map(h => escC(r[h])).join(','))).join('\r\n') };
+    const eqs = (name, k) => { const e = eqOf(name); return e ? (e[k] || []).map(x => `${bl(x.brand)} ${x.model} (${x.confidence})`).join('; ') || 'not yet found' : ''; };
+    const tp = name => { const p = printerRec(name); return (p && p.gilman_fit && p.gilman_fit.talking_points[0]) || ''; };
+    const val = (r, h) => h === 'printer_equipment' ? eqs(r.printer, 'printers') : h === 'cutter_equipment' ? eqs(r.printer, 'cutters') : h === 'talking_point' ? tp(r.printer) : r[h];
+    return { n: rows.length, csv: [headers.join(',')].concat(rows.map(r => headers.map(h => escC(val(r, h))).join(','))).join('\r\n') };
   }
   const CSV_NAME = 'gilman-sales-leads.csv';
   function csvFile(csv) { try { return new File([csv], CSV_NAME, { type: 'text/csv' }); } catch (e) { return null; } }
@@ -376,8 +475,11 @@
       if (e.target.closest('#slCardClose')) selectState('');
       else if (e.target.closest('#slCardLeads')) { view.lState = view.state; view.state = ''; view.tab = 'leads'; pushHist(true); render(); window.scrollTo(0, 0); }
     });
-    const sel = (id, key) => $('#' + id).addEventListener('change', e => { view[key] = e.target.value; render(); });
-    sel('slFProduct', 'lProduct'); sel('slFState', 'lState'); sel('slFTier', 'lTier'); sel('slFType', 'lType');
+    const sel = (id, key) => $('#' + id).addEventListener('change', e => { view[key] = e.target.value; view.lMax = 80; render(); });
+    sel('slFProduct', 'lProduct'); sel('slFState', 'lState'); sel('slFTier', 'lTier'); sel('slFType', 'lType'); sel('slFPB', 'lPB'); sel('slFCB', 'lCB');
+    const fitToggle = e => { if (e.target.closest('button[data-more]')) { view.lMax = (view.lMax || 80) + 80; renderLeads(); return; } const b = e.target.closest('button[data-fit]'); if (!b) return; view.open = view.open === b.dataset.fit ? '' : b.dataset.fit; renderLeads();
+      const nb = document.querySelector(`#view-leads button[data-fit="${CSS.escape(b.dataset.fit)}"]`); if (nb && view.open) nb.scrollIntoView({ block: 'nearest' }); };
+    $('#slLeadCards').addEventListener('click', fitToggle); $('#slLeadBody').addEventListener('click', fitToggle);
     sel('slNState', 'nState'); sel('slNType', 'nType'); sel('slNSeg', 'nSeg');
     $('#slFEvid').addEventListener('click', () => { view.lEvid = !view.lEvid; render(); });
     $('#slExport').addEventListener('click', () => exportCsv());
@@ -390,6 +492,7 @@
     });
     matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => { if (themePref() === 'auto') applyTheme(); });
     WIDE.addEventListener('change', () => render());
+    TABLE_MQ.addEventListener('change', () => render());
     document.addEventListener('visibilitychange', () => { if (!document.hidden && data && isStale()) pullFile(); });
   }
   function boot() {
@@ -411,6 +514,7 @@
     view: () => Object.assign({}, view),
     setView(v) { Object.assign(view, v || {}); render(); },
     setTab, selectState, exportCsv, csvText, canShareCsv, filteredLeads, filteredNews, isStale: () => !!data && isStale(),
+    openFit(printer, product) { const F = filteredLeads(), i = F.findIndex(x => x.printer === printer && (!product || x.product === product)); view.open = i >= 0 ? leadKey(F[i]) : ''; if (i >= view.lMax) view.lMax = Math.ceil((i + 1) / 80) * 80; render(); return i >= 0; }, printerRec,
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })();

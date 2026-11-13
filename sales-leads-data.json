@@ -1,7 +1,7 @@
 {
  "schema": "pencil-sales-leads/1",
- "generated_et": "2026-11-13 07:29 ET",
- "generated_iso": "2026-11-13T12:28:29+00:00",
+ "generated_et": "2026-11-13 08:44 ET",
+ "generated_iso": "2026-11-13T13:44:09+00:00",
  "notice": "Gilman Brothers, The Gilman Brothers Company and the product names INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient® and ADHERE™ are trademarks or registered trademarks of The Gilman Brothers Company. Printer, retailer, restaurant and brand names are trademarks of their respective owners; listing does not imply endorsement or a business relationship beyond the linked public source. Product fit is a suggestion. Public-source research for demo and internal sales planning only — no contact details are stored.",
  "sources": [
   {
@@ -2355,7 +2355,38 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk (model not stated)",
+      "confidence": "likely",
+      "source_url": "https://www.linkedin.com/posts/a3visuals_were-hiring-a3-visual-is-looking-activity-7481443875597746177-ZILG",
+      "note": "Jul 2026 job post for a VUTEk operator"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your EFI VUTEk (model not stated) (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "ARC Document Solutions",
@@ -2381,7 +2412,62 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Fujifilm",
+      "model": "Acuity TR",
+      "confidence": "confirmed",
+      "source_url": "https://www.e-arc.com/equipment-supplies/",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex R530",
+      "confidence": "confirmed",
+      "source_url": "https://www.largeformatreview.com/hardware/wide-format-print/arc-hp-latex-r530/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "Entro 24",
+      "confidence": "likely",
+      "source_url": "https://www.largeformatreview.com/hardware/wide-format-print/arc-hp-latex-r530/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "g-fujifilm",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg Entro 24 (likely) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Fujifilm Acuity TR → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+     "Your HP Latex R530 → INFINITY, InSite, Resilient and EAGLECELL are certified on this exact printer (HP Latex R530)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-fuji",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Image Options",
@@ -2407,7 +2493,53 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk Q5r",
+      "confidence": "confirmed",
+      "source_url": "https://www.printing.org/content/2022/01/20/image-options-gains-versatility-and-speed-with-efi-vutek-q5r-installation",
+      "note": ""
+     },
+     {
+      "brand": "EFI",
+      "model": "VUTEk FabriVU 340 / 520, HS125 Pro",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/california-printer-image-options-partners-installs-four-vuteks-efi/",
+      "note": "2017 install"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "iCut",
+      "model": "CNC (2 units)",
+      "confidence": "likely",
+      "source_url": "https://bigpicturemag.com/image-options-acquires-icp-west-s-assets/",
+      "note": "older article"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your iCut (likely): Gilman has no iCut guide yet. Send the Zünd or Kongsberg tables as a starting point and ask Gilman for iCut settings.",
+     "Your EFI VUTEk Q5r → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Lithographix Inc.",
@@ -2432,7 +2564,53 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk 5r",
+      "confidence": "confirmed",
+      "source_url": "https://www.lithographix.com/portfolio-1/print",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "D3",
+      "confidence": "confirmed",
+      "source_url": "https://www.lithographix.com/zund-digital-cutter",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd D3 → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI VUTEk 5r → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Primary Color",
@@ -2458,7 +2636,57 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro H3300",
+      "confidence": "confirmed",
+      "source_url": "https://www.primarycolor.com/print",
+      "note": ""
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Inca Onset X3",
+      "confidence": "confirmed",
+      "source_url": "https://www.primarycolor.com/print",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "C64 Edge",
+      "confidence": "confirmed",
+      "source_url": "https://www.kongsbergsystems.com/en/success-stories/primary-color",
+      "note": "Kongsberg customer story"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg C64 Edge → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Fujifilm Inca Onset X3 → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Marketing Alliance Group (MAG)",
@@ -2482,7 +2710,44 @@
     "InSite Reveal",
     "Ryno Board"
    ],
-   "end_user_count": 7
+   "end_user_count": 7,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350 HS",
+      "confidence": "likely",
+      "source_url": "https://www.importgenius.com/importers/marketing-alliance-group",
+      "note": "import records via search summary"
+     },
+     {
+      "brand": "Landa",
+      "model": "S10 / S11 Nanographic (sheetfed)",
+      "confidence": "confirmed",
+      "source_url": "https://www.landa-corporation.com/news-1/landa-s10-press-installed-at-marketing-alliance-group",
+      "note": ""
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Durst P5 350 HS (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Miller Zell",
@@ -2507,7 +2772,59 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 12
+   "end_user_count": 12,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "Rho 1312 + hybrid/roll presses",
+      "confidence": "confirmed",
+      "source_url": "https://www.wideformatimpressions.com/partner/miller-zell-relies-on-durst-for-innovation-partnership-and-performance/",
+      "note": ""
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Inca X2 / S50",
+      "confidence": "likely",
+      "source_url": "https://www.millerzell.com/what-we-do/production",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "robotic finishing automation",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/miller-zells-print-facility-implements-cutting-edge-robotic-technology/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "d-durst",
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Durst Rho 1312 + hybrid/roll presses → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your Fujifilm Inca X2 / S50 (likely) → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Moss Inc.",
@@ -2535,7 +2852,52 @@
     "MountCor",
     "InSite HA"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "Rhotex 325 (8 units)",
+      "confidence": "confirmed",
+      "source_url": "https://digitaloutput.net/fabricate-anything-/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "digital cutters",
+      "confidence": "confirmed",
+      "source_url": "https://digitaloutput.net/fabricate-anything-/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Durst Rhotex 325 (8 units) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Rand Graphics",
@@ -2562,7 +2924,50 @@
     "MountCor",
     "InSite HA"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Fujifilm",
+      "model": "Inca Onset X3",
+      "confidence": "confirmed",
+      "source_url": "https://www.randgraphics.com/services/digital-printing/",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex",
+      "confidence": "confirmed",
+      "source_url": "https://www.randgraphics.com/services/digital-printing/",
+      "note": ""
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "g-fujifilm",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Fujifilm Inca Onset X3 → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+     "Your HP Latex → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-fuji",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Modernistic Inc.",
@@ -2590,7 +2995,46 @@
     "MountCor",
     "InSite HA"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Fujifilm",
+      "model": "Acuity Ultra R2 (2), Acuity Prime 30",
+      "confidence": "confirmed",
+      "source_url": "https://www.modprint.com/5-key-highlights-from-our-latest-digital-press-upgrades/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Unknown",
+      "model": "digital cutting (brand not stated)",
+      "confidence": "likely",
+      "source_url": "https://www.modprint.com/products/precision-cutting/",
+      "note": "25+ cutting machines; brand not public"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter brand not public. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron.",
+     "Your Fujifilm Acuity Ultra R2 (2), Acuity Prime 30 → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal."
+    ],
+    "barrier_removers": [
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Showdown Displays",
@@ -2616,7 +3060,64 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 TEX iSUB",
+      "confidence": "likely",
+      "source_url": "https://www.showdowndisplays.eu/print-services/meet-our-printers-and-cutter/",
+      "note": "European affiliate"
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 570/800, Stitch",
+      "confidence": "likely",
+      "source_url": "https://www.showdowndisplays.eu/print-services/meet-our-printers-and-cutter/",
+      "note": "European affiliate"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3",
+      "confidence": "likely",
+      "source_url": "https://www.showdowndisplays.eu/showdown-displays-europe-increases-daily-print-production-with-new-zund-cutter/",
+      "note": "European affiliate"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "d-durst",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Durst P5 TEX iSUB (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your HP Latex 570/800, Stitch (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "BluEdge",
@@ -2642,7 +3143,35 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 2
+   "end_user_count": 2,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Canon",
+      "model": "wide-format (sells/services)",
+      "confidence": "likely",
+      "source_url": "https://bluedge.com/experiential-marketing/large-format/large-format-new-york-ny/",
+      "note": "in-house brand not confirmed"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Duggal Visual Solutions",
@@ -2670,7 +3199,73 @@
     "MountCor",
     "InSite HA"
    ],
-   "end_user_count": 5
+   "end_user_count": 5,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "Reggiani NEXT Plus",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/duggal-visual-solutions-installs-efi-reggiani-next-plus/",
+      "note": ""
+     },
+     {
+      "brand": "Durst",
+      "model": "dye-sub (Rhotex)",
+      "confidence": "confirmed",
+      "source_url": "https://www.largeformatreview.com/hardware/industrial-print/duggal-installs-first-high-resolution-durst-dye-sublimation-printer-in-the-us/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "CNC cutting tables",
+      "confidence": "likely",
+      "source_url": "https://user-sjelb2t.cld.bz/Vision-to-Visuals",
+      "note": "search summary"
+     },
+     {
+      "brand": "Kongsberg",
+      "model": "CNC cutting tables",
+      "confidence": "likely",
+      "source_url": "https://user-sjelb2t.cld.bz/Vision-to-Visuals",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Kongsberg (likely) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your EFI Reggiani NEXT Plus → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Durst dye-sub (Rhotex) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Federal Heath",
@@ -2697,7 +3292,27 @@
     "MountCor",
     "InSite HA"
    ],
-   "end_user_count": 6
+   "end_user_count": 6,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Vision Graphics",
@@ -2722,7 +3337,44 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "Rho 500R, Rho 800 Presto",
+      "confidence": "likely",
+      "source_url": "https://digitaloutput.net/quantifying-retail-signage/",
+      "note": "older article"
+     },
+     {
+      "brand": "Canon",
+      "model": "Colorado 1640",
+      "confidence": "likely",
+      "source_url": "https://digitaloutput.net/quantifying-retail-signage/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Durst Rho 500R, Rho 800 Presto (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Olympus Group",
@@ -2743,7 +3395,64 @@
    "products": [
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350",
+      "confidence": "confirmed",
+      "source_url": "https://durstus.com/olympus-group-turns-to-durst/",
+      "note": "Durst case study"
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 360/365",
+      "confidence": "likely",
+      "source_url": "https://durstus.com/olympus-group-turns-to-durst/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "cutting units",
+      "confidence": "likely",
+      "source_url": "https://durstus.com/olympus-group-turns-to-durst/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "d-durst",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Durst P5 350 → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your HP Latex 360/365 (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Serigraph Inc.",
@@ -2768,7 +3477,61 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "digital press",
+      "confidence": "confirmed",
+      "source_url": "https://www.serigraph.com/about-us/history/",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex R1000 Plus",
+      "confidence": "confirmed",
+      "source_url": "https://www.serigraph.com/about-us/history/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "digital die-cutting/routing",
+      "confidence": "confirmed",
+      "source_url": "https://www.serigraph.com/about-us/history/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "d-durst",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Durst digital press → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your HP Latex R1000 Plus → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Thysse",
@@ -2793,7 +3556,35 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "PageWide Advantage 2200 (web press)",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/thysse-boosts-capabilities-with-new-hp-pagewide-advantage-2200-web-press/",
+      "note": "not wide-format"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "4 Over International",
@@ -2818,7 +3609,45 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "wide-format",
+      "confidence": "likely",
+      "source_url": "https://whattheythink.com/articles/53100-a-visit-to-4over-in-glendale-california/",
+      "note": "older article"
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Inca",
+      "confidence": "likely",
+      "source_url": "https://whattheythink.com/articles/53100-a-visit-to-4over-in-glendale-california/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Fujifilm Inca (likely) → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Calitho",
@@ -2844,7 +3673,76 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex 3000",
+      "confidence": "confirmed",
+      "source_url": "https://calitho.com/wp-content/uploads/2024/05/EQUIPMENT-LIST-2024.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Acuity HS",
+      "confidence": "confirmed",
+      "source_url": "https://calitho.com/wp-content/uploads/2024/05/EQUIPMENT-LIST-2024.pdf",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "D3 L-2000",
+      "confidence": "confirmed",
+      "source_url": "https://calitho.com/wp-content/uploads/2024/05/EQUIPMENT-LIST-2024.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Kongsberg",
+      "model": "XP44 / XP24",
+      "confidence": "confirmed",
+      "source_url": "https://calitho.com/wp-content/uploads/2024/05/EQUIPMENT-LIST-2024.pdf",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd D3 L-2000 → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Kongsberg XP44 / XP24 → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your HP Latex 3000 → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your Fujifilm Acuity HS → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Drummond",
@@ -2868,7 +3766,62 @@
     "InSite Reveal",
     "Ryno Board"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Scitex 11000 / FB7600, Latex 3000",
+      "confidence": "confirmed",
+      "source_url": "https://drummond.com/wp-content/uploads/2021/03/Drummond_Equipment_List_2021.pdf",
+      "note": "2021 list, Decatur GA plant"
+     },
+     {
+      "brand": "EFI",
+      "model": "VUTEk HS125 Pro",
+      "confidence": "confirmed",
+      "source_url": "https://drummond.com/2017/09/26/efi-casestudy-wide-format-printing/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "XL (Esko iCut) x3",
+      "confidence": "confirmed",
+      "source_url": "https://drummond.com/wp-content/uploads/2021/03/Drummond_Equipment_List_2021.pdf",
+      "note": "2021 list"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg XL (Esko iCut) x3 → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your HP Scitex 11000 / FB7600, Latex 3000 → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your EFI VUTEk HS125 Pro → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Phase 3 Marketing and Communications",
@@ -2894,7 +3847,45 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 2
+   "end_user_count": 2,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk 5r (2)",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/phase-3-purchases-efi-vutek-5r/",
+      "note": ""
+     },
+     {
+      "brand": "Agfa",
+      "model": "Jeti Titan HS",
+      "confidence": "likely",
+      "source_url": "https://www.inkworldmagazine.com/breaking-news/first-agfa-graphics-jeti-titan-hs-sold-in-us-goes-to-phase-3-marketing-communications/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your EFI VUTEk 5r (2) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Wallace Graphics",
@@ -2919,7 +3910,67 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk LX3",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/wallace-graphics-embodies-convergence/",
+      "note": "2019 article"
+     },
+     {
+      "brand": "swissQprint",
+      "model": "Nyala 3",
+      "confidence": "likely",
+      "source_url": "https://directory.printing.org/company/wallace-graphics-inc/",
+      "note": "G7 listing via search"
+     },
+     {
+      "brand": "Canon",
+      "model": "Colorado",
+      "confidence": "likely",
+      "source_url": "https://directory.printing.org/company/wallace-graphics-inc/",
+      "note": "G7 listing via search"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 XL",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/wallace-graphics-embodies-convergence/",
+      "note": "2019 article"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 XL (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI VUTEk LX3 (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Mittera",
@@ -2944,7 +3995,35 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro, Grizzly",
+      "confidence": "confirmed",
+      "source_url": "https://largeformat.mittera.com/",
+      "note": ""
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "ABS Graphics",
@@ -2969,7 +4048,38 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Fujifilm",
+      "model": "Inca R40, Uvistar",
+      "confidence": "likely",
+      "source_url": "https://www.printaccess.com/p?aff=glga&pid=679",
+      "note": "directory listing"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Fujifilm Inca R40, Uvistar (likely) → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Vivid Impact",
@@ -2994,7 +4104,50 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro H3300 LED",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/vivid-impact-installs-agfa-jeti-tauro-h3300-led-fwide-format-printer/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "cutter",
+      "confidence": "likely",
+      "source_url": "https://www.wideformatimpressions.com/article/vivid-impact-delivers-strategic-solutions-with-agfa-jeti-tauro/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Mele Printing",
@@ -3020,7 +4173,35 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Agfa",
+      "model": "Jeti Mira",
+      "confidence": "likely",
+      "source_url": "https://melemu.com/resources/equipment.html",
+      "note": "site may be a related company"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Gilson Graphics",
@@ -3045,7 +4226,70 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk LX3, HS125",
+      "confidence": "confirmed",
+      "source_url": "https://gilsongraphics.com/wp-content/uploads/2024/11/Gilson-Equipment-List-2024.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro H3300 UHS",
+      "confidence": "confirmed",
+      "source_url": "https://gilsongraphics.com/wp-content/uploads/2024/11/Gilson-Equipment-List-2024.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Canon",
+      "model": "Arizona flatbed, Colorado M5W",
+      "confidence": "confirmed",
+      "source_url": "https://gilsongraphics.com/wp-content/uploads/2024/11/Gilson-Equipment-List-2024.pdf",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "cutter/routers",
+      "confidence": "confirmed",
+      "source_url": "https://gilsongraphics.com/wp-content/uploads/2024/11/Gilson-Equipment-List-2024.pdf",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "b-canon-arizona",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI VUTEk LX3, HS125 → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Canon Arizona → Gilman and Canon issued a joint Arizona technical bulletin for INFINITY and InSite (ink advice)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-canon",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Vomela Specialty",
@@ -3071,7 +4315,38 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 4
+   "end_user_count": 4,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk FabriVU 340i+",
+      "confidence": "confirmed",
+      "source_url": "https://www.efi.com/wp-content/uploads/sites/2/2023/09/visual_impact_fabrivu_release_final_en_us.pdf",
+      "note": "EFI release"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your EFI VUTEk FabriVU 340i+ → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Hederman Brothers",
@@ -3096,7 +4371,52 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350 HS",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/hederman-brothers-expands-wide-format-capabilities-with-durst-and-zund/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 3XL-3200",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/hederman-brothers-expands-wide-format-capabilities-with-durst-and-zund/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 3XL-3200 → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Durst P5 350 HS → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Salem One",
@@ -3122,7 +4442,49 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex R2000",
+      "confidence": "likely",
+      "source_url": "https://www.wideformatimpressions.com/article/salem-one-achieving-wide-format-growth-through-acquisitions/",
+      "note": "search summary"
+     },
+     {
+      "brand": "Durst",
+      "model": "wide-format",
+      "confidence": "likely",
+      "source_url": "https://www.wideformatimpressions.com/article/salem-one-achieving-wide-format-growth-through-acquisitions/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "q-hp-r530",
+     "g-hp-r2000",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your HP Latex R2000 (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your Durst wide-format (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Sandy Alexander",
@@ -3148,7 +4510,90 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk Q5r, LX3 Pro (2)",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Durst",
+      "model": "Rho 1312, Rho 500",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 370 / 570",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro H3300 LED",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 3XL-3200, G3 XL",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     },
+     {
+      "brand": "MultiCam",
+      "model": "5000 3-axis CNC router",
+      "confidence": "confirmed",
+      "source_url": "https://sandyalexander.com/wp-content/uploads/2024/03/SA-Equipment-Facilities-Overview_v10.pdf",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "cut-multicam",
+     "d-durst",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 3XL-3200, G3 XL → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your MultiCam → Gilman MultiCam guide with INFINITY bits, RPM and feed rates.",
+     "Your EFI VUTEk Q5r, LX3 Pro (2) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Durst Rho 1312, Rho 500 → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your HP Latex 370 / 570 → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Baesman Group",
@@ -3173,7 +4618,37 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 4
+   "end_user_count": 4,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350 HS",
+      "confidence": "likely",
+      "source_url": "https://linkedin.com/in/jim-hardy-7600905",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Durst P5 350 HS (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Robin Enterprises",
@@ -3197,7 +4672,27 @@
     "InSite Reveal",
     "Ryno Board"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Visual Marking Systems",
@@ -3222,7 +4717,65 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex",
+      "confidence": "likely",
+      "source_url": "https://bigpicturemag.com/integrating-white-ink-visual-marking-system/",
+      "note": "search summary"
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Acuity",
+      "confidence": "likely",
+      "source_url": "https://bigpicturemag.com/integrating-white-ink-visual-marking-system/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "digital cutter/router",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/marked-improvement/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "g-fujifilm",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your HP Latex (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your Fujifilm Acuity (likely) → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-fuji",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Premier Press",
@@ -3248,7 +4801,74 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 2
+   "end_user_count": 2,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk h5",
+      "confidence": "confirmed",
+      "source_url": "https://www.premierpress.com/wp-content/uploads/2024/12/Premier-Press-Equipment-List-2024-12-11.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Canon",
+      "model": "Arizona 6170 XTS, Colorado 1650",
+      "confidence": "confirmed",
+      "source_url": "https://www.premierpress.com/wp-content/uploads/2024/12/Premier-Press-Equipment-List-2024-12-11.pdf",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 3XL / 2XL",
+      "confidence": "confirmed",
+      "source_url": "https://www.premierpress.com/wp-content/uploads/2024/12/Premier-Press-Equipment-List-2024-12-11.pdf",
+      "note": ""
+     },
+     {
+      "brand": "Kongsberg",
+      "model": "XE10",
+      "confidence": "confirmed",
+      "source_url": "https://www.premierpress.com/wp-content/uploads/2024/12/Premier-Press-Equipment-List-2024-12-11.pdf",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "b-canon-arizona",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 3XL / 2XL → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Kongsberg XE10 → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your EFI VUTEk h5 → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Canon Arizona → Gilman and Canon issued a joint Arizona technical bulletin for INFINITY and InSite (ink advice)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-canon",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "ANRO Inc.",
@@ -3273,7 +4893,55 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex 360 (2)",
+      "confidence": "confirmed",
+      "source_url": "http://www.anro.com/Content/documents/190219_ANRO_EquipmentList_Proof.pdf",
+      "note": "2019 list"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 L-3200",
+      "confidence": "confirmed",
+      "source_url": "http://www.anro.com/Content/documents/190219_ANRO_EquipmentList_Proof.pdf",
+      "note": "2019 list"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 L-3200 → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your HP Latex 360 (2) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Heeter",
@@ -3294,7 +4962,72 @@
    "products": [
     "Gilco Styrene"
    ],
-   "end_user_count": 2
+   "end_user_count": 2,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk h5, H1625 LED, Pro 30f",
+      "confidence": "confirmed",
+      "source_url": "https://www.heeter.com/about/our-facilities/",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 560",
+      "confidence": "confirmed",
+      "source_url": "https://www.heeter.com/about/our-facilities/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "XN (Esko)",
+      "confidence": "confirmed",
+      "source_url": "https://www.heeter.com/about/our-facilities/",
+      "note": ""
+     },
+     {
+      "brand": "Colex",
+      "model": "CNC",
+      "confidence": "confirmed",
+      "source_url": "https://www.heeter.com/about/our-facilities/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "cut-res-colex",
+     "cut-align-colex",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg XN (Esko) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Colex → Gilman Resilient and Resilient Align Colex cutting guides.",
+     "Your EFI VUTEk h5, H1625 LED, Pro 30f → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your HP Latex 560 → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "PrintMailPro",
@@ -3319,7 +5052,27 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Slate Group",
@@ -3345,7 +5098,67 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Agfa",
+      "model": "Jeti Tauro",
+      "confidence": "confirmed",
+      "source_url": "https://www.slategroup.com/services/wide-format-printing/",
+      "note": ""
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 570",
+      "confidence": "confirmed",
+      "source_url": "https://www.slategroup.com/services/wide-format-printing/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "XN24, C24 Edge",
+      "confidence": "confirmed",
+      "source_url": "https://www.slategroup.com/services/wide-format-printing/",
+      "note": ""
+     },
+     {
+      "brand": "Summa",
+      "model": "S Class",
+      "confidence": "confirmed",
+      "source_url": "https://www.slategroup.com/services/wide-format-printing/",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg XN24, C24 Edge → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Summa S Class: Gilman has no Summa guide yet. Send the Zünd or Kongsberg tables as a starting point and ask Gilman for Summa settings.",
+     "Your HP Latex 570 → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Thomas Printworks",
@@ -3371,7 +5184,50 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 1
+   "end_user_count": 1,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex, PageWide",
+      "confidence": "likely",
+      "source_url": "https://thomasprintworks.com/resources/faq",
+      "note": "search summary"
+     },
+     {
+      "brand": "Canon",
+      "model": "Colorado 1640",
+      "confidence": "likely",
+      "source_url": "https://www.irga.com/thomas-printworks-on-the-grow/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "q-hp-r530",
+     "g-hp-r2000",
+     "q-hp-pagewide",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your HP Latex, PageWide (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your HP PageWide (likely) → HP sells Gilman InSite Reveal as HP Production Foamplus Board, approved for PageWide XL Pro.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-pagewide",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Worth Higgins & Associates",
@@ -3397,7 +5253,27 @@
     "Gilco Styrene",
     "InSite Reveal Colors"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "DCG ONE",
@@ -3418,7 +5294,50 @@
    "products": [
     "Gilco Styrene"
    ],
-   "end_user_count": 2
+   "end_user_count": 2,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk Q3h XP, H5",
+      "confidence": "likely",
+      "source_url": "https://www.linkedin.com/posts/dcgone_getting-ready-for-the-first-run-introducing-activity-7404209605750444032-_ZzS",
+      "note": "company LinkedIn post"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "cutting table",
+      "confidence": "likely",
+      "source_url": "https://production.dcgone.com/print-production",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg (likely) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your EFI VUTEk Q3h XP, H5 (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Suttle-Straus Inc.",
@@ -3443,7 +5362,53 @@
     "Ryno Board",
     "Gilco Styrene"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk QS3200, GS3250 LX",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/suttle-straus-inc-has-installed-a-vutek-gs3250-lx-from-heidelberg/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 L-3200",
+      "confidence": "likely",
+      "source_url": "https://www.printaccess.com/p?aff=glga&pid=94581",
+      "note": "directory listing"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 L-3200 (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI VUTEk QS3200, GS3250 LX (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Prisma Graphic",
@@ -3465,7 +5430,38 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk QS3220",
+      "confidence": "likely",
+      "source_url": "https://www.printaccess.com/p?aff=piasc&pid=67647",
+      "note": "directory listing"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your EFI VUTEk QS3220 (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Almaden",
@@ -3487,7 +5483,35 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "iJetColor",
+      "model": "Pro 1175P",
+      "confidence": "confirmed",
+      "source_url": "https://www.ijetcolor.com/almaden",
+      "note": "vendor case page"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Delta Print Group",
@@ -3509,7 +5533,47 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex R1000, 800W, 360",
+      "confidence": "likely",
+      "source_url": "https://www.printaccess.com/p?aff=vma&pid=386",
+      "note": "directory listing"
+     },
+     {
+      "brand": "Roland",
+      "model": "VersaUV LEF-300",
+      "confidence": "likely",
+      "source_url": "https://www.printaccess.com/p?aff=vma&pid=386",
+      "note": "directory listing"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your HP Latex R1000, 800W, 360 (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "The Dot Corp",
@@ -3531,7 +5595,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Postal Center International (PCI)",
@@ -3553,7 +5637,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Southeastern Printing",
@@ -3575,7 +5679,42 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Mimaki",
+      "model": "JFX-1631",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/southeastern-printing-now-offering-wide-format-sign-graphics-services/",
+      "note": "older article"
+     },
+     {
+      "brand": "Roland",
+      "model": "FJ-540",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/southeastern-printing-now-offering-wide-format-sign-graphics-services/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Christian Edwards Print & Graphics",
@@ -3597,7 +5736,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "American Litho",
@@ -3619,7 +5778,44 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Unknown",
+      "model": "UV wide-format to 126 in (brand not stated)",
+      "confidence": "likely",
+      "source_url": "https://www.alitho.com/capabilities-printing-services/wide-format-printing/",
+      "note": "brand not public"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Unknown",
+      "model": "digital routing / die-cutting",
+      "confidence": "likely",
+      "source_url": "https://www.alitho.com/capabilities-printing-services/wide-format-printing/",
+      "note": "brand not public"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter brand not public. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron.",
+     "Printer brand not public. Ask which flatbed they run, then send the matching Gilman print settings (HP, Fujifilm or Canon) or offer a test print."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Czarnowski",
@@ -3641,7 +5837,39 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "X24, C64",
+      "confidence": "confirmed",
+      "source_url": "https://www.kongsbergsystems.com/en/success-stories/czarnowski",
+      "note": "Kongsberg customer story"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg X24, C64 → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Kirkwood",
@@ -3663,7 +5891,65 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "Latex R2000 Plus",
+      "confidence": "likely",
+      "source_url": "https://www.kirkwooddirect.com/wp-content/uploads/2019/09/kirkwood-direct-equipment-list.pdf",
+      "note": "2019 list"
+     },
+     {
+      "brand": "EFI",
+      "model": "VUTEk GS3250LX",
+      "confidence": "likely",
+      "source_url": "https://www.kirkwooddirect.com/wp-content/uploads/2019/09/kirkwood-direct-equipment-list.pdf",
+      "note": "2019 list"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 L-3200",
+      "confidence": "likely",
+      "source_url": "https://www.kirkwooddirect.com/wp-content/uploads/2019/09/kirkwood-direct-equipment-list.pdf",
+      "note": "2019 list"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 L-3200 (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your HP Latex R2000 Plus (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings.",
+     "Your EFI VUTEk GS3250LX (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Ironmark",
@@ -3685,7 +5971,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Strategic Factory",
@@ -3707,7 +6013,64 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Mimaki",
+      "model": "JFX200-2513 EX",
+      "confidence": "confirmed",
+      "source_url": "https://strategicfactory.com/news/mimaki-large-format-printer/",
+      "note": ""
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "Esko cutter & router",
+      "confidence": "confirmed",
+      "source_url": "https://strategicfactory.com/about-us/equipment/",
+      "note": ""
+     },
+     {
+      "brand": "Summa",
+      "model": "cutter",
+      "confidence": "likely",
+      "source_url": "https://strategicfactory.com/news/mimaki-large-format-printer/",
+      "note": "search summary"
+     },
+     {
+      "brand": "MultiCam",
+      "model": "router",
+      "confidence": "likely",
+      "source_url": "https://strategicfactory.com/news/mimaki-large-format-printer/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "cut-multicam",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg Esko cutter & router → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your Summa (likely): Gilman has no Summa guide yet. Send the Zünd or Kongsberg tables as a starting point and ask Gilman for Summa settings.",
+     "Your MultiCam (likely) → Gilman MultiCam guide with INFINITY bits, RPM and feed rates."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Imagine",
@@ -3729,7 +6092,73 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk HS125 Pro",
+      "confidence": "confirmed",
+      "source_url": "https://www.piworld.com/article/imagine-express-increases-capacity-factor-10-new-efi-vutek-hs125-pro-inkjet-press/",
+      "note": ""
+     },
+     {
+      "brand": "Durst",
+      "model": "textile",
+      "confidence": "likely",
+      "source_url": "https://anyflip.com/pidm/kkaz/basic",
+      "note": "equipment list via search"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 XL",
+      "confidence": "likely",
+      "source_url": "https://anyflip.com/pidm/kkaz/basic",
+      "note": "equipment list via search"
+     },
+     {
+      "brand": "Kongsberg",
+      "model": "XL-24",
+      "confidence": "likely",
+      "source_url": "https://anyflip.com/pidm/kkaz/basic",
+      "note": "equipment list via search"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 XL (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Kongsberg XL-24 (likely) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your EFI VUTEk HS125 Pro → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Durst textile (likely) → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Shapco Printing",
@@ -3751,7 +6180,65 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk Q3h XP, Pro 30f",
+      "confidence": "likely",
+      "source_url": "https://www.shapco.com/why-shapco/equipment-list/",
+      "note": "site list via search"
+     },
+     {
+      "brand": "HP",
+      "model": "Latex 60 in",
+      "confidence": "likely",
+      "source_url": "https://www.shapco.com/why-shapco/equipment-list/",
+      "note": "site list via search"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "flatbed cutting/routing",
+      "confidence": "likely",
+      "source_url": "https://www.shapco.com/why-shapco/equipment-list/",
+      "note": "site list via search"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "q-hp-r530",
+     "g-hp-r2000",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI VUTEk Q3h XP, Pro 30f (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your HP Latex 60 in (likely) → INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530, and Gilman publishes HP R2000 print settings."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-hp-r530",
+     "br-hp-r2000",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Visions Inc.",
@@ -3773,7 +6260,53 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "FabriVU 340i Plus",
+      "confidence": "likely",
+      "source_url": "https://linkedin.com/in/brian-offerdahl-33aa295a",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 L-3200",
+      "confidence": "likely",
+      "source_url": "https://linkedin.com/in/brian-offerdahl-33aa295a",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 L-3200 (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your EFI FabriVU 340i Plus (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Marketing.com",
@@ -3795,7 +6328,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "NextPage",
@@ -3817,7 +6370,35 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "Canon",
+      "model": "Colorado 1650",
+      "confidence": "likely",
+      "source_url": "https://gonextpage.com/5-types-of-large-format-print-solutions-to-consider/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "HATTERAS",
@@ -3839,7 +6420,62 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350",
+      "confidence": "confirmed",
+      "source_url": "https://www.hatteras.us/hatteras-adds-new-durst-p5-350-to-its-fleet-of-large-format-presses/",
+      "note": ""
+     },
+     {
+      "brand": "EFI",
+      "model": "VUTEk HS125 Pro, GS3250LX Pro",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/hatteras-press-tinton-falls-n-j-expands-into-wide-format-digital-printing-with-efi/",
+      "note": "older article"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Zund",
+      "model": "G3 3XL-3200",
+      "confidence": "likely",
+      "source_url": "https://www.piworld.com/article/hatteras-drives-growth-with-three-strategic-investments/",
+      "note": "search summary"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-zund",
+     "cut-res-zund",
+     "cut-align-zund",
+     "cut-eaglecell",
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Zünd G3 3XL-3200 (likely) → Gilman Zünd cutting guide has the tool, blade and speed for InSite, INFINITY, Ryno Board, EAGLECELL and Resilient. Setup starts from known settings instead of test cuts.",
+     "Your Durst P5 350 → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your EFI VUTEk HS125 Pro, GS3250LX Pro (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-infinity",
+     "br-insite-zund",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Candid Litho/Candid Worldwide",
@@ -3861,7 +6497,70 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "EFI",
+      "model": "VUTEk GS5000R, GS3250",
+      "confidence": "confirmed",
+      "source_url": "http://www.candidww.com/wp-content/uploads/2020/02/CANDID_Equipmentlist.pdf",
+      "note": "2020 list"
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "Inca Onset S40i",
+      "confidence": "confirmed",
+      "source_url": "http://www.candidww.com/wp-content/uploads/2020/02/CANDID_Equipmentlist.pdf",
+      "note": "2020 list"
+     },
+     {
+      "brand": "Canon",
+      "model": "Arizona 6170 XTS",
+      "confidence": "confirmed",
+      "source_url": "http://www.candidww.com/wp-content/uploads/2020/02/CANDID_Equipmentlist.pdf",
+      "note": "2020 list"
+     }
+    ],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "cutter/router",
+      "confidence": "confirmed",
+      "source_url": "http://www.candidww.com/wp-content/uploads/2020/02/CANDID_Equipmentlist.pdf",
+      "note": "2020 list"
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "g-fujifilm",
+     "b-canon-arizona",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides.",
+     "Your EFI VUTEk GS5000R, GS3250 → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Your Fujifilm Inca Onset S40i → Gilman publishes tested Onset/Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+     "Your Canon Arizona → Gilman and Canon issued a joint Arizona technical bulletin for INFINITY and InSite (ink advice)."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-fuji",
+     "br-canon",
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Graphic Village",
@@ -3883,7 +6582,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Repacorp Label Products",
@@ -3905,7 +6624,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Think Patented",
@@ -3927,7 +6666,39 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [],
+    "cutters": [
+     {
+      "brand": "Kongsberg",
+      "model": "XN24 (Esko)",
+      "confidence": "confirmed",
+      "source_url": "https://thinkpatented.com/does/print",
+      "note": ""
+     }
+    ],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "cut-kongsberg",
+     "cut-res-kongsberg",
+     "cut-align-kongsberg",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Kongsberg XN24 (Esko) → Gilman Kongsberg cutting guide lists the tool, bit and speed for InSite and INFINITY, plus Resilient and Resilient Align guides."
+    ],
+    "barrier_removers": [
+     "br-cut",
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "The Phoenix Group",
@@ -3949,7 +6720,42 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "likely",
+    "printers": [
+     {
+      "brand": "HP",
+      "model": "wide-format",
+      "confidence": "likely",
+      "source_url": "https://www.phoenixlitho.com/services/wide-format-printing/",
+      "note": "search summary"
+     },
+     {
+      "brand": "Fujifilm",
+      "model": "wide-format",
+      "confidence": "likely",
+      "source_url": "https://www.phoenixlitho.com/services/wide-format-printing/",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "The YGS Group",
@@ -3971,7 +6777,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Midstates Inc. Print & Media Solutions",
@@ -3993,7 +6819,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Ennis Inc.",
@@ -4015,7 +6861,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   },
   {
    "company": "Orora Visual (dba Orora Visual and Orora Packaging Solutions)",
@@ -4037,7 +6903,47 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "confirmed",
+    "printers": [
+     {
+      "brand": "Durst",
+      "model": "P5 350",
+      "confidence": "confirmed",
+      "source_url": "https://www.ororavisual.com/news/orora-visual-ramps-up-digital-print-manufacturing-offering",
+      "note": ""
+     },
+     {
+      "brand": "EFI",
+      "model": "VUTEk HS100 (6)",
+      "confidence": "likely",
+      "source_url": "https://www.ororavisual.com/news/orora-visual-ramps-up-digital-print-manufacturing-offering",
+      "note": "search summary"
+     }
+    ],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "d-durst",
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Your Durst P5 350 → Durst has live-printed on Gilman Resilient and INFINITY at a Gilman event. Offer those samples (it's a demo, not a certification).",
+     "Your EFI VUTEk HS100 (6) (likely) → offer a test print on INFINITY and InSite Reveal samples. Don't say \"preloaded specs\" yet; Gilman hasn't published that.",
+     "Cutter not yet found publicly. Ask what they cut on: Gilman has guides for Zünd, Kongsberg, Colex, MultiCam, Onsrud and Elitron."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": [
+     "u-vutek"
+    ]
+   }
   },
   {
    "company": "Peczuh Printing & Paperbox",
@@ -4059,7 +6965,27 @@
     "INFINITY",
     "EAGLECELL"
    ],
-   "end_user_count": 0
+   "end_user_count": 0,
+   "equipment": {
+    "status": "not_found",
+    "printers": [],
+    "cutters": [],
+    "checked": "2026-11-13"
+   },
+   "gilman_fit": {
+    "resources": [
+     "s-infinity",
+     "s-insite",
+     "s-library"
+    ],
+    "talking_points": [
+     "Equipment not yet found in public sources. Ask which printer and cutter they run, then send the matching Gilman guide (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron, HP, Fujifilm or Canon)."
+    ],
+    "barrier_removers": [
+     "br-docs"
+    ],
+    "unverified": []
+   }
   }
  ],
  "leads": [
@@ -10912,20 +13838,6 @@
  ],
  "news": [
   {
-   "id": "ce4daec7493c",
-   "date_et": "2026-11-13 07:09 ET",
-   "published_iso": "2026-11-13T12:09+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Retail Systems",
-   "title": "Matalan to open four new stores ahead of Christmas - Retail Systems",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPZFlNZUpkeERwV3g5Xy02ck9OUEFNOHBKOUozeXFKR0NFUU9nbkFMWkdwUkVpTmxPYWxvRVdrOHQycDdjV19hbFAzZXV2UThmNFNsNXRQSGtLemlxYkVqZzB2dE1raTVCM0dKb3I2eFRRb2tyY2ZqWXRTSVd5aFVZc01PSUx0Rk9YSFplRA?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
    "id": "22f729aa2802",
    "date_et": "2026-11-13 06:32 ET",
    "published_iso": "2026-11-13T11:32+00:00",
@@ -10934,20 +13846,6 @@
    "source": "RestaurantNews.com",
    "title": "Paris Baguette Celebrates Grand Opening of New Freehold Café on November 13 - RestaurantNews.com",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNOHlKeldrM1kzcWVsWmRmQ3JaUERLQWJJQU9ySVJXSnpacEtkdnFobUhKcGZ4WjJsU3Bjd05vOTVqS3Q3YXQyaXVRSkNBMzN6cDNPdW9VM2t3QnZxTzh1dkNmUlpKR094aDJUbUxhdlBNT092eXNIX1U4cU1TSTFJa0RKRGtvbE5IaXBNMmJB?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "3f5f5d041dfe",
-   "date_et": "2026-11-13 06:00 ET",
-   "published_iso": "2026-11-13T11:00+00:00",
-   "type": "opening",
-   "segment": "QSR / restaurant",
-   "source": "TradingView",
-   "title": "Happy Belly Food Group's Heal Wellness QSR Announces the Grand Opening of Its 56th Location in Collingwood, Ontario - TradingView",
-   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxPM3h6SzNDLWdxWFJ1bjdVWUFUQ21GVTdhMWFaS1pFbmEyd1RRUGR5R0hZRWE1ZFA5TEItOHhtbG1Ic1hkWjZ5Qm1uTDktNldyZjVXS0pCaUpsaFM0ck9sWDQ0UjlYQTI1cU1Cbmt5VzRoQkQ2RGhkbGtJMjg3RjFBUnllM0hFNW95Z1ptTHpYY0ZsRWVZV0Zrd2lPSHpHdU81cFgyNHQwYVF6aG1Damw4UzJIdFY5cUJWZjV1b01rYzByeFdCeDFnbVlONlRlRWZ0QUtubjZpTDg2VlBMN3NsZi01MWN5VzdLSG1sV0NrcUd4R1lkRUU0ZjVpZWo1eHBhSTVTcDFGVEQ?oc=5",
    "states": [],
    "printers": [],
    "end_users": [],
@@ -10980,34 +13878,6 @@
    "source": "The Gardner News",
    "title": "Northshore Mall has opened 5 new stores this year. See the full lineup - The Gardner News",
    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPTUR2QllJcU92QlVvbDNMS2F3VWRnZFlDS2pVNTR4SW1tbEdRRGY4NFVzNThNYVBQNFRaZDJLd0xVak5ZVDNQWThNQktGenFUOEhsamFGaE83T3J1bkRxejI3TTlhUEtvQVU2aFJwOU1Rb0N0TVNWaE5Hekh4d05QdTdiRTNXUWtxVm1iaEpMRjZ0THZfbGZDRzQ4cWpUU2JiOEZ0aDJER0pjNXlRZTFycVlWQVk2UDRVWDAySkFsUUZINnNWenJzYmxFMkNxRVIzdzk1VE5mZzBXdw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "9af1eb2dd612",
-   "date_et": "2026-11-13 05:02 ET",
-   "published_iso": "2026-11-13T10:02+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "InteriorDaily",
-   "title": "JYSK Ukraine accelerates expansion with five new stores planned - InteriorDaily",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOc19BU3l2NTk2d0FxalFvazN3MENiWnd1S3JNYXRQOG1DTE85dGt4c2NaaDIzXzMzSWVhZEdvSlcwTWRYcWV3eDhCQmUxVTBoWmlpMktYdUIzOTNTU1BQeURqOWcybWVEb2hiVGtXaU1iWnpPWTczTk9HQjNIZE0zd3V5X3JHODZpUVowY3JxV29QSWNxcVpFNkVnaHByQVJFdzgyYXZNSC1uQ3JjVlY4?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "fd21e8507f29",
-   "date_et": "2026-11-13 02:53 ET",
-   "published_iso": "2026-11-13T07:53+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "FashionNetwork - The World's Fashion Business News",
-   "title": "Matalan opens and reopens five new stores, reports strong trading for upgraded Derby - FashionNetwork - The World's Fashion Business News",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSG9jYUZiNEMxSXFqa3o2QVBqSDNlcDhpVXp6OG1rQU5KclExc0E1dDhJSVhvZXo4blBaTUxhUnJHSkZUSDJhRUt4VlhhTHpWVk1EVnRGTEc3SVM3UHA1Mmk2ckFXQlRtTXl3NUFMYTN6c05JTEZWTXhjbDFKZzJLeEhQanFjdHdUQ3RlRDM1M3ZKR1ZDOURnT1N1cVRHY19HcE1qUmNQX3dMNzdUeHg1eFpNRU5tOS1zdTduck1ZZlEtb3RSR2F6RkY4Yw?oc=5",
    "states": [],
    "printers": [],
    "end_users": [],
@@ -11069,36 +13939,6 @@
    "states": [],
    "printers": [],
    "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "1edcb83c6431",
-   "date_et": "2026-11-12 17:47 ET",
-   "published_iso": "2026-11-12T22:47+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Daily Hive",
-   "title": "Vancouver's first budget-friendly FreshCo grocery store opens in former Toys 'R' Us, beneath landmark BowMac sign - Daily Hive",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNEJ4TkFvdTVENzg1ZnlKWW1nUTAybVNoRnp3MnY5TUJiQTgwNm5ZWXpoaUozbGtiZ0RrMWxpZENPRXl4S3RDZ1lOOFJxZFp0YnN5Qi00d0VQSmQtSEE4VzE1SHNEWkZaTXdxUUw2a3Z1Q2FQQm1ZTlpSWi16UnhHLXJDXzJZRjdNNGJCZzFIT1M?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "55c4437a48f3",
-   "date_et": "2026-11-12 17:22 ET",
-   "published_iso": "2026-11-12T22:22+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Narcity",
-   "title": "Another Costco store in Ontario is opening this month and it has a gas station - Narcity",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNY24xNzNETGZQeXViRER0SURwOC01RmNEak5RZHMyclVjekR2c1djMHc5b0FTSGM0Tm8ySlBmWExEM3BvTjJjTU9DaVE0VnNPYnF6TUZqUzA3aVRLN0hfNmRzSXFmLV9BUURCQVdSc1RrLWZIdlluVlY2UVBlQlcwVGduNEp0RGROcEE?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Costco"
-   ],
    "linked": []
   },
   {
@@ -11418,20 +14258,6 @@
    "linked": []
   },
   {
-   "id": "61c5c316c803",
-   "date_et": "2026-11-12 09:00 ET",
-   "published_iso": "2026-11-12T14:00+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Halifax Courier",
-   "title": "Supermarket's licence bid for new store in Calderdale village - Halifax Courier",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOV2xKLWJMbUFQSUU3SU0tMFozeDdLTHhSai1PUUZ5dW02VnNwbm92dlRLYlUzWEV4NXF3Q2tWaXVBdFp4blJvUnR0OWdBXzljZldWRllFeERrODZfckFKcklfMnFvTTZSd1dFbFVkSHAzclg1anh0MzkzR25iSG5Cb0d3Njk0ZUNLdmEtYllOQ21GVGpFNzlUTGZaQ2NoUHktXzYxdWJTVDNYc0VDWjdV?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
    "id": "b3e87aefebae",
    "date_et": "2026-11-12 08:56 ET",
    "published_iso": "2026-11-12T13:56+00:00",
@@ -11486,50 +14312,6 @@
    ]
   },
   {
-   "id": "960a1cbe7cca",
-   "date_et": "2026-11-12 07:40 ET",
-   "published_iso": "2026-11-12T12:40+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Madrid Secreto",
-   "title": "Costco Delights Its Madrid Customers: Prepares to Open a Third Store with Its Own Gas Station - Madrid Secreto",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5tNFlpLURTcldCM3REd2tLN2UyUm5yVnNjU1gxRWRSUXhWSG45RFJwbVNQaTdLRk5BSUFPNHlGVnlmYS1naml5a1I2RnJramFQR2g5X09oc3pYcFprdDNUMFl5VHd1N2oz?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Costco"
-   ],
-   "linked": []
-  },
-  {
-   "id": "96f06406f29d",
-   "date_et": "2026-11-12 07:33 ET",
-   "published_iso": "2026-11-12T12:33+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "UA.NEWS",
-   "title": "The JYSK chain is expanding in Ukraine: where the new stores will open - UA.NEWS",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPdVB1Mi15LW81ZTU4bmVTZFhxSWF5SGNodkVtenkxOElMTEllQXJLQV9tNEsySFM2c0ZKRGtXcS1ZN0JYUV9PTTBVLTMyZzJEb2lwT1YxdEg1NmxpckRTLXpDOGVsbjAxYTl0WjJxSEhfWkJBX2hwemNHdVlmSlEyQmJMODI3c2UwOWpxVmRIR1lxT2trQUkxa21xcw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "e6d22cd4fcb3",
-   "date_et": "2026-11-12 07:16 ET",
-   "published_iso": "2026-11-12T12:16+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Completely Retail News",
-   "title": "Waitrose opens 15,000 sq ft supermarket in Hale Barns, Greater Manchester - Completely Retail News",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQdl80YkdrSWZJWHZaYjVTSkoyNS0zQlUyaFZqYzAtVC1na1kteTJZaG1xQUYtZWRrTDNZNWNYZE9sSmdPTG9DNlVjM00tQU5iMUNQWUZhem1rc0tfSzktRFFHczl4UTlocEw2QWRRU2ZBX3NOQTRnVC1aRnpOMDBHS0k4NXhlRDBQZHF0Ql92bF94UUMwUGp4TmxhU1p0Ulc3NnhBYmUtbFJ5YTVR?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
    "id": "12073ebfc000",
    "date_et": "2026-11-12 07:15 ET",
    "published_iso": "2026-11-12T12:15+00:00",
@@ -11566,36 +14348,6 @@
    "linked": [
     "Baesman Group → Kroger"
    ]
-  },
-  {
-   "id": "d2a34b94a271",
-   "date_et": "2026-11-12 06:46 ET",
-   "published_iso": "2026-11-12T11:46+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Grocery Gazette",
-   "title": "Waitrose opens new supermarket in Greater Manchester - Grocery Gazette",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZ0RBQ1c2MnRSYlZYNUlIMmdPOExLMUVBYkpYVEZuRkVnSWpsZGZqRG10c1ZSUVo0Ni1WZ1FDZlZ2bjQ2RFppaFk0ckhYT1dRYUhjdU9yUUhKZWlCdEJrdGRNcE5EcmRYVHBrYjBWSV9nR2F0YTJVTmZQdFNWSTdHanRETkNLUjZaa1NVc2hZcndySC0tQjVLcmFzb0hrZw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "18efb09735d9",
-   "date_et": "2026-11-12 06:21 ET",
-   "published_iso": "2026-11-12T11:21+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Bucks Free Press",
-   "title": "Lidl confirms opening date for new Buckinghamshire supermarket - Bucks Free Press",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOalU0Tmg2R3JDQkRTTHRQU3dmUlZIYUhSUDRQaXExZTdlcDNMSUFzbmhkX0NSclRzX2lacjQybDNQSGE3VHZ4cmN0SkRmdWJNRWh5X1AydXhSdTJPc29DeFliZ21BdG1Wd3p4OExVSHBlYi1hQkU1SG1xbFBjLTRPYktVcFJoT3lqVkFZZ2lHSXVoNDhDdjZKemc1aw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Lidl"
-   ],
-   "linked": []
   },
   {
    "id": "941b65ffc4d3",
@@ -11635,50 +14387,6 @@
     "BluEdge → Walmart",
     "Miller Zell → Walmart"
    ]
-  },
-  {
-   "id": "3470a0c386f2",
-   "date_et": "2026-11-12 05:29 ET",
-   "published_iso": "2026-11-12T10:29+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Комерсант Український",
-   "title": "JYSK to Open Five New Stores in Ukraine: The Chain’s Plans for Winter and Spring - Комерсант Український",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPREtVTnkwWEVaQW4xRjg0UlJlRU02eGtiWXFETHcyYWdwb0REOGZOanowbGNSQU9YNkpUNlFQZVh1WWFVNm43UUFWVHRRV1pwOEZFdUt1OFJxZTR1SlQ5T2ltUGdWYWY4S0dITjdWQ25ta0VnMU0xYkF2ZEhxY2M2YWQ2bnQwSG1oVHp3eWRKSVcxMEtoZjhzVzZLVXJrUllXQktR?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "650ef872ced1",
-   "date_et": "2026-11-12 03:58 ET",
-   "published_iso": "2026-11-12T08:58+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "TheBusinessDesk.com",
-   "title": "Retailer Matalan accelerates store investment with four new openings - TheBusinessDesk.com",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSzRvQV9SalFrTno2UHhLMGt6aG9WRVhKTUlzdHN3cWU0V3ZtSTZCWHFXYndwd3REMDA1Y1VUX3doMm5GTUNkNS14OFhMcTFxYVJKM1VUc3Uza0MtUmxKZVlVMUp5eFIyNzRpR3llWk1EaVk1TS1WSU1YU29mWWcxUVlZc3lSTjBwa3hoUTRZT3FfOWotVjhqdDU3NTdFa2x5dVJSZURPb1VHakhEZmotYmVUcE83d09ud2FTOWo5UmY?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "91e9f97a5c2c",
-   "date_et": "2026-11-12 03:34 ET",
-   "published_iso": "2026-11-12T08:34+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Odessa Journal",
-   "title": "Danish Retailer JYSK to Open Five New Stores in Ukraine - Oj - Odessa Journal",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQSEl3MlFqYnpkS2xWZHFkeHNscU9rdUR5bnQ5ejVCSGNpRUNyc0ZaQXE2MkdKVUI5djU0SXg1SXB0dEVsd1RqelpoQVc3UkhXQnhiZkQyektvVGhGM1dUeVBGMFFLLVRCNGdlZUtmYzRhX1M3bzN6Y2NWNEs2N21ETEV0ZnhHNVJiLW55RWswVTVaMW5kSTVTV0lSRQ?oc=5",
-   "states": [
-    "TX"
-   ],
-   "printers": [],
-   "end_users": [],
-   "linked": []
   },
   {
    "id": "e02cb8b23954",
@@ -13087,20 +15795,6 @@
    "linked": []
   },
   {
-   "id": "4baf460f95c1",
-   "date_et": "2026-11-10 06:53 ET",
-   "published_iso": "2026-11-10T11:53+00:00",
-   "type": "expansion",
-   "segment": "Mass / big-box retail",
-   "source": "Talking Retail",
-   "title": "Go Local Wholesale expands retailer support team in national growth push - Talking Retail",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQVGRpbWlvR182YU1mUGxkN3R0QnhSSklNZmRHOExnQ0o2U0tXTUlvZmh1dlU0LXVuM1B0OFpVUFBNNWxrWUl3RDBXMEJ6S3lMUDRuWU5DOEdTb3QwVjZqSkpmYkVtQ3JIRlIzdkt3TUxIc3Jxb2JzNWhTY1JDc1VHY2hYNDF3ZW52ekljNWFkTjlZRC1rZjJDTG9EbzZQZzc4YjdJV0RzYUZ6RzMzMDcyYnZPdDY2cHNnNi1FWnBmU1A?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
    "id": "cfca09a81c27",
    "date_et": "2026-11-10 05:04 ET",
    "published_iso": "2026-11-10T10:04+00:00",
@@ -13388,9 +16082,359 @@
   },
   "dropped": {
    "too old": 205,
-   "non-US": 11,
+   "non-US": 27,
    "not a store/printer event": 5,
    "headline names an old year": 2
+  }
+ },
+ "gilman_resources": [
+  {
+   "id": "cut-zund",
+   "kind": "cutting",
+   "oem": "Zund",
+   "title": "Gilman Cutting Guidelines – Zünd",
+   "products": [
+    "InSite",
+    "INFINITY",
+    "Ryno Board",
+    "EAGLECELL",
+    "Resilient"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/CUTTING-GUIDELINES-ZUND.pdf"
+  },
+  {
+   "id": "cut-res-zund",
+   "kind": "cutting",
+   "oem": "Zund",
+   "title": "Resilient Cutting Guidelines – Zünd",
+   "products": [
+    "Resilient"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Cutting-Guidelines-ZUND.pdf"
+  },
+  {
+   "id": "cut-align-zund",
+   "kind": "cutting",
+   "oem": "Zund",
+   "title": "Resilient Align Cutting Guidelines – Zünd",
+   "products": [
+    "Resilient Align"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Align-Cutting-Guidelines-ZUND.pdf"
+  },
+  {
+   "id": "cut-kongsberg",
+   "kind": "cutting",
+   "oem": "Kongsberg",
+   "title": "Gilman Cutting Guidelines – Kongsberg",
+   "products": [
+    "InSite",
+    "INFINITY"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/CUTTING-GUIDELINES-KONGSBERG.pdf"
+  },
+  {
+   "id": "cut-res-kongsberg",
+   "kind": "cutting",
+   "oem": "Kongsberg",
+   "title": "Resilient Cutting Guidelines – Kongsberg",
+   "products": [
+    "Resilient"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Cutting-Guidelines-KONGSBERG.pdf"
+  },
+  {
+   "id": "cut-align-kongsberg",
+   "kind": "cutting",
+   "oem": "Kongsberg",
+   "title": "Resilient Align Cutting Guidelines – Kongsberg",
+   "products": [
+    "Resilient Align"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Align-Cutting-Guidelines-KONGSBERG.pdf"
+  },
+  {
+   "id": "cut-res-colex",
+   "kind": "cutting",
+   "oem": "Colex",
+   "title": "Resilient Cutting Guidelines – Colex",
+   "products": [
+    "Resilient"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Cutting-Guidelines-COLEX.pdf"
+  },
+  {
+   "id": "cut-align-colex",
+   "kind": "cutting",
+   "oem": "Colex",
+   "title": "Resilient Align Cutting Guidelines – Colex",
+   "products": [
+    "Resilient Align"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/10/Resilient-Align-Cutting-Guidelines-COLEX.pdf"
+  },
+  {
+   "id": "cut-multicam",
+   "kind": "cutting",
+   "oem": "MultiCam",
+   "title": "Gilman Cutting Guidelines – MultiCam",
+   "products": [
+    "INFINITY"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/CuttingGuidelines-MultiCam.pdf"
+  },
+  {
+   "id": "cut-onsrud",
+   "kind": "cutting",
+   "oem": "Onsrud",
+   "title": "Gilman Cutting Guidelines – Onsrud (router bits)",
+   "products": [
+    "INFINITY"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/CuttingGuidelines-ONSRUD.pdf"
+  },
+  {
+   "id": "cut-elitron",
+   "kind": "cutting",
+   "oem": "Elitron",
+   "title": "Gilman Cutting Guidelines – Elitron",
+   "products": [
+    "INFINITY",
+    "InSite",
+    "Resilient"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/CUTTING-GUIDELINES-ELITRON.pdf"
+  },
+  {
+   "id": "cut-eaglecell",
+   "kind": "cutting",
+   "oem": "Any cutter",
+   "title": "EAGLECELL Cutting Guidelines",
+   "products": [
+    "EAGLECELL"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2026/07/EAGLECELL-cutting-guidelines.pdf"
+  },
+  {
+   "id": "q-hp-r530",
+   "kind": "qualification",
+   "oem": "HP",
+   "title": "HP Latex R530 certification: INFINITY, InSite, Resilient, EAGLECELL",
+   "products": [
+    "INFINITY",
+    "InSite",
+    "Resilient",
+    "EAGLECELL"
+   ],
+   "url": "https://gilmanbrothers.com/news/",
+   "claim": "Gilman News: \"now officially certified on the HP Latex R530 Printer\""
+  },
+  {
+   "id": "q-hp-pagewide",
+   "kind": "qualification",
+   "oem": "HP",
+   "title": "InSite Reveal globally approved for HP PageWide XL Pro (sold by HP as \"HP Production Foamplus Board\")",
+   "products": [
+    "InSite Reveal"
+   ],
+   "url": "https://www.wideformatimpressions.com/article/gilman-brothers-insite-reveal-approved-for-the-hp-pagewide-xl-pro/",
+   "claim": "Wide-format Impressions, Apr 17 2024; also on gilmanbrothers.com/news"
+  },
+  {
+   "id": "g-hp-r2000",
+   "kind": "printing",
+   "oem": "HP",
+   "title": "Gilman Printing Guidelines – HP Latex R2000",
+   "products": [
+    "InSite Reveal",
+    "INFINITY",
+    "InSite Canvas"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/printing-guidelines-hp.pdf"
+  },
+  {
+   "id": "g-fujifilm",
+   "kind": "printing",
+   "oem": "Fujifilm",
+   "title": "Gilman Printing Guidelines – Fujifilm Onset X2 / Acuity (modes, UV, adhesion tests)",
+   "products": [
+    "INFINITY",
+    "InSite Reveal",
+    "InSite Canvas"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/PRINTING-GUIDELINES-FUJIFILM.pdf"
+  },
+  {
+   "id": "b-canon-arizona",
+   "kind": "bulletin",
+   "oem": "Canon",
+   "title": "Canon Océ Arizona Technical Bulletin (Gilman + Canon, Dec 2015; IJC258 ink advice)",
+   "products": [
+    "INFINITY",
+    "InSite"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/TechnicalBulletin-CanonOceArizonaPrinters-122115.pdf"
+  },
+  {
+   "id": "d-durst",
+   "kind": "demo",
+   "oem": "Durst",
+   "title": "Durst live-printed on Resilient and INFINITY at a Gilman event (demo, not a certification)",
+   "products": [
+    "Resilient",
+    "INFINITY"
+   ],
+   "url": "https://gilmanbrothers.com/news/"
+  },
+  {
+   "id": "s-infinity",
+   "kind": "spec",
+   "oem": "",
+   "title": "Technical Specifications – INFINITY",
+   "products": [
+    "INFINITY"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2025/04/Technical-Specifications-INFINITY-2.pdf"
+  },
+  {
+   "id": "s-insite",
+   "kind": "spec",
+   "oem": "",
+   "title": "Technical Specifications – InSite",
+   "products": [
+    "InSite"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/Technical-Specifications-Insite.pdf"
+  },
+  {
+   "id": "s-ryno",
+   "kind": "spec",
+   "oem": "",
+   "title": "Technical Specifications – Ryno Board",
+   "products": [
+    "Ryno Board"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/Technical-Specifications-Ryno-Board.pdf"
+  },
+  {
+   "id": "s-eaglecell-tol",
+   "kind": "spec",
+   "oem": "",
+   "title": "EAGLECELL Tolerances",
+   "products": [
+    "EAGLECELL"
+   ],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2026/07/EAGLECELL-Tolerances-1.pdf"
+  },
+  {
+   "id": "s-master",
+   "kind": "spec",
+   "oem": "",
+   "title": "Product Master Brochure",
+   "products": [],
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2026/07/PRODUCT-MASTER-BROCHURE.pdf"
+  },
+  {
+   "id": "s-library",
+   "kind": "spec",
+   "oem": "",
+   "title": "Gilman Resource Library (all guides, SDS, sell sheets)",
+   "products": [],
+   "url": "https://gilmanbrothers.com/resource-library/"
+  }
+ ],
+ "equipment_brands": {
+  "printers": [
+   "Agfa",
+   "Canon",
+   "Durst",
+   "EFI",
+   "Fujifilm",
+   "HP",
+   "Landa",
+   "Mimaki",
+   "Roland",
+   "iJetColor",
+   "swissQprint"
+  ],
+  "cutters": [
+   "Colex",
+   "Kongsberg",
+   "MultiCam",
+   "Summa",
+   "Zund",
+   "iCut"
+  ]
+ },
+ "barrier_removers": [
+  {
+   "id": "br-cut",
+   "text": "Gilman publishes tool, blade and speed settings for 6 cutter brands (Zünd, Kongsberg, Colex, MultiCam, Onsrud, Elitron), so cutting needs no trial and error.",
+   "url": "https://gilmanbrothers.com/resource-library/"
+  },
+  {
+   "id": "br-hp-r530",
+   "text": "INFINITY, InSite, Resilient and EAGLECELL are certified on the HP Latex R530.",
+   "url": "https://gilmanbrothers.com/news/"
+  },
+  {
+   "id": "br-pagewide",
+   "text": "InSite Reveal is globally approved for HP PageWide XL Pro, and HP sells it as HP Production Foamplus Board.",
+   "url": "https://www.wideformatimpressions.com/article/gilman-brothers-insite-reveal-approved-for-the-hp-pagewide-xl-pro/"
+  },
+  {
+   "id": "br-fuji",
+   "text": "Tested Fujifilm Onset X2 / Acuity print modes, UV settings and adhesion results for INFINITY and InSite Reveal.",
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/PRINTING-GUIDELINES-FUJIFILM.pdf"
+  },
+  {
+   "id": "br-hp-r2000",
+   "text": "Published HP Latex R2000 print settings for InSite Reveal, INFINITY and InSite Canvas.",
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/printing-guidelines-hp.pdf"
+  },
+  {
+   "id": "br-canon",
+   "text": "Canon Océ Arizona technical bulletin, issued jointly with Canon (ink advice for styrene and paper faces).",
+   "url": "https://gilmanbrothers.com/wp-content/uploads/2024/03/TechnicalBulletin-CanonOceArizonaPrinters-122115.pdf"
+  },
+  {
+   "id": "br-infinity",
+   "text": "INFINITY needs no pre-cleaning, uses about 7% less ink for full coverage and cuts about 30% faster on digital cutters such as Zünd (Gilman claim).",
+   "url": "https://gilmanbrothers.com/infinity/"
+  },
+  {
+   "id": "br-insite-zund",
+   "text": "InSite Reveal: \"Superior Cutting Performance on ZÜND\" (Gilman claim).",
+   "url": "https://gilmanbrothers.com/insite-reveal-2/"
+  },
+  {
+   "id": "br-docs",
+   "text": "Spec sheets, SDS and tolerances are public and ready for a printer's QA file.",
+   "url": "https://gilmanbrothers.com/resource-library/"
+  }
+ ],
+ "equipment_unverified": [
+  {
+   "id": "u-vutek",
+   "oem": "EFI",
+   "claim": "Gilman InSite specs preloaded on EFI VUTEk printers",
+   "status": "Not verified. No VUTEk/EFI profile, certification or preloaded media found on gilmanbrothers.com (sitemap, resource library, news, all 140 PDFs) or in public EFI pages. EFI says VUTEk media profiles are built or downloaded per media in Fiery XF. Ask Gilman for written confirmation before using it.",
+   "checked": [
+    "https://gilmanbrothers.com/resource-library/",
+    "https://gilmanbrothers.com/news/",
+    "https://communities.efi.com/s/article/Selecting-the-correct-profiles-after-an-ink-change-on-a-VUTEk-printer?language=en_US"
+   ]
+  }
+ ],
+ "equipment_notice": "EFI, VUTEk and Fiery are trademarks of Electronics For Imaging, Inc. Durst is a trademark of Durst Group AG. HP, Latex, PageWide and Indigo are trademarks of HP Inc. Canon, Océ, Arizona and Colorado are trademarks of Canon Inc. and its affiliates. Fujifilm, Acuity and Inca Onset are trademarks of FUJIFILM Corporation and its affiliates. Zünd is a trademark of Zünd Systemtechnik AG. Kongsberg is a trademark of Kongsberg Precision Cutting Systems. Agfa and Jeti are trademarks of Agfa-Gevaert. swissQprint, MultiCam, Colex, Summa, Onsrud, Elitron, Mimaki, Roland, Landa, iJetColor and other names are trademarks of their respective owners. Equipment facts come from public sources and may be out of date. No OEM endorses Gilman or this list unless stated in the cited source.",
+ "equipment_meta": {
+  "version": "equipment/1",
+  "researched_et": "2026-11-13",
+  "method": "Printer websites (equipment/capabilities pages) + targeted public search; trade press, OEM case studies, equipment lists.",
+  "counts": {
+   "confirmed": 34,
+   "likely": 23,
+   "not_found": 15
   }
  }
 }

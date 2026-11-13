@@ -1,5 +1,5 @@
 /* Gilman Sales Leads service worker. Bump CACHE on every app release. */
-const CACHE = 'sales-leads-v1';
+const CACHE = 'sales-leads-v2';
 const DATA = 'sales-leads-data.json';
 const ASSETS = ['./', 'index.html', 'offline.html', 'app.css', 'app.js', 'manifest.webmanifest', DATA,
   'icons/icon.svg', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/icon-maskable-512.png', 'icons/apple-touch-icon.png'];
