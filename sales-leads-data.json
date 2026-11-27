@@ -1,7 +1,7 @@
 {
  "schema": "pencil-sales-leads/1",
- "generated_et": "2026-11-26 06:29 ET",
- "generated_iso": "2026-11-26T11:28:35+00:00",
+ "generated_et": "2026-11-27 06:33 ET",
+ "generated_iso": "2026-11-27T11:32:21+00:00",
  "notice": "Gilman Brothers, The Gilman Brothers Company and the product names INFINITY®, EAGLECELL®, InSite®, Reveal®, Ryno Board®, Gilco®, MountCor®, Resilient® and ADHERE™ are trademarks or registered trademarks of The Gilman Brothers Company. Printer, retailer, restaurant and brand names are trademarks of their respective owners; listing does not imply endorsement or a business relationship beyond the linked public source. Product fit is a suggestion. Public-source research for demo and internal sales planning only — no contact details are stored.",
  "sources": [
   {
@@ -13802,6 +13802,256 @@
  ],
  "news": [
   {
+   "id": "7ab3b676b0a9",
+   "date_et": "2026-11-26 15:04 ET",
+   "published_iso": "2026-11-26T20:04+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Thousand Oaks Acorn",
+   "title": "Whole Foods Market sets Dec. 17 opening date at The Promenade - Thousand Oaks Acorn",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcXlZQU9ieFBSSXhObFNDVUVWTWxpUkExWXhYekQ1S2hhWUZoN0ZidWFMWC16bTJ2alJIeG1YSERQX2t3QTV1a1JfRHBYZDdlU0Z3ejhwZFNXOFRNRTFVaTVuOXo3YlVlemlHTXpfQVBQSUxCQzdZeHNUYWMwd2FTbjdHOGtRUnFJSVZCd0FsSG52LU9ZckdlSV9n?oc=5",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [
+    "Whole Foods"
+   ],
+   "linked": []
+  },
+  {
+   "id": "8d62b285e736",
+   "date_et": "2026-11-26 14:29 ET",
+   "published_iso": "2026-11-26T19:29+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Camarillo Acorn",
+   "title": "Whole Foods Market sets Dec. 17 opening date at The Promenade - Camarillo Acorn",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUjRGNHJkcnlhRkgyZTBZNDdVR0VxM1dLOUFIVWpuUEZPQno3TVQ0Z2FBdjhXdm1TTkc0dkpkUUJCNkZYTW1zZGFvTjZuNXlVeEZCdi1rRnB2S2hnZ3kwRk80U3dUVW9rOXF1T25EZjM1TnExamZmMzNxWnVham5FWmJRRHphbzJDYjBFNG1xbHV6bmpBS2R5eEg2MDllX3N1VEtHSEVJWQ?oc=5",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [
+    "Whole Foods"
+   ],
+   "linked": []
+  },
+  {
+   "id": "98f687eb4b5e",
+   "date_et": "2026-11-26 13:30 ET",
+   "published_iso": "2026-11-26T18:30+00:00",
+   "type": "opening",
+   "segment": "C-store / fuel",
+   "source": "electrive.com",
+   "title": "IONNA opens 22-bay charging hub in California and adds Tesla Autocharge - electrive.com",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPYTN3Y29Uc1RVMF8yRHd1NFZ1QmNGMmRpQjFoaDVuRWwweW1LUW0ybDlHdERmSTNoZzJkVnIyNjgwXzBPUEYtUmEzVGNxX1Q0cVBtb3NudWpwVjFiVG9KTGFUbnVmRnR5R1hzcTBuY1FWMTBRSVprMEdGQWV4ay1EUnZOWW9JVVBZckZ1MVlTWFY5TTNXQlV3SnBqY1VrU09YaW1BemdDTHJTT2RxRGc?oc=5",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "95486efa0882",
+   "date_et": "2026-11-26 12:05 ET",
+   "published_iso": "2026-11-26T17:05+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Chron",
+   "title": "$1B chicken tender giant to open new location in Houston - Chron",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNWwtS3hGRGpBdkpiay1uaHhxTHF5c21tcjNJMzNRcWg0TDRsYVcxVldoaFFSWFJZN054bmltZk50ZUhUSkY1cWpZVGloVDVvc2JCaFFmRWQyTDdWY3RJbzhidDg2TWxnSVFkeW5DM1lWM3NoMG5kMGhmMTZ2azFCbU9Ga0FhZm5F?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "62a68adb7b22",
+   "date_et": "2026-11-26 11:16 ET",
+   "published_iso": "2026-11-26T16:16+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Wisevoter",
+   "title": "Meddys Opens Second Omaha Location at One Pacific - Wisevoter",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNVdtM092N290dWRVVFdoMW1ka0FKMGc3LU1pakpBSDgzWWdDd2E3SmZlTDdNcnJNd0FYZW11aE0zQTlSd083cmhBbWh5SS1MSV8yZi1wdjFzaWFNVmFqMjZTeFUtaEdLcDBHZTBhckt5MUx6azJyeTFsaTBTVWxwTVVJV2kyRUV4dnE2YWdWS3N0eVlRRmgwZVFNclNyZw?oc=5",
+   "states": [
+    "NE"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "7f39180f8f23",
+   "date_et": "2026-11-26 11:03 ET",
+   "published_iso": "2026-11-26T16:03+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Retail & Leisure International",
+   "title": "Academy Sports + Outdoors on Course for 23 New Stores - Retail & Leisure International",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1BnalJXTXhzU09GRmlONWh5Mm1ScUpwNHpxU3ZMaFZPdUF4ZW9BR2ZzMHF3QV9CLUUxRkpjUTRORFhlOHpVSWg3MHg0Sjdlcnc3cmg1LWVpcWI5ODFTVEo5dlI5RG1FLXl2T0ZqMEtEeUZKVGlLenktd2UyaElZYQ?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Academy Sports"
+   ],
+   "linked": []
+  },
+  {
+   "id": "5732a3e2b3f9",
+   "date_et": "2026-11-26 10:43 ET",
+   "published_iso": "2026-11-26T15:43+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Business Review",
+   "title": "Auchan opens two stores on the same day: the Auchan hypermarket in Sun Plaza, Bucharest, and an ATAC supermarket in Timiș County - Business Review",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOaFEwc2JFRmF4Nk9oTWozZnRTRzRRSENlMmRYZTJrQ0FIWi12NlMtTVoxRW0wUWZiOWtQYzFCeGc5aWU2dmZWcUpWYUdNcGEyWDkteFhaYktZRFNCczdqdUFCWFVUZVM0bkZTOVJqM09hdUxycGJGelJyVjYtZmYyTzNlLTlBRTNoNlNRQk1Uclpfc1A2MHFuOFRlZnJFRjFlWENmcER5V2VoSFRhV3otTEl2dTJpVVUxcTIwRzBmU2h1a1JGVGhJRVIwSUNmRWwzQ2E1MGEzdTNxd1FYWlViOWREMWJNWlVnSkRmR2p2VnZNRlNVUjIzNDZCSm1FeHYxXzg0Q01GOGNobDA?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "f186df5a21be",
+   "date_et": "2026-11-26 10:30 ET",
+   "published_iso": "2026-11-26T15:30+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Daily Investor",
+   "title": "Checkers opens four new stores in one day at popular coastal mall - Daily Investor",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSGkwZlhxd0F4R3hOUk1xQk1kXzFDWmpFd3hYaFRJQ0JJSGYzZ3VHTW5DN3RPMXk1YjlhRlNDeGlCd0FvdndmUWtzZV8wT0VKU3FubEQ3d3J1WWlraWlKTG5TVGpzY1FnblFaRkV1N01mYndpNHBnbGVqZmVrV2VFWUhzWWY4Vk5BbFZIQmtIU0VLb01aQ3ZiREZZNk5DMEd0VVhMd3lYdGktZw?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "06d378276a5d",
+   "date_et": "2026-11-26 09:30 ET",
+   "published_iso": "2026-11-26T14:30+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Secret Los Angeles",
+   "title": "Costco, Target, Walmart and Trader Joe's are closed across L.A. on Thanksgiving Day: Here's which stores are open and their holiday hours - Secret Los Angeles",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+   "states": [
+    "CA"
+   ],
+   "printers": [],
+   "end_users": [
+    "Trader Joe's",
+    "Walmart",
+    "Target",
+    "Costco"
+   ],
+   "linked": [
+    "BluEdge → Walmart",
+    "Duggal Visual Solutions → Target",
+    "Federal Heath → Target",
+    "Miller Zell → Walmart"
+   ]
+  },
+  {
+   "id": "eb4aceae047c",
+   "date_et": "2026-11-26 08:06 ET",
+   "published_iso": "2026-11-26T13:06+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "KUTV",
+   "title": "LIST: Stores open and closed on Thanksgiving, Black Friday - KUTV",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQek51STlyRVhvMTFMblM1Smlnc291ekF5QkN6ZWV2Zy1KSmxDX2lFekdfU2NLb1l5TFh0MVFYT052MGhieFNENE5RaXNXSXUxbVB3SmRmUnlsdFVfWlpRd3ZTTExnRUNTWXlqUXltWGFaNnlaOGE5ZlV3aUpFc3hFYWFzeHNwNFBCVkRzMDR2b2doZzg5NmxIWUIyYWZVQlNkekxzbnZfTndGYTNMNGtYQ3FjWENWMFZaWXZWU18yMVpEYlpsUEhFQUhrY0xzNVA4eFE?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "bf937d19bb42",
+   "date_et": "2026-11-26 07:00 ET",
+   "published_iso": "2026-11-26T12:00+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Register-Guard",
+   "title": "Which Eugene-Springfield grocery stores are open on Thanksgiving? - The Register-Guard",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPQWoxSGxjYTlZbHFicFl0bjlzNWFkMTlFd0pSS3F0SVBqQTdaX3FpVkIwREhDTzFhLWR3ZnROQXZYenFEZzhESktibmFnZ0JsYkdIMF92em1wUWM4YUJNY1pjOGxZUW5SSmRUR3NORHAxcUNydXRFc1JTdFZVNm1aMDJWMHdhOTZ6WE5NcHdUYnhZbVkxbVBfQ1VVM3dNcjZzY0ZWejM1TXZnSnZ1cWtQeWxCSmRJMnNBbGNvRHk0MHlYV3Fu?oc=5",
+   "states": [
+    "OR"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "07ed5e86f0a0",
+   "date_et": "2026-11-26 06:49 ET",
+   "published_iso": "2026-11-26T11:49+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Sun",
+   "title": "Lidl opens SIX new stores before Christmas 2026 – is one near you? - The Sun",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE45bW43YXdYdXp6ODdMNlN4ZUxhVzF3bDJuR3gwdzNJdnpHQXp3U0ZqQkdxckNKRmZNUEhFNDhhRF9yeWhiWGFMVWFRRXRXaVJOendyX1JSUGdYUXdRVjhZaFlfV09wdFhOTjFjUDJCQS1DY2k1UlMzclpBLUE?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Lidl"
+   ],
+   "linked": []
+  },
+  {
+   "id": "8b569caea68b",
+   "date_et": "2026-11-26 06:15 ET",
+   "published_iso": "2026-11-26T11:15+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Yahoo Finance",
+   "title": "Burlington Stores (BURL) Unveils 115 New Stores And $750 Million Buyback - Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVUZuUjZLcGR1cjFuMjViOTdEektuWWpFYWFDZnQtWkY2Tks2eDR1aFZsdkV6d0xjYjRXcG9Ib3Y1N2R0dmpEUXJObTRLZEN4ZE1ldzR2SEpuMXZVYnpwS2x2UDdncVJOdU5XWnV2RVQxREVMaUUxcE95T01RcEdnbVVxQl8ybWZ2VkttV2dVSVJ2ZnQydEo4LS1wYkY5MGpz?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Burlington"
+   ],
+   "linked": [
+    "Ardent Displays & Packaging → Burlington Stores"
+   ]
+  },
+  {
+   "id": "4ef663c21185",
+   "date_et": "2026-11-26 05:52 ET",
+   "published_iso": "2026-11-26T10:52+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "The Des Moines Register",
+   "title": "Need last-minute items? These grocery stores are open on Thanksgiving - The Des Moines Register",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQSGdfXzcxcDRQd2Q3ckNDR3piYWJnYXFja2xZMWI4b01EelQ4SG41VmYzbzItUDdUTUFBM2toN1VfUmZCdVM2YWw5VF9fMy0wMFFoMWI5VWY2ejlvbGpxLTBHUjNJOE95dkJ6eE1raEJJc0FqZzhqU1pHMENpYUU0MG9WZGhLc3ZoOUlpTXFpRFVvUDZsZy11Sm9qclZZMWRQLXR6SDhrcW9xUktvYWkySmRMMU5LUFR6NVE4WXpGU1RLOUVHM0xJ?oc=5",
+   "states": [
+    "IA"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "bd09a23bb46d",
+   "date_et": "2026-11-26 05:40 ET",
+   "published_iso": "2026-11-26T10:40+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Chattanooga Pulse",
+   "title": "Quaint Neighborhood Market, Favored Daughter, Opens On The Southside - Chattanooga Pulse",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPR08xMXpwNDk3NWU5MnZ5bTc3TzZsNDQxaEZObGI1U0d2VEVnckw3dm9rSy10d2N5UVZJNVFmbk5HRmIzckd3aFhXWlNJZ3hUa0dkNW5zdndNY0FaMlNjNk5Lamk1VTdSaUZ2MnhhZ09jd1EzT2FNMjdKazNTZFZEZFhMRTlxNW9ZakRtem1YVzhwS2VPU0VpOXBwYjIzTFE4VVlOS3UzdjkwSUNyb1VCcHpLcWVrb1lIc0hn?oc=5",
+   "states": [
+    "TN"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "2699e1a98ec0",
    "date_et": "2026-11-26 05:29 ET",
    "published_iso": "2026-11-26T10:29+00:00",
@@ -13852,6 +14102,22 @@
    ]
   },
   {
+   "id": "402d8e012614",
+   "date_et": "2026-11-26 04:53 ET",
+   "published_iso": "2026-11-26T09:53+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Bury Mercury",
+   "title": "Lidl has revealed its next wave of 36 store openings – here's where they're going - Bury Mercury",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTDhBOFZScU85bFR2cnRCUXdRQ3dmZFRMZm0tWGJVcnNGdm04ejBCSGhPbmZ4MEFtLVNMT2tQRjhiYVExOVZpdnp4VEVoZTlmMnRtWmJCblR4dDQzOWI5cE9EZldJNXRLcFdRb0xKZndFN2dweW5nSG5uaGo2YmJONU1tN3BtX2cxYWtCM0NWZzc3UFZvUHlhQU5VQkVFeFFYV2c?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Lidl"
+   ],
+   "linked": []
+  },
+  {
    "id": "61bce0bde4d1",
    "date_et": "2026-11-26 03:55 ET",
    "published_iso": "2026-11-26T08:55+00:00",
@@ -13880,6 +14146,22 @@
    "linked": []
   },
   {
+   "id": "ab64d2370ccc",
+   "date_et": "2026-11-26 02:31 ET",
+   "published_iso": "2026-11-26T07:31+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Birmingham Live",
+   "title": "New Birmingham restaurant opens as chain continues to conquer city - Birmingham Live",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOdjkxaGJwS2hnZ3E0aFE4TWtvdmpkOGJmMXlWOVVtVEROd2NmeklVdGdRenB3SUQ1RW5DZlVGVDRVNXhUMGNyOWc5TlhDTEpmVTFHLW5SQTJ2NjN2SlpLMW00eUdrMmJLekQ1OURlOXJsSkt5U1dOdjVSdzIzdnRmTGlWS2FQamZaa1k5YVNmWUx2d21STUlORER1eVVtdzl6Z1dXUXpnVmphM01E0gGsAUFVX3lxTE52OTFoYnBLaGdncTRoUThNa292amQ4YmYxeVY5VW1URE53Y2Z6SVV0Z1F6cHdJRDVFbkNmVUZUNFU1eFQwY3I5ZzlOWENMSmZVMUctblJBMnY2M3ZKWksxbTR5R2syYkt6RDU5RGU5cmxKS3lTV052NVJ3MjN2dGZMaVZLYVBqZlprWTlhU2ZZTHZ3bVJNSU5ERHV5VW13OXpnV1dRemdWamEzTUQ?oc=5",
+   "states": [
+    "AL"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "155317648b25",
    "date_et": "2026-11-26 02:11 ET",
    "published_iso": "2026-11-26T07:11+00:00",
@@ -13893,6 +14175,22 @@
    ],
    "printers": [],
    "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "42bf13166adc",
+   "date_et": "2026-11-26 01:49 ET",
+   "published_iso": "2026-11-26T06:49+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Nacionale",
+   "title": "Is Trader Joe's open on Black Friday 2026? Yes, regular hours on November 27 - Nacionale",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWkQwbXhER1J3ZE9OMVJhbkN0QXlhVmNFZ3hfbGpVNHI3WHY3aHUzWXNSX3VWYlMtTjJ1SFFUeHI3aXVWTFM3bVZzb0JINEdSNzhKdWxTVHhvX0UyUDRHbzBld1dPdE9uX2t2aF9uenBVeE1mUzZ5akJ4SVJKM0RnNEp3by1SdjFLQ3E4bmdyd01KRzh0LTlmSkJpVEc?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Trader Joe's"
+   ],
    "linked": []
   },
   {
@@ -13978,6 +14276,24 @@
    "states": [],
    "printers": [],
    "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "01e603249ae3",
+   "date_et": "2026-11-25 18:30 ET",
+   "published_iso": "2026-11-25T23:30+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "News12 | New Jersey",
+   "title": "Quickchek Opens New Sayreville Store Near Bass Pro Shops - News12 | New Jersey",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGdVU3NIUDF5WXJ2NU52dTVVQXZKMmI5aWJzaE90VHAtTk5Gek5sQk9rVS14RUc2ajhZSV9fWWVyQnpKenh6aHpaUlhFUGUtbkxJR3Y3dUdrcjBSclA0SGJhM1doM0dYUmtnVHNOZGh2VVItTHVhOEZHQTlIaHlpVG5MM21vNy0tVTUwRzB2SFFQeHByZ3VrWVhWQjExV1VLSWU4NS15ejYzbzlub3pZM3Jxc0YzRldKN0NR?oc=5",
+   "states": [
+    "NJ"
+   ],
+   "printers": [],
+   "end_users": [
+    "Bass Pro"
+   ],
    "linked": []
   },
   {
@@ -14183,6 +14499,24 @@
    "linked": []
   },
   {
+   "id": "e63625774634",
+   "date_et": "2026-11-25 13:00 ET",
+   "published_iso": "2026-11-25T18:00+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "Community Impact",
+   "title": "New Texas Roadhouse, Tony C's and more open in Georgetown - Community Impact",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZzZ1QW5HUG5Tdmd2LWtXOTAyTTluMVFlS0ZDUGxNQ2thS05VYjlLVDRNZkZVNExTQVJPOFM5WEsxRl9IaGlyb3JhTC1hSkN6ZllzRVB1aWVaYmw2WF9rcGxEanJGVzVDdUxucTdfUXYycExqMUhDbi1KSWlSNmNzQURxV053R2pHWDBlRm14d2VLNFNFR3NUVVo1MHhkR25RTXdsVlpOX2JPUWI0aUNfR1ROQ2xUQ1Q0YWFPS3hWeExkcDdSZ3NUVU43VQ?oc=5",
+   "states": [
+    "TX"
+   ],
+   "printers": [],
+   "end_users": [
+    "Texas Roadhouse"
+   ],
+   "linked": []
+  },
+  {
    "id": "44d42d31e8ad",
    "date_et": "2026-11-25 12:38 ET",
    "published_iso": "2026-11-25T17:38+00:00",
@@ -14197,6 +14531,22 @@
    "printers": [],
    "end_users": [
     "Wawa"
+   ],
+   "linked": []
+  },
+  {
+   "id": "7c37c3e80a47",
+   "date_et": "2026-11-25 12:30 ET",
+   "published_iso": "2026-11-25T17:30+00:00",
+   "type": "opening",
+   "segment": "Grocery",
+   "source": "Secret NYC",
+   "title": "Queens’ first-ever Whole Foods opens this December - Secret NYC",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdVh5MnhlMU15TjZPeVRpQU5DOXVTUDk3X0dGQ2NIT1B5SlRkX2VvZHNvcjVTa3RtVEdIUmM3N2p3ZS00OExSa3BRbGZNWDdIZ2NVUnZ1NmVacmFOVE45VXFWbHNHbjBCdFlBd05uRE9wMlB3bnRaWFdZSmFWNGlhSnln?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "Whole Foods"
    ],
    "linked": []
   },
@@ -14233,6 +14583,36 @@
    "linked": []
   },
   {
+   "id": "347ddfe84c1d",
+   "date_et": "2026-11-25 11:14 ET",
+   "published_iso": "2026-11-25T16:14+00:00",
+   "type": "remodel",
+   "segment": "C-store / fuel",
+   "source": "ItalPassion",
+   "title": "3 months after the unveiling of the new 1,065 HP Lamborghini V12, this new prototype is sparking debate - ItalPassion",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNaHdwenpuc3F5RTEtd29xeTVabzljTWVySHF4NUxSY29vVURQZlJmdnpKNDFkb0RYNGxYSVltTUVyYjczTU5tSWk5dWk4VGdNSkhEZWNEMjFPcjI0T3JDNngyd2tYQ1hpaHd0elJoNmRYSUM4UHBmMjZzOWdKQXVpT3p5eHN4eVM2WGROOTFPTUpRT2RiT3Y4QlBVWC1YRktCZ2ZMSFN1SXNUQlZ0S2dqaUlxRmtkbFp1OGc4cHJmQTNwNm1qNFFHNm9vWWRDOVVmeEoyZkFjc1VWa2l1dWx4cVp3?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
+   "id": "68cfcf92359a",
+   "date_et": "2026-11-25 11:12 ET",
+   "published_iso": "2026-11-25T16:12+00:00",
+   "type": "opening",
+   "segment": "Mass / big-box retail",
+   "source": "Crain's Detroit Business",
+   "title": "Downtown Birmingham’s retail boom grows with 2 new stores - Crain's Detroit Business",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPODZSa29qY3FSbmhWejVGUXRLeGR5Y0V0eDM5QTZJa2drejZGZHBINDdITTZ0eVVOamU1RmhWU1ZNR3hWRzdWdlM3SEY3N2FwZG5nb2xkd1gta2dPajNSV0IwYmhVeGN5cDRLNzA1YmluM0wxQThpV09xTlB1TzVxNlJ1ZXM3bTd1TnFhVkFjVUZPQQ?oc=5",
+   "states": [
+    "MI"
+   ],
+   "printers": [],
+   "end_users": [],
+   "linked": []
+  },
+  {
    "id": "76f7b367aa9a",
    "date_et": "2026-11-25 11:11 ET",
    "published_iso": "2026-11-25T16:11+00:00",
@@ -14259,6 +14639,45 @@
    "printers": [],
    "end_users": [],
    "linked": []
+  },
+  {
+   "id": "15c17c60b2dd",
+   "date_et": "2026-11-25 10:41 ET",
+   "published_iso": "2026-11-25T15:41+00:00",
+   "type": "opening",
+   "segment": "QSR / restaurant",
+   "source": "GRANT HAVEN MEDIA",
+   "title": "McDonald’s opens second location in town - GRANT HAVEN MEDIA",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Kci16V3FOcFVOMFRMa0pGbjQxWWJMNUpaYXBzUElOTFlIZTQzQUFVMTg4UUgtOTdVUzR1VmdkM1JmWmtkZ0RYVXdWY2NLeVE0dWtKbWZfcUtOWmxWbmdvbUcwMGtueXFyS2NlZ19Ta0p2SU54RUZseG0tYUQ?oc=5",
+   "states": [],
+   "printers": [],
+   "end_users": [
+    "McDonald's"
+   ],
+   "linked": [
+    "Serigraph Inc. → McDonald's"
+   ]
+  },
+  {
+   "id": "406c20a5981f",
+   "date_et": "2026-11-25 10:40 ET",
+   "published_iso": "2026-11-25T15:40+00:00",
+   "type": "expansion",
+   "segment": "Mass / big-box retail",
+   "source": "St. Johns Citizen",
+   "title": "Walmart responds to Citizen report on possible new St. Johns County store, touts Northeast Florida investment - St. Johns Citizen",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeU93a3dJdlE4N0hGVVJsSWdGaTF5eUxGSzQ0X3MxVllpVGJmMGRPMjE1VV8wVzQtdVhPdk50Y1RwbGtzbFZpS3FxbFc1M2ZBUGhQVWtaNGtTd2wyWDJrMWNweGt6VnE2UElUY042LVdwZElmakllclZCYzYxYU9KRDFjLWlxR09td2VjNVlEZTE4RFBLdTZFVGU5TUtJREtkWTBzN044WEtDQmVOZjhyRklCdDNTZGY5OE1pd3E3XzR2N3JZUGdNRmNR?oc=5",
+   "states": [
+    "FL"
+   ],
+   "printers": [],
+   "end_users": [
+    "Walmart"
+   ],
+   "linked": [
+    "BluEdge → Walmart",
+    "Miller Zell → Walmart"
+   ]
   },
   {
    "id": "0facb5834c6a",
@@ -19724,446 +20143,23 @@
    "printers": [],
    "end_users": [],
    "linked": []
-  },
-  {
-   "id": "7ce837717e14",
-   "date_et": "2026-11-12 10:51 ET",
-   "published_iso": "2026-11-12T15:51+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Finger Lakes Daily News",
-   "title": "Bass Pro Shops Celebrates Victor Grand Opening Thursday - Finger Lakes Daily News",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMTBPaW50RmlYNzRrYmxUU3V2aldkYVY3Q0hlME51THRRUzZTa2pjR1ZFSk10UVBxS1RCMjF4RXpIbnR2ckp6TkpZd3lZZU1ybjBaSU5pQV9JMlBRWk5OTzlfcmdSNnBnMHdrUVVoQ1JRbmQxS0l5aE9mZ1NOQkh0UDZ4SmhRRmFZNTRFOFFKWGlwVFFSQWNWSlNZNHprUVNC?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Bass Pro"
-   ],
-   "linked": []
-  },
-  {
-   "id": "5d29b388d153",
-   "date_et": "2026-11-12 10:19 ET",
-   "published_iso": "2026-11-12T15:19+00:00",
-   "type": "remodel",
-   "segment": "C-store / fuel",
-   "source": "Fast Casual",
-   "title": "Carrot Express rebrands, opens 7th New York City location - Fast Casual",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOUFNxXzlBRzV2a1FNVWRObWEzeDFoMWs4bW9jODk5QVF2bzh3U3c4UXEyVFJsWVZWOVE3S0pvaVNxaGVvQ2ZvdUdnaHJmSWVoV0g1bTlEeVNnbTMxQXFJOXplM19reXpWM1c1Wm1iWjdVajZkNHB2Nk1PZGt1TG5zUlZNaDBvempTWElOR3RvYTdKbW8?oc=5",
-   "states": [
-    "NY"
-   ],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "612723ba8186",
-   "date_et": "2026-11-12 10:16 ET",
-   "published_iso": "2026-11-12T15:16+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Sarasota Herald-Tribune",
-   "title": "New Trader Joe’s opens in Sarasota. Here’s what shoppers will find - Sarasota Herald-Tribune",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNeGc5bWoyM2NVeWJ3d3Q1QmtSRmtJSHZvRWdaTE9UdXpFVC0xQ2J0X0pVRzcxaW9NNTJXQnJrdG5FMUl2QjlPajg0bzlrb043bTVFV3h0Q2M4d2hpaG5wOVN0TkJJdjBSa3hJMVNmWmRLTjRtZ2ZPRzF2VnlITVR5RzRmNWR5c0ZlUXRsS1lDOFFqS2o3d2c5NmZYU0tpNWFzU0pWcG01Y1BnaUFLQnByMGhCaEljV040ZVZZOVBjczlBc0w0X2pqVUhiU19KYmltb1RF?oc=5",
-   "states": [
-    "FL"
-   ],
-   "printers": [],
-   "end_users": [
-    "Trader Joe's"
-   ],
-   "linked": []
-  },
-  {
-   "id": "6e9fc1a99910",
-   "date_et": "2026-11-12 10:01 ET",
-   "published_iso": "2026-11-12T15:01+00:00",
-   "type": "opening",
-   "segment": "QSR / restaurant",
-   "source": "QSR Magazine",
-   "title": "Hyper Energy Opens in Lee’s Summit, Missouri",
-   "url": "https://www.qsrmagazine.com/news/hyper-energy-opens-in-lees-summit-missouri/",
-   "states": [
-    "MO"
-   ],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "7b611319922e",
-   "date_et": "2026-11-12 09:52 ET",
-   "published_iso": "2026-11-12T14:52+00:00",
-   "type": "expansion",
-   "segment": "QSR / restaurant",
-   "source": "QSR Magazine",
-   "title": "Chick-fil-A Adds Permanent Spicy Sauce to Menu, Launches Holiday Treats",
-   "url": "https://www.qsrmagazine.com/news/chick-fil-a-adds-permanent-spicy-sauce-to-menu-launches-holiday-treats/",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Chick-fil-A"
-   ],
-   "linked": [
-    "Miller Zell → Chick-fil-A"
-   ]
-  },
-  {
-   "id": "33d62ae28fe8",
-   "date_et": "2026-11-12 09:49 ET",
-   "published_iso": "2026-11-12T14:49+00:00",
-   "type": "opening",
-   "segment": "C-store / fuel",
-   "source": "NACS",
-   "title": "RaceTrac Opens First Location in Memphis - NACS",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTUxZRmQ2cnFqWnB6aVRBU3ZjOGJUd1NSNDdTaXF4cGNZWmdjdzhiUmtaaVRZWnVzcTliME1nS0JEZ1Ftcl9IOXNWVWNRTjdydWNUSDF3V2tpZE1xNUMzbjZOMnJyS0lVSTkwOWFxT2J0aGhsU0pKRFdmd1FFY1ZyZ2lma2tPNnRnSEl5cFNzUWJiUnctaFZKOHRsZ2t4Y1R4bmFuZVB3?oc=5",
-   "states": [
-    "TN"
-   ],
-   "printers": [],
-   "end_users": [
-    "RaceTrac"
-   ],
-   "linked": []
-  },
-  {
-   "id": "b3e87aefebae",
-   "date_et": "2026-11-12 08:56 ET",
-   "published_iso": "2026-11-12T13:56+00:00",
-   "type": "opening",
-   "segment": "C-store / fuel",
-   "source": "C-Store Dive",
-   "title": "Parker’s opens first Florida c-store - C-Store Dive",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQTlNrZERvM1VFbGxfR3hCU2NqRmgxRThvR200eF9Ea0gxTG95RDEwanQ4WXpubjcySkR5YW9lcllHdENkT2dOWmJWcU1xT1F5ZEw1VDFsZXd6YU5xQjJIeENpbGZXTnIyYkt5Q080V2RnUUNNZ2dsRlVOdllkSWhDdw?oc=5",
-   "states": [
-    "FL"
-   ],
-   "printers": [],
-   "end_users": [
-    "Parker's"
-   ],
-   "linked": []
-  },
-  {
-   "id": "bb6043b7cba0",
-   "date_et": "2026-11-12 08:40 ET",
-   "published_iso": "2026-11-12T13:40+00:00",
-   "type": "opening",
-   "segment": "C-store / fuel",
-   "source": "C-Store Dive",
-   "title": "Parker’s opens first Florida c-store",
-   "url": "https://www.cstoredive.com/news/parkers-opens-first-florida-c-store/874435/",
-   "states": [
-    "FL"
-   ],
-   "printers": [],
-   "end_users": [
-    "Parker's"
-   ],
-   "linked": []
-  },
-  {
-   "id": "28c626578cd1",
-   "date_et": "2026-11-12 07:41 ET",
-   "published_iso": "2026-11-12T12:41+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "WWLTV.com",
-   "title": "River Ridge's first ALDI opens this week. What to know - WWLTV.com",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQQWNQdEZ5OFE0TWdaMG1MMXF1RGhkNVhJX3NFbGJUXzU3RHRya2VTNTNPZGNOMHJnQjdRNlRqcnVybmFzQV9QYnNtT3FQd0VQc3Bna1RSSnJGa19XTFJsVF9JQWZ1ZnRxSGVVbUh0U1psM3prV3RvWXE1MGRFUWZoM21JUWtnSEFURnVaTzV6dExRU0lHYXNZWEJ1WUJtNmdGNTBteDR3U0pZZWxTZFY4OXRxNkNzVm9rZ2ZMOWxFQjlOclozaUgxMkI3d2p6bzBYVV9SWUVacw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "ALDI"
-   ],
-   "linked": [
-    "Miller Zell → ALDI"
-   ]
-  },
-  {
-   "id": "12073ebfc000",
-   "date_et": "2026-11-12 07:15 ET",
-   "published_iso": "2026-11-12T12:15+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "The Shelby Report",
-   "title": "Kroger Atlanta Opens $39M Marketplace In Locust Grove - The Shelby Report",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQSk1aZVpEQ2VSb1RWYXpyY0ZiNXc3YnVuT2JiLVI1anhjYzVLMVAzZDdCZDZ0Z1cweTYwUFYwZEhRNUlUTW5VNnZwR1hoSHJRVXgwZ1RlTkxLLXFjYmFJdVhOQXZDZGJaVVAyZm00c0hjZ1dYRFZuYVdsMllMNDNCWEtTZTZTcVhVVXZlSFdRS1ViSTFKRVkw?oc=5",
-   "states": [
-    "GA"
-   ],
-   "printers": [],
-   "end_users": [
-    "Kroger"
-   ],
-   "linked": [
-    "Baesman Group → Kroger"
-   ]
-  },
-  {
-   "id": "fb945eba1913",
-   "date_et": "2026-11-12 06:46 ET",
-   "published_iso": "2026-11-12T11:46+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "The Business Journals",
-   "title": "Kroger to open $40M store in nation's fifth-fastest-growing city - The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPU0hTUE9jMUd2anR4VlN3ZVgtMUpyRVpZQVREcl9JOXhpbjVRYjNhWlV3MTdST2w4UnlSU2d5b3VHaW85WnUxcjJxTHdYZU9DemlIdXVYQVFOemZsRzdIaHFDNGY3U0tfbkZqNkZJbHFqckFFdy1LZ1ZrVC1sZFhTOE9PWEJKUUFpSjl4b2NKbnp6emNvRTZzdktZaTI4ZDVJa05QNnNOekZfalQ5?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Kroger"
-   ],
-   "linked": [
-    "Baesman Group → Kroger"
-   ]
-  },
-  {
-   "id": "941b65ffc4d3",
-   "date_et": "2026-11-12 06:07 ET",
-   "published_iso": "2026-11-12T11:07+00:00",
-   "type": "opening",
-   "segment": "QSR / restaurant",
-   "source": "Community Impact",
-   "title": "Panera to open first Leander location Nov. 12 - Community Impact",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOc18tRjZjVGVRYWU2Ul9DdjZSWDRvQzFZcTJGcS1VdC0wU2ljV09jZEUwSUVNZzdQT2c2b0VfTnNDVFBOd3RRREpybXFrVnZZMDJDcURPc2FJZUtVTWhpMlAzb3BmeHV1MVpraEVZZm53UnZIVUdTcV9HY2lFZ2xJSzNud0xjM2pnOWNkOVFVcWtfbTNCMFdCOHI5aFZYdHh3b3FtNlpIa19DRGZYSGJ4Zw?oc=5",
-   "states": [
-    "TX"
-   ],
-   "printers": [],
-   "end_users": [
-    "Panera"
-   ],
-   "linked": []
-  },
-  {
-   "id": "c1b4c2eee483",
-   "date_et": "2026-11-12 06:00 ET",
-   "published_iso": "2026-11-12T11:00+00:00",
-   "type": "expansion",
-   "segment": "Mass / big-box retail",
-   "source": "The Business Journals",
-   "title": "Walmart's real estate director dishes on investment, going all-in on Central Florida - The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNjVVRWVBZlZETUFHVWRYTTRxOWp1QnNMZWtSOWJZSENEbGVGQ3NQWUhrZlMwZW85RmFrUjBqakRyZU1wUDlncU5CWGl5M2NtZjJrZ09RZGg3cDBRMU1NSjhjQ09CVlhzbHBMdjdvRi1hNnVvTkxtb29HeTFUT1JScEJUay0tZWpMNGJQa0p6R04td3BXd25XYU11Vm0zcEJUYlg1OU1PZG1xZw?oc=5",
-   "states": [
-    "FL"
-   ],
-   "printers": [],
-   "end_users": [
-    "Walmart"
-   ],
-   "linked": [
-    "BluEdge → Walmart",
-    "Miller Zell → Walmart"
-   ]
-  },
-  {
-   "id": "e02cb8b23954",
-   "date_et": "2026-11-12 03:00 ET",
-   "published_iso": "2026-11-12T08:00+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "365 Retail",
-   "title": "Superdrug Opens New Store in Elephant and Castle - 365 Retail",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9tWjFLaW5VaHdRX0FKYWxReTdfQ25VeTQ0cDAwRmdEbm9pWUZ2b01Bbm9JTTJDczc4NllIVERod0tqV3dndUJRQVZXRmxjcldiTTRaZk50VFh5bHhQMHJ2RkJPb05ySVFGcWs2WTdZeVJHY0x1bkY1Mkhn?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "1188a76a6a00",
-   "date_et": "2026-11-12 02:55 ET",
-   "published_iso": "2026-11-12T07:55+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Passionate In Marketing",
-   "title": "Edge by Croma expands its presence in Bengaluru with two new stores and exclusive launch offers - Passionate In Marketing",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbTllREdmRFhaVUJ4djZta2c5ZVdkM2xoS3YySTRJZVg1d1FuNDZpcXlTaG5lYlhkR0l1bGFxMXVlVE5naXNuZGJYWUZUOXRvekVqYmIzc250b3JobS1FOFo3SFhGMDRIbHlfd0NQUnpLWTR1cU05MC13YWRfZ2NybnpSazVXa2FWRDVQc1dEbnhteENrVGNIVXpWLURxUjFpQnNnOGt5dkVDTnFyR185ejFNajZHTmlGbW12aTJGbzZwVDMtM1l2RndjeWV6SFE?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "035e955a54c3",
-   "date_et": "2026-11-12 02:00 ET",
-   "published_iso": "2026-11-12T07:00+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "Happi | Household And Personal Products Industry",
-   "title": "K-Beauty Retailer Olive Young Will Open Five Stores in California in 2027 - Happi | Household And Personal Products Industry",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPY09nVmFjdG5XaU42MGd5WjFaeEV4RGJFUnpBVVl4cVo2NVkyXzAyVGJfS1ROQ0ZPYlFLX3lBNm1VY01OZDRIOTNMYjZDRTUzc2dEeW1tQjc0QjJJaF9YVDBoN2lXa1FvTUdFNjZEVGE5bHM2LTJ0cTJVVVJadnVraGV0QktOdnRqU2h6MVlWNlhLXzc5OWJr?oc=5",
-   "states": [
-    "CA"
-   ],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "877eeb943f9c",
-   "date_et": "2026-11-11 22:26 ET",
-   "published_iso": "2026-11-12T03:26+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Community Impact",
-   "title": "H-E-B opens store in Montgomery with BBQ restaurant - Community Impact",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVG1iRm5uV09fMjBfTXpjcldXY19kV1EyOXBzQ0lISHJ2TG4wMDh4Z3ZuVzFjOEVYSGVucEg2WUdFSkp6REFmUVdQN05RWDNfS0VxZFFQbi11QlZ4NUp0YmxBREFsZmZBdERDWUtkX0hBZ3JfSE96YXVtTDl3SUtPeUVNUzJ1dHNpeUMyLTl4Sy04cU5JRUMxa2ZibnVPYXhyS1Y2NHh0ampWMW8?oc=5",
-   "states": [
-    "TX"
-   ],
-   "printers": [],
-   "end_users": [
-    "H-E-B"
-   ],
-   "linked": []
-  },
-  {
-   "id": "bc97b324e33d",
-   "date_et": "2026-11-11 22:26 ET",
-   "published_iso": "2026-11-12T03:26+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Community Impact Newspaper",
-   "title": "H-E-B opens store in Montgomery with BBQ restaurant - Community Impact Newspaper",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVG1iRm5uV09fMjBfTXpjcldXY19kV1EyOXBzQ0lISHJ2TG4wMDh4Z3ZuVzFjOEVYSGVucEg2WUdFSkp6REFmUVdQN05RWDNfS0VxZFFQbi11QlZ4NUp0YmxBREFsZmZBdERDWUtkX0hBZ3JfSE96YXVtTDl3SUtPeUVNUzJ1dHNpeUMyLTl4Sy04cU5JRUMxa2ZibnVPYXhyS1Y2NHh0ampWMW8?oc=5",
-   "states": [
-    "TX"
-   ],
-   "printers": [],
-   "end_users": [
-    "H-E-B"
-   ],
-   "linked": []
-  },
-  {
-   "id": "c3c91be187e6",
-   "date_et": "2026-11-11 21:05 ET",
-   "published_iso": "2026-11-12T02:05+00:00",
-   "type": "remodel",
-   "segment": "C-store / fuel",
-   "source": "East Oregonian",
-   "title": "Stanfield’s Pilot completes remodel with new services - East Oregonian",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNkFvanFIMV9GUG0zQjNTb3lZNGpCbFBtSE5uZXVfSllNNjFQbG5Rd0h2VzNlR2pOcGtEZ3hEa2pURWY0TjhGcHNtTmZiZjNYVDgwVzYyZzNkcE43cDlIam41SEYxbU95LTJ0OVBxR2RDenNHNHdscHYxN0MwNDM0UnZWSkotRDM3TFVUZzBRRTZWT3Ix?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "Pilot"
-   ],
-   "linked": []
-  },
-  {
-   "id": "2ab036eb06ef",
-   "date_et": "2026-11-11 19:13 ET",
-   "published_iso": "2026-11-12T00:13+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "The Cornell Daily Sun",
-   "title": "Smart Tart Froyo, a Jason’s Grocery & Deli Successor, Opens at Triphammer Marketplace - The Cornell Daily Sun",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWmszWkxfaDU0MTVVU3VwVGZLNXJxQ25MZVZpWV82N3I4TTR4UndJYjV6d2pkOVpmQ2RTbWdtVXpIdjJXanlJRThYMDFsSzlGU2lMeW5SaElIaWY4blFnMmdnN3BRQlRETnpZN2ZfdElCZC14QTA4VEZLTGpoeEExRUYxYVp2SEJCY2Q2TkpjNnpvVms1d0x0cmIyTUdDWEpmT21TbGc5WjFMV1haamNUUGNSWUxoSTdZWGV0aVExQVRTdw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "16d1cba82d58",
-   "date_et": "2026-11-11 19:05 ET",
-   "published_iso": "2026-11-12T00:05+00:00",
-   "type": "opening",
-   "segment": "Grocery",
-   "source": "Davidson County Source",
-   "title": "Perenn Grocery Opens in Wedgewood-Houston With Market, Bakery, Café and Listening Room - Davidson County Source",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPaXdUN2NhS1VyQ3kzU0gxQ1phdS11aDJJT3F5RkZUM2FMUHU4MjVadUM0cS1wM0ROcUNwWG9ITXRaM2NqYlkyWkh3M0JzTGdsSkNTd3hXTVdQV1c2ZmhiRmxpTjVPTVRvcGhhVVNjbEU5ajdyZ0JDSGhINlVkTkxYR0NvUURfR3B6aVZ4ZmcwXzdRcU1qc1ZCd2RRWFpkZ25mdVVhdGZEVlJkUEk2cjdxbFhDdUNTQ2o4TVE?oc=5",
-   "states": [
-    "TX"
-   ],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "edf7783ea264",
-   "date_et": "2026-11-11 19:01 ET",
-   "published_iso": "2026-11-12T00:01+00:00",
-   "type": "opening",
-   "segment": "Mass / big-box retail",
-   "source": "365 Retail",
-   "title": "Majestic Opens 30th New Store Under Fortress in Ealing - 365 Retail",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTkdCMEFCU3NTbWZlX2c3b295Ry0zUFlGTlNKcXl1Q3o0c2lULVp2TE85Y2NDY2dYTFNSUzVmcHBUUVNmZ1FlNzZnZ2ttUDB1a1ZUUVBjQVM1Rm8wSkdTZ3YwUEZ0cEFQdmllQ0g0LWszQVhjUGZJaVZKaUYxTFhYQ1MyajRmdw?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
-  },
-  {
-   "id": "97489f06683a",
-   "date_et": "2026-11-11 18:28 ET",
-   "published_iso": "2026-11-11T23:28+00:00",
-   "type": "opening",
-   "segment": "C-store / fuel",
-   "source": "FL Times-Union",
-   "title": "Parker's Kitchen opens first Florida convenience store in Yulee - FL Times-Union",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQdEYtMm16V1g3Njk4bVdZeC1NNnJDTXRRTzdDY2p1NnRuQVBVQlJ4cjJrUWNzd0d5bTB0bzNWS3JTYm9Yb0hSbW83X01kVUZJRDlMRTBzdmJsTG5abFpjTDFDRGdFT2lKNzM5VmNMLVJxaWxsSWdfS3R2MDlFdjRwRGhjWFJfU2hSaWl0anBjNmFIcUpucnhlenJjZVh6bUQtOFFkMDRwT0pGZFVxRnEtbXR0VFNfNUZsNEFRbHpNZnJMeTFVbEFkUXBJVQ?oc=5",
-   "states": [
-    "FL"
-   ],
-   "printers": [],
-   "end_users": [
-    "Parker's"
-   ],
-   "linked": []
-  },
-  {
-   "id": "e47462aeab5c",
-   "date_et": "2026-11-11 18:26 ET",
-   "published_iso": "2026-11-11T23:26+00:00",
-   "type": "opening",
-   "segment": "QSR / restaurant",
-   "source": "Plainview Herald",
-   "title": "McDonald’s opens new Plainview restaurant on Fifth Street - Plainview Herald",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdDZ6X20yYnFoYnEtOHRGcGQ0d0ZCT2luWlpJWWRnWnJjQzgwX0tBdXMwZG5MSUZ5OEdvNm5SSU5qLUdzZ0JjLWxpaV96S0xBWV9acHBzdjZYWlo3SVVaMVhJejh1Y1BTbndXblY1WUY0RlNIa1NiVnU1R1hsSXRmdzBweDN1WlFEZ2t4aWt6OA?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [
-    "McDonald's"
-   ],
-   "linked": [
-    "Serigraph Inc. → McDonald's"
-   ]
-  },
-  {
-   "id": "dd95d20e6206",
-   "date_et": "2026-11-11 18:10 ET",
-   "published_iso": "2026-11-11T23:10+00:00",
-   "type": "acquisition",
-   "segment": "printer",
-   "source": "Jamestown Sun",
-   "title": "Lamar Advertising acquires Newman Signs' Outdoor Advertising division - Jamestown Sun",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPbEwydVM0VzBnMHpvaGJILV8xQmlOX29pVWZlXy1zVEtBVjJkZ0dueC1SVmlucFRwRDBXMXRuS3NGektwX3U1Z1dGa0N0bF9rLWVubFRfaGpKcVVBRkJDQzJLdGJvcTJTZlFxRElfa3RCY3lhZlVfek96VlFWMEZQbXdtR3dBM2JZOVJ0bGFMYzhibzZiVGMzZW42TV9sYlJLZS1QdVEtUzI4TTg2?oc=5",
-   "states": [],
-   "printers": [],
-   "end_users": [],
-   "linked": []
   }
  ],
  "run": {
   "sources": {
    "Printing Impressions": "ok (1 kept)",
    "Sign Builder Illustrated": "ok (0 kept)",
-   "C-Store Dive": "ok (4 kept)",
-   "Restaurant Dive": "ok (3 kept)",
+   "C-Store Dive": "ok (2 kept)",
+   "Restaurant Dive": "ok (2 kept)",
    "Retail Dive": "ok (0 kept)",
    "Grocery Dive": "ok (0 kept)",
    "Nation's Restaurant News": "ok (0 kept)",
    "QSR Magazine": "ok (2 kept)",
    "PR Newswire": "ok (0 kept)",
-   "Google News · c-store": "ok (16 kept)",
-   "Google News · qsr": "ok (23 kept)",
-   "Google News · grocery": "ok (27 kept)",
-   "Google News · retail": "ok (13 kept)",
+   "Google News · c-store": "ok (13 kept)",
+   "Google News · qsr": "ok (12 kept)",
+   "Google News · grocery": "ok (17 kept)",
+   "Google News · retail": "ok (9 kept)",
    "Google News · printer": "ok (0 kept)",
    "Google News · printer watch 1": "ok (0 kept)",
    "Google News · printer watch 2": "ok (0 kept)",
@@ -20176,9 +20172,9 @@
    "Google News · printer watch 9": "ok (0 kept)"
   },
   "dropped": {
-   "too old": 401,
-   "not a store/printer event": 11,
-   "non-US": 31,
+   "too old": 430,
+   "not a store/printer event": 3,
+   "non-US": 34,
    "headline names an old year": 1
   }
  },
@@ -20625,10 +20621,10 @@
       "result": "pass",
       "detail": "10 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -20742,7 +20738,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Gilman guide / qualification",
@@ -20756,10 +20752,10 @@
       "result": "pass",
       "detail": "12 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -20918,10 +20914,10 @@
       "result": "pass",
       "detail": "8 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -20979,6 +20975,182 @@
     "alt": []
    },
    "rank": 3
+  },
+  {
+   "id": "r-target",
+   "name": "Target",
+   "orig_name": "Target",
+   "type": "retailer",
+   "segment": "Mass / big-box retail",
+   "website": "https://www.target.com",
+   "city": "Minneapolis",
+   "state": "MN",
+   "region": "",
+   "size": {
+    "employees": 10001,
+    "label": "10,001+ employees",
+    "source": "LinkedIn"
+   },
+   "printers": [
+    {
+     "name": "Duggal Visual Solutions",
+     "id": "duggal-visual-solutions",
+     "badge": "Verified",
+     "score": 67,
+     "evidence": "Client logo / list",
+     "url": "https://duggal.com/case-studies/"
+    },
+    {
+     "name": "Federal Heath",
+     "id": "federal-heath",
+     "badge": "Verified",
+     "score": 50,
+     "evidence": "Project / portfolio",
+     "url": "https://federalheath.com/"
+    }
+   ],
+   "growth_only": false,
+   "social": {
+    "linkedin": {
+     "handle": "target",
+     "how": "LinkedIn page lists the company's own website"
+    },
+    "x": {
+     "handle": "Target",
+     "how": "X verified business account linking the company site",
+     "last_post": "2026-11-11",
+     "active": true
+    }
+   },
+   "signals": [
+    {
+     "date": "2026-11-12",
+     "platform": "LinkedIn",
+     "cat": "pop",
+     "label": "POP / display / signage work",
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526667084538429441/",
+     "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat"
+    },
+    {
+     "date": "2026-11-03",
+     "platform": "LinkedIn",
+     "cat": "rollout",
+     "label": "Store / remodel rollout",
+     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523437100688560130/",
+     "fit": "Rollouts need consistent volume board (INFINITY / InSite Reveal)"
+    }
+   ],
+   "social_checked": true,
+   "verification": {
+    "badge": "Verified",
+    "sources_n": 5,
+    "sources": [
+     "linkedin",
+     "news",
+     "printer site",
+     "website",
+     "x"
+    ],
+    "issues": [],
+    "summary": "5 independent sources (linkedin, news, printer site, website, x)",
+    "checks": [
+     {
+      "what": "Company website",
+      "result": "pass",
+      "detail": "live",
+      "url": "https://www.target.com",
+      "date": "2026-11-13"
+     },
+     {
+      "what": "LinkedIn company page",
+      "result": "pass",
+      "detail": "10,001+ employees · Retail · HQ Minneapolis, MN",
+      "url": "https://www.linkedin.com/company/target/",
+      "date": "2026-11-13"
+     },
+     {
+      "what": "News coverage",
+      "result": "pass",
+      "detail": "3 stories · latest Secret Los Angeles",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+      "date": "2026-11-26"
+     },
+     {
+      "what": "Printer case study / client list",
+      "result": "pass",
+      "detail": "Duggal Visual Solutions (Client logo / list)",
+      "url": "https://duggal.com/case-studies/",
+      "date": ""
+     },
+     {
+      "what": "Official X account",
+      "result": "pass",
+      "detail": "@Target · verified business · last post 2026-11-11",
+      "url": "https://x.com/Target",
+      "date": "2026-11-27"
+     }
+    ],
+    "checked": "2026-11-27"
+   },
+   "factors": [
+    {
+     "k": "growth",
+     "label": "Store growth (openings / remodels)",
+     "pts": 30,
+     "max": 30,
+     "why": "3 store opening/remodel stories in recent news; official account announced new locations"
+    },
+    {
+     "k": "printer",
+     "label": "Buys POP through a verified Gilman-capable printer",
+     "pts": 16,
+     "max": 25,
+     "why": "Documented with Duggal Visual Solutions, Federal Heath"
+    },
+    {
+     "k": "market",
+     "label": "POP-heavy segment",
+     "pts": 12,
+     "max": 15,
+     "why": "POP-heavy segment: Mass / big-box retail"
+    },
+    {
+     "k": "size",
+     "label": "Size",
+     "pts": 15,
+     "max": 15,
+     "why": "10,001+ employees (LinkedIn)"
+    },
+    {
+     "k": "social",
+     "label": "Social signals (official accounts)",
+     "pts": 5,
+     "max": 5,
+     "why": "Recent official LinkedIn posts: POP/display work, store rollouts"
+    },
+    {
+     "k": "verified",
+     "label": "Verification strength",
+     "pts": 10,
+     "max": 10,
+     "why": "Verified: 5 independent sources (linkedin, news, printer site, website, x)"
+    }
+   ],
+   "score": 88,
+   "why": [
+    "3 store opening/remodel stories in recent news",
+    "Recent official LinkedIn posts: POP/display work, store rollouts",
+    "POP-heavy segment: Mass / big-box retail"
+   ],
+   "best": {
+    "product": "INFINITY",
+    "url": "https://gilmanbrothers.com/infinity/",
+    "value_prop": "Prints, ships flat and cold-bends into 3D POP; 22% lighter, no pre-cleaning, cuts up to 30% faster on Zünd, 100% recyclable, made in USA.",
+    "why_fit": "Fits their POP and display work",
+    "proof": null,
+    "alt": []
+   },
+   "rank": 4
   },
   {
    "id": "r-walmart",
@@ -21075,9 +21247,9 @@
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "6 stories · latest The State",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5QbHpDX1QySl9rdWo1ZThJb0hJWHlrR1g1TXZPYVo0OU5sZnMwb1JUR1gxSENKcnBYalY4eTRMc29yeElTOTBPc0Rnbm9IVC1TT0NEcjlmcmd3X0IydGhIVVdmWnJqTmI30gFoQVVfeXFMTmkzM0RHZEViRFR4OHJQeTJDUHpHVTd3V2o4SHFaclNnSmRfckM5dnB3LWhxQzJNSWJVaThQV244MGU4Z3NhOFNyejFFQ0tmNzZLeGY0aTFFWFMxYklfNW1mdDVOMV9BNWg?oc=5",
-      "date": "2026-11-25"
+      "detail": "8 stories · latest Secret Los Angeles",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+      "date": "2026-11-26"
      },
      {
       "what": "Printer case study / client list",
@@ -21091,10 +21263,10 @@
       "result": "pass",
       "detail": "@Walmart · verified business · last post 2026-11-13",
       "url": "https://x.com/Walmart",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -21102,7 +21274,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "5 store opening/remodel stories in recent news"
+     "why": "7 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -21142,7 +21314,7 @@
    ],
    "score": 88,
    "why": [
-    "5 store opening/remodel stories in recent news",
+    "7 store opening/remodel stories in recent news",
     "Recent official LinkedIn posts: sustainability, growth/awards",
     "POP-heavy segment: Mass / big-box retail"
    ],
@@ -21156,7 +21328,7 @@
      "INFINITY"
     ]
    },
-   "rank": 4
+   "rank": 5
   },
   {
    "id": "primary-color",
@@ -21319,10 +21491,10 @@
       "result": "partial",
       "detail": "@pr1marycolor · not verified; linked from company site · last post 2023-08-24 (inactive)",
       "url": "https://x.com/pr1marycolor",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -21395,182 +21567,6 @@
      "InSite Reveal",
      "EAGLECELL"
     ]
-   },
-   "rank": 5
-  },
-  {
-   "id": "r-target",
-   "name": "Target",
-   "orig_name": "Target",
-   "type": "retailer",
-   "segment": "Mass / big-box retail",
-   "website": "https://www.target.com",
-   "city": "Minneapolis",
-   "state": "MN",
-   "region": "",
-   "size": {
-    "employees": 10001,
-    "label": "10,001+ employees",
-    "source": "LinkedIn"
-   },
-   "printers": [
-    {
-     "name": "Duggal Visual Solutions",
-     "id": "duggal-visual-solutions",
-     "badge": "Verified",
-     "score": 67,
-     "evidence": "Client logo / list",
-     "url": "https://duggal.com/case-studies/"
-    },
-    {
-     "name": "Federal Heath",
-     "id": "federal-heath",
-     "badge": "Verified",
-     "score": 50,
-     "evidence": "Project / portfolio",
-     "url": "https://federalheath.com/"
-    }
-   ],
-   "growth_only": false,
-   "social": {
-    "linkedin": {
-     "handle": "target",
-     "how": "LinkedIn page lists the company's own website"
-    },
-    "x": {
-     "handle": "Target",
-     "how": "X verified business account linking the company site",
-     "last_post": "2026-11-11",
-     "active": true
-    }
-   },
-   "signals": [
-    {
-     "date": "2026-11-12",
-     "platform": "LinkedIn",
-     "cat": "pop",
-     "label": "POP / display / signage work",
-     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7526667084538429441/",
-     "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat"
-    },
-    {
-     "date": "2026-11-03",
-     "platform": "LinkedIn",
-     "cat": "rollout",
-     "label": "Store / remodel rollout",
-     "url": "https://www.linkedin.com/feed/update/urn:li:activity:7523437100688560130/",
-     "fit": "Rollouts need consistent volume board (INFINITY / InSite Reveal)"
-    }
-   ],
-   "social_checked": true,
-   "verification": {
-    "badge": "Verified",
-    "sources_n": 5,
-    "sources": [
-     "linkedin",
-     "news",
-     "printer site",
-     "website",
-     "x"
-    ],
-    "issues": [],
-    "summary": "5 independent sources (linkedin, news, printer site, website, x)",
-    "checks": [
-     {
-      "what": "Company website",
-      "result": "pass",
-      "detail": "live",
-      "url": "https://www.target.com",
-      "date": "2026-11-13"
-     },
-     {
-      "what": "LinkedIn company page",
-      "result": "pass",
-      "detail": "10,001+ employees · Retail · HQ Minneapolis, MN",
-      "url": "https://www.linkedin.com/company/target/",
-      "date": "2026-11-13"
-     },
-     {
-      "what": "News coverage",
-      "result": "pass",
-      "detail": "2 stories · latest Progressive Grocer",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQcUlYQkNwbTNtZnctYVBVNUh4ZW8yalA0RndfTVZnMm1fWV9hT1FleGZiY2p6NnF1dFdIQzRJaFBQVXNaMDFKLXhQR25ITkZBTkhwQmdLdkNsMTlWbVhDUDFMVUNoQkVvUlpoMENuNk9Yd29IamdkN1FlR0t4eTBSUjlad28zc2pzOExKVHJCa05PWThlSEZhSHQxRzFMbGU5bzlxZDFsaDVhUFlsSEJMaHd1ckI1SkE?oc=5",
-      "date": "2026-11-19"
-     },
-     {
-      "what": "Printer case study / client list",
-      "result": "pass",
-      "detail": "Duggal Visual Solutions (Client logo / list)",
-      "url": "https://duggal.com/case-studies/",
-      "date": ""
-     },
-     {
-      "what": "Official X account",
-      "result": "pass",
-      "detail": "@Target · verified business · last post 2026-11-11",
-      "url": "https://x.com/Target",
-      "date": "2026-11-26"
-     }
-    ],
-    "checked": "2026-11-26"
-   },
-   "factors": [
-    {
-     "k": "growth",
-     "label": "Store growth (openings / remodels)",
-     "pts": 26,
-     "max": 30,
-     "why": "2 store opening/remodel stories in recent news; official account announced new locations"
-    },
-    {
-     "k": "printer",
-     "label": "Buys POP through a verified Gilman-capable printer",
-     "pts": 16,
-     "max": 25,
-     "why": "Documented with Duggal Visual Solutions, Federal Heath"
-    },
-    {
-     "k": "market",
-     "label": "POP-heavy segment",
-     "pts": 12,
-     "max": 15,
-     "why": "POP-heavy segment: Mass / big-box retail"
-    },
-    {
-     "k": "size",
-     "label": "Size",
-     "pts": 15,
-     "max": 15,
-     "why": "10,001+ employees (LinkedIn)"
-    },
-    {
-     "k": "social",
-     "label": "Social signals (official accounts)",
-     "pts": 5,
-     "max": 5,
-     "why": "Recent official LinkedIn posts: POP/display work, store rollouts"
-    },
-    {
-     "k": "verified",
-     "label": "Verification strength",
-     "pts": 10,
-     "max": 10,
-     "why": "Verified: 5 independent sources (linkedin, news, printer site, website, x)"
-    }
-   ],
-   "score": 84,
-   "why": [
-    "Recent official LinkedIn posts: POP/display work, store rollouts",
-    "2 store opening/remodel stories in recent news",
-    "POP-heavy segment: Mass / big-box retail"
-   ],
-   "best": {
-    "product": "INFINITY",
-    "url": "https://gilmanbrothers.com/infinity/",
-    "value_prop": "Prints, ships flat and cold-bends into 3D POP; 22% lighter, no pre-cleaning, cuts up to 30% faster on Zünd, 100% recyclable, made in USA.",
-    "why_fit": "Fits their POP and display work",
-    "proof": null,
-    "alt": []
    },
    "rank": 6
   },
@@ -21685,10 +21681,10 @@
       "result": "pass",
       "detail": "@burgerking · verified business · last post 2026-11-12",
       "url": "https://x.com/burgerking",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -21879,10 +21875,10 @@
       "result": "pass",
       "detail": "@chipotletweets · verified business · last post 2026-11-13",
       "url": "https://x.com/chipotletweets",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -22048,10 +22044,10 @@
       "result": "pass",
       "detail": "@FoodLion · verified business · last post 2026-11-10",
       "url": "https://x.com/FoodLion",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -22217,10 +22213,10 @@
       "result": "pass",
       "detail": "@kroger · verified business · last post 2026-11-12",
       "url": "https://x.com/kroger",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -22539,10 +22535,10 @@
       "result": "pass",
       "detail": "@millerzell · not verified; linked from company site · last post 2026-11-12",
       "url": "https://x.com/millerzell",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -22725,10 +22721,10 @@
       "result": "pass",
       "detail": "@7Eleven · verified business · last post 2026-11-12",
       "url": "https://x.com/7Eleven",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -22894,10 +22890,10 @@
       "result": "pass",
       "detail": "@AldiUSA · verified business · last post 2026-11-12",
       "url": "https://x.com/AldiUSA",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -23021,9 +23017,9 @@
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "3 stories · latest Crain's New York",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcnhGTUR3c2o5VUU5UDZlb0ZmV2dyZ004T3RnWnp1QXkxcWZUTG94S3ZCMnpvb2dsOEtfNFJkVGR0ZFNzR0lac2s3V1BiLWpUWlVmLWk2bnFIUGN3RHd3cXFoT2V6Y0Zla0xfSzlvM1hMZnh4OG9uNDNYVlVoX2k5RElIcGl6MWQwckRFSG5wZnFySXlZNDFUUHZB?oc=5",
-      "date": "2026-11-19"
+      "detail": "4 stories · latest GRANT HAVEN MEDIA",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Kci16V3FOcFVOMFRMa0pGbjQxWWJMNUpaYXBzUElOTFlIZTQzQUFVMTg4UUgtOTdVUzR1VmdkM1JmWmtkZ0RYVXdWY2NLeVE0dWtKbWZfcUtOWmxWbmdvbUcwMGtueXFyS2NlZ19Ta0p2SU54RUZseG0tYUQ?oc=5",
+      "date": "2026-11-25"
      },
      {
       "what": "Printer case study / client list",
@@ -23033,7 +23029,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -23041,7 +23037,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "3 store opening/remodel stories in recent news"
+     "why": "4 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -23081,7 +23077,7 @@
    ],
    "score": 78,
    "why": [
-    "3 store opening/remodel stories in recent news",
+    "4 store opening/remodel stories in recent news",
     "POP-heavy segment: QSR / restaurant",
     "Documented with Serigraph Inc."
    ],
@@ -23259,10 +23255,10 @@
       "result": "partial",
       "detail": "@premierpress · not verified; linked from company site · last post 2023-03-28 (inactive)",
       "url": "https://x.com/premierpress",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -23472,7 +23468,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -23647,7 +23643,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -23809,7 +23805,7 @@
       "result": "pass",
       "detail": "Global parent Alimentation Couche-Tard is in Laval, QC; Circle K runs thousands of U.S. stores (U.S. HQ Tempe, AZ)",
       "url": "https://www.circlek.com/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -23826,7 +23822,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24032,17 +24028,17 @@
       "result": "pass",
       "detail": "direct-to-substrate, CNC finishing",
       "url": "https://gilsongraphics.com/retail/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Official X account",
       "result": "partial",
       "detail": "@gilsongraphics · not verified; linked from company site · last post 2018-12-27 (inactive)",
       "url": "https://x.com/gilsongraphics",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24288,7 +24284,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24458,12 +24454,12 @@
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "7 stories · latest AOL.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOOG9xYTZ1X0lrSnRKMmdaWWNEbURHbHRDYkZfeHlHQ2phandIbGVfS09hLVZ5Z1VpdXFUYnA4SnVJM3Y2QmVBQmZCcUFZZEpaZU1HN3c5TGF3WFgydmRTeUFOVlk5b3JfMzBRNVRLWHY4aEoxY0tBa1RWTFBRdU5WUEFET0c?oc=5",
+      "detail": "9 stories · latest The Sun",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE45bW43YXdYdXp6ODdMNlN4ZUxhVzF3bDJuR3gwdzNJdnpHQXp3U0ZqQkdxckNKRmZNUEhFNDhhRF9yeWhiWGFMVWFRRXRXaVJOendyX1JSUGdYUXdRVjhZaFlfV09wdFhOTjFjUDJCQS1DY2k1UlMzclpBLUE?oc=5",
       "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24471,7 +24467,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "7 store opening/remodel stories in recent news; official account announced new locations"
+     "why": "9 store opening/remodel stories in recent news; official account announced new locations"
     },
     {
      "k": "printer",
@@ -24511,7 +24507,7 @@
    ],
    "score": 71,
    "why": [
-    "7 store opening/remodel stories in recent news",
+    "9 store opening/remodel stories in recent news",
     "POP-heavy segment: Grocery",
     "Recent official LinkedIn posts: new print/cut kit, growth/awards, sustainability"
    ],
@@ -24690,7 +24686,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24869,10 +24865,10 @@
       "result": "partial",
       "detail": "@starbucks · verified business · last post 2025-09-10 (inactive)",
       "url": "https://x.com/starbucks",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -24991,7 +24987,7 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "https://www.harristeeter.com",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
@@ -25008,7 +25004,7 @@
       "date": "2026-11-11"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -25208,10 +25204,10 @@
       "result": "pass",
       "detail": "@bwwings · verified business · last post 2026-11-12",
       "url": "https://x.com/bwwings",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -25324,7 +25320,7 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "https://www.usa.canon.com",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
@@ -25345,10 +25341,10 @@
       "result": "pass",
       "detail": "3 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -25522,10 +25518,10 @@
       "result": "pass",
       "detail": "@ChickfilA · verified blue · last post 2026-10-30",
       "url": "https://x.com/ChickfilA",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -25714,7 +25710,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -25844,7 +25840,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Gilman guide / qualification",
@@ -25858,10 +25854,10 @@
       "result": "pass",
       "detail": "6 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -26085,10 +26081,10 @@
       "result": "partial",
       "detail": "@ARCDocSolutions · not verified; linked from company site · last post 2023-03-28 (inactive)",
       "url": "https://x.com/ARCDocSolutions",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -26220,7 +26216,7 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "https://www.basspro.com",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
@@ -26232,12 +26228,12 @@
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "3 stories · latest NewsBreak: Local News & Alerts",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNN3JvWk1mMmpPWWo2cVgyMVI3MkFadnNBc1Y1WHZ4U1Q5b1I5RnU2anpES18yUXFhd01OTlVzX0FqUnYtZXBIMkV2Q19XaDFvUGMxYUdCejhYUTlQd29zbXJueENPbmxfaEJKT2FiWC1aZk15WktoaTdVOVFEdUpIbmhRTzMxS05kUzlpN1Z3Mlk2TktaSmZ3NFRrRk96MHBEU3NzLUVtOHVlSm4wS3dHdzVfNEdIbjB1QmNIdnllUmVOVHNXNVhtX1pxeGdMTEM0VjMyNEhGUFNaX1N2dFpsVUhraWphR2t6TTZRVXhfWXZRSThFWTR3aTBrMW5KUQ?oc=5",
-      "date": "2026-11-23"
+      "detail": "4 stories · latest News12 | New Jersey",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGdVU3NIUDF5WXJ2NU52dTVVQXZKMmI5aWJzaE90VHAtTk5Gek5sQk9rVS14RUc2ajhZSV9fWWVyQnpKenh6aHpaUlhFUGUtbkxJR3Y3dUdrcjBSclA0SGJhM1doM0dYUmtnVHNOZGh2VVItTHVhOEZHQTlIaHlpVG5MM21vNy0tVTUwRzB2SFFQeHByZ3VrWVhWQjExV1VLSWU4NS15ejYzbzlub3pZM3Jxc0YzRldKN0NR?oc=5",
+      "date": "2026-11-25"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -26245,7 +26241,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "3 store opening/remodel stories in recent news"
+     "why": "4 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -26285,7 +26281,7 @@
    ],
    "score": 67,
    "why": [
-    "3 store opening/remodel stories in recent news",
+    "4 store opening/remodel stories in recent news",
     "Recent official LinkedIn posts: hiring, growth/awards",
     "POP-heavy segment: Specialty / pharmacy retail"
    ],
@@ -26299,25 +26295,19 @@
    },
    "route_via": [
     {
-     "name": "Primary Color",
-     "id": "primary-color",
-     "state": "CA",
-     "score": 84
+     "name": "Sandy Alexander",
+     "id": "sandy-alexander",
+     "state": "NJ",
+     "score": 72
     },
     {
-     "name": "Miller Zell",
-     "id": "miller-zell",
-     "state": "GA",
-     "score": 82
-    },
-    {
-     "name": "Serigraph Inc.",
-     "id": "serigraph-inc",
-     "state": "WI",
-     "score": 77
+     "name": "HATTERAS",
+     "id": "hatteras",
+     "state": "NJ",
+     "score": 46
     }
    ],
-   "route_note": "Top-scored verified printers (no printer partner is public)",
+   "route_note": "Nearest verified printers in the states where it is opening",
    "rank": 31
   },
   {
@@ -26517,7 +26507,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -26735,7 +26725,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -26905,10 +26895,10 @@
       "result": "pass",
       "detail": "@Whataburger · verified business · last post 2026-11-13",
       "url": "https://x.com/Whataburger",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -27080,7 +27070,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -27274,7 +27264,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -27472,10 +27462,10 @@
       "result": "pass",
       "detail": "@nike · verified business · last post 2026-11-12",
       "url": "https://x.com/nike",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -27577,7 +27567,7 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "https://www.traderjoes.com",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
@@ -27589,12 +27579,12 @@
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "11 stories · latest New York Post",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYmpQOXlTQVBZMDlfaVRibVlpUzVJTHpldXVvOHlPdDRTMjAzVC1LZEtiREQ5UUVVRHgycEJrTVV0aVRoWjZ3NTliMG84Y2hNRXFLY2N1WHlVRlBSQUR6WThocFZ0RGRFM1UxNWx2eVpsU05HN1hyOVdOUWJieVFtLUxUbE9LSGJkWXRpRHl6eml6WTlxY2VUTXhZY0ZwUG8?oc=5",
-      "date": "2026-11-24"
+      "detail": "13 stories · latest Secret Los Angeles",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+      "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -27602,7 +27592,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "11 store opening/remodel stories in recent news"
+     "why": "13 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -27642,7 +27632,7 @@
    ],
    "score": 65,
    "why": [
-    "11 store opening/remodel stories in recent news",
+    "13 store opening/remodel stories in recent news",
     "POP-heavy segment: Grocery",
     "10,001+ employees (LinkedIn)"
    ],
@@ -27826,7 +27816,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28072,7 +28062,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28187,7 +28177,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Gilman guide / qualification",
@@ -28201,10 +28191,10 @@
       "result": "pass",
       "detail": "1 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28330,7 +28320,7 @@
       "date": "2026-11-11"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28520,7 +28510,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28724,7 +28714,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -28908,7 +28898,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -29117,10 +29107,10 @@
       "result": "pass",
       "detail": "@SlateGrp · not verified; linked from company site · last post 2026-11-11",
       "url": "https://x.com/SlateGrp",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -29315,7 +29305,7 @@
       "result": "pass",
       "detail": "LVMH-owned, global HQ in France; Sephora Americas operates U.S. stores from San Francisco",
       "url": "https://www.sephora.com/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Printer case study / client list",
@@ -29329,10 +29319,10 @@
       "result": "pass",
       "detail": "@sephora · verified business · last post 2026-11-12",
       "url": "https://x.com/sephora",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -29542,10 +29532,10 @@
       "result": "pass",
       "detail": "@ShowdownDisplay · not verified; linked from company site · last post 2026-11-12",
       "url": "https://x.com/ShowdownDisplay",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -29755,7 +29745,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -29920,10 +29910,10 @@
       "result": "pass",
       "detail": "@HomeDepot · verified business · last post 2026-11-11",
       "url": "https://x.com/HomeDepot",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30039,17 +30029,17 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Installed at lead printers (trade press / OEM case studies)",
       "result": "pass",
       "detail": "9 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30158,17 +30148,17 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Installed at lead printers (trade press / OEM case studies)",
       "result": "pass",
       "detail": "13 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30309,10 +30299,10 @@
       "result": "pass",
       "detail": "@SamsClub · verified business · last post 2026-11-12",
       "url": "https://x.com/SamsClub",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30521,7 +30511,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30679,10 +30669,10 @@
       "result": "pass",
       "detail": "@AdvanceAuto · verified business · last post 2026-11-11",
       "url": "https://x.com/AdvanceAuto",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -30828,7 +30818,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -30849,10 +30839,10 @@
       "result": "pass",
       "detail": "virtually all substrates · Zünd G3 XL",
       "url": "https://www.piworld.com/article/growth-beyond-imagination/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31014,7 +31004,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31204,7 +31194,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31378,7 +31368,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31496,7 +31486,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -31506,7 +31496,7 @@
       "date": "2026-11-25"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31681,7 +31671,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31840,10 +31830,10 @@
       "result": "pass",
       "detail": "@littlecaesars · verified business · last post 2026-11-13",
       "url": "https://x.com/littlecaesars",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -31993,10 +31983,10 @@
       "result": "pass",
       "detail": "@Lowes · verified business · last post 2026-11-12",
       "url": "https://x.com/Lowes",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32100,7 +32090,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -32110,7 +32100,7 @@
       "date": "2026-11-18"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32235,7 +32225,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -32245,7 +32235,7 @@
       "date": "2026-11-25"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32447,10 +32437,10 @@
       "result": "pass",
       "detail": "@Wendys · verified business · last post 2026-11-13",
       "url": "https://x.com/Wendys",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32633,10 +32623,10 @@
       "result": "pass",
       "detail": "UV printing on rigid substrates",
       "url": "https://olympuscustomprint.com/print-capabilities/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32814,10 +32804,10 @@
       "result": "partial",
       "detail": "@anrosolutions · not verified; linked from company site · last post 2021-04-22 (inactive)",
       "url": "https://x.com/anrosolutions",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -32991,10 +32981,10 @@
       "result": "pass",
       "detail": "@CocaColaCo · verified business · last post 2026-08-04",
       "url": "https://x.com/CocaColaCo",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -33155,10 +33145,10 @@
       "result": "pass",
       "detail": "@papajohns · verified business · last post 2026-11-02",
       "url": "https://x.com/papajohns",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -33371,7 +33361,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -33565,7 +33555,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -33679,17 +33669,17 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "13 stories · latest WTMJ",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNZmQ4eDIzWlNKQm93QlNLYjhDdkxCakNsbmQ4TnpOeHE5LVR1dUc0MHljTy11dDNocVdtZVMtcTNlaEhkLTdlVC1vWkdFcEdFUU9XTUxpLTVGNmVXQUtEaVQtbDNTN1pRQWNVR0NXUFR1NWw2bEdkZWVRcnR2RWxfN0RkQ3pTaUJHOVlKdC1wcjFSdEU0OWl2V3RrN1lfb0VIaEoyUVctQlBNVzVkelFKR21UR1lyelg3?oc=5",
-      "date": "2026-11-24"
+      "detail": "14 stories · latest Secret Los Angeles",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+      "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -33697,7 +33687,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "13 store opening/remodel stories in recent news"
+     "why": "14 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -33737,7 +33727,7 @@
    ],
    "score": 50,
    "why": [
-    "13 store opening/remodel stories in recent news",
+    "14 store opening/remodel stories in recent news",
     "POP-heavy segment: Mass / big-box retail",
     "size n/a (not found)"
    ],
@@ -33751,22 +33741,22 @@
    },
    "route_via": [
     {
+     "name": "Primary Color",
+     "id": "primary-color",
+     "state": "CA",
+     "score": 84
+    },
+    {
      "name": "Serigraph Inc.",
      "id": "serigraph-inc",
      "state": "WI",
      "score": 77
     },
     {
-     "name": "Olympus Group",
-     "id": "olympus-group",
-     "state": "WI",
-     "score": 52
-    },
-    {
-     "name": "DCG ONE",
-     "id": "dcg-one",
-     "state": "WA",
-     "score": 50
+     "name": "Calitho",
+     "id": "calitho",
+     "state": "CA",
+     "score": 68
     }
    ],
    "route_note": "Nearest verified printers in the states where it is opening",
@@ -33894,10 +33884,10 @@
       "result": "partial",
       "detail": "graphics only: retail displays, signage (EFI VUTEk Q3h XP added Dec 2025), signage",
       "url": "https://www.linkedin.com/posts/dcgone_getting-ready-for-the-first-run-introducing-activity-7404209605750444032-_ZzS",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34109,10 +34099,10 @@
       "result": "pass",
       "detail": "@FederalHeath · not verified; linked from company site · last post 2026-11-11",
       "url": "https://x.com/FederalHeath",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34286,10 +34276,10 @@
       "result": "pass",
       "detail": "@Nordstrom · verified business · last post 2026-06-24",
       "url": "https://x.com/Nordstrom",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34464,7 +34454,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34580,7 +34570,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Gilman guide / qualification",
@@ -34594,10 +34584,10 @@
       "result": "pass",
       "detail": "1 confirmed installs",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34782,7 +34772,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -34945,7 +34935,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Printer case study / client list",
@@ -34959,10 +34949,10 @@
       "result": "pass",
       "detail": "@ultabeauty · verified business · last post 2026-11-13",
       "url": "https://x.com/ultabeauty",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35058,14 +35048,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "https://www.heb.com",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -35075,7 +35065,7 @@
       "date": "2026-11-16"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35270,10 +35260,10 @@
       "result": "partial",
       "detail": "graphics only: wide-format signage, displays, retail/pop graphics",
       "url": "https://kirkwoodus.com/branded-environments/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35420,7 +35410,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35516,14 +35506,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -35533,7 +35523,7 @@
       "date": "2026-11-25"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35650,14 +35640,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -35667,7 +35657,7 @@
       "date": "2026-11-23"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35784,14 +35774,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -35801,7 +35791,7 @@
       "date": "2026-11-25"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -35918,14 +35908,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -35935,7 +35925,7 @@
       "date": "2026-11-24"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -36052,24 +36042,24 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "6 stories · latest The Acorn",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNa0lEUVZUZDdXT0FRRmlfUGpSem5XOFJYbjlWclFjUkJYMm84MW5DendyMjYzc3pBdEdMeUtsalNMUkRmNTBTSmozSDlsOGJkOWtyb3BDdWNNeFVUMTFvQWVPakV0QWVpRDdUWWRWNkdkckwzT1BQZlZqd0plNGlPRHRCRkJ2TWFjODNIbEtvVEpHRmlSTVlaOTBmMA?oc=5",
-      "date": "2026-11-25"
+      "detail": "9 stories · latest Thousand Oaks Acorn",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcXlZQU9ieFBSSXhObFNDVUVWTWxpUkExWXhYekQ1S2hhWUZoN0ZidWFMWC16bTJ2alJIeG1YSERQX2t3QTV1a1JfRHBYZDdlU0Z3ejhwZFNXOFRNRTFVaTVuOXo3YlVlemlHTXpfQVBQSUxCQzdZeHNUYWMwd2FTbjdHOGtRUnFJSVZCd0FsSG52LU9ZckdlSV9n?oc=5",
+      "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -36077,7 +36067,7 @@
      "label": "Store growth (openings / remodels)",
      "pts": 30,
      "max": 30,
-     "why": "6 store opening/remodel stories in recent news"
+     "why": "9 store opening/remodel stories in recent news"
     },
     {
      "k": "printer",
@@ -36117,7 +36107,7 @@
    ],
    "score": 48,
    "why": [
-    "6 store opening/remodel stories in recent news",
+    "9 store opening/remodel stories in recent news",
     "POP-heavy segment: Grocery",
     "size n/a (not found)"
    ],
@@ -36131,22 +36121,22 @@
    },
    "route_via": [
     {
-     "name": "Duggal Visual Solutions",
-     "id": "duggal-visual-solutions",
-     "state": "NY",
+     "name": "Primary Color",
+     "id": "primary-color",
+     "state": "CA",
+     "score": 84
+    },
+    {
+     "name": "Calitho",
+     "id": "calitho",
+     "state": "CA",
+     "score": 68
+    },
+    {
+     "name": "ARC Document Solutions",
+     "id": "arc-document-solutions",
+     "state": "CA",
      "score": 67
-    },
-    {
-     "name": "Drummond",
-     "id": "drummond",
-     "state": "FL",
-     "score": 62
-    },
-    {
-     "name": "Candid Worldwide",
-     "id": "candid-litho-candid-worldwide",
-     "state": "NY",
-     "score": 62
     }
    ],
    "route_note": "Nearest verified printers in the states where it is opening",
@@ -36272,10 +36262,10 @@
       "result": "pass",
       "detail": "@4over · not verified; linked from company site · last post 2026-11-13",
       "url": "https://x.com/4over",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -36457,7 +36447,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -36662,10 +36652,10 @@
       "result": "pass",
       "detail": "@a3visual · not verified; linked from company site · last post 2026-11-11",
       "url": "https://x.com/a3visual",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -36840,10 +36830,10 @@
       "result": "partial",
       "detail": "graphics only: in-store marketing, pop displays, end caps",
       "url": "https://www.hatteras.us/products/in-store-marketing/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37043,7 +37033,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37220,7 +37210,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37413,7 +37403,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37578,10 +37568,10 @@
       "result": "pass",
       "detail": "@verizon · verified business · last post 2026-11-12",
       "url": "https://x.com/verizon",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37732,10 +37722,10 @@
       "result": "partial",
       "detail": "@enmarketenjoy · not verified; linked from company site · last post 2022-07-12 (inactive)",
       "url": "https://x.com/enmarketenjoy",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -37918,7 +37908,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38127,7 +38117,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38240,7 +38230,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -38250,7 +38240,7 @@
       "date": "2026-11-11"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38436,10 +38426,10 @@
       "result": "partial",
       "detail": "graphics only: point-of-purchase, signs, banners",
       "url": "https://deltaprintgroup.com/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38583,7 +38573,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38735,10 +38725,10 @@
       "result": "partial",
       "detail": "@FritoLay · verified business · last post 2025-12-29 (inactive)",
       "url": "https://x.com/FritoLay",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -38898,7 +38888,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39049,7 +39039,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39210,7 +39200,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -39227,7 +39217,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39410,10 +39400,10 @@
       "result": "partial",
       "detail": "graphics only: large format: banners, pop-up displays",
       "url": "https://www.shapco.com/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39565,7 +39555,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -39589,7 +39579,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39711,7 +39701,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -39728,7 +39718,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -39857,7 +39847,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40054,7 +40044,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40258,10 +40248,10 @@
       "result": "pass",
       "detail": "@baesman · not verified; linked from company site · last post 2026-11-09",
       "url": "https://x.com/baesman",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40468,10 +40458,10 @@
       "result": "pass",
       "detail": "@1Vision_Inc · not verified; linked from company site · last post 2026-11-10",
       "url": "https://x.com/1Vision_Inc",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40594,7 +40584,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -40611,7 +40601,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40707,14 +40697,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -40724,7 +40714,7 @@
       "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40841,14 +40831,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -40858,7 +40848,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -40969,14 +40959,14 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
@@ -40986,7 +40976,7 @@
       "date": "2026-11-24"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41056,6 +41046,140 @@
    ],
    "route_note": "Nearest verified printers in the states where it is opening",
    "rank": 117
+  },
+  {
+   "id": "r-texas-roadhouse",
+   "name": "Texas Roadhouse",
+   "orig_name": "Texas Roadhouse",
+   "type": "retailer",
+   "segment": "QSR / restaurant",
+   "website": "",
+   "city": "",
+   "state": "",
+   "region": "",
+   "size": {
+    "employees": 0,
+    "label": "size n/a",
+    "source": "not found"
+   },
+   "printers": [],
+   "growth_only": true,
+   "social": {},
+   "signals": [],
+   "social_checked": false,
+   "verification": {
+    "badge": "Unverified",
+    "sources_n": 1,
+    "sources": [
+     "news"
+    ],
+    "issues": [],
+    "summary": "1 independent sources (news)",
+    "checks": [
+     {
+      "what": "Company website",
+      "result": "n/a",
+      "detail": "could not be fetched by the checker (bot-blocked or down)",
+      "url": "",
+      "date": "2026-11-27"
+     },
+     {
+      "what": "LinkedIn company page",
+      "result": "n/a",
+      "detail": "no public company page found that links back to the company site",
+      "url": "",
+      "date": "2026-11-27"
+     },
+     {
+      "what": "News coverage",
+      "result": "pass",
+      "detail": "2 stories · latest Community Impact Newspaper",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZzZ1QW5HUG5Tdmd2LWtXOTAyTTluMVFlS0ZDUGxNQ2thS05VYjlLVDRNZkZVNExTQVJPOFM5WEsxRl9IaGlyb3JhTC1hSkN6ZllzRVB1aWVaYmw2WF9rcGxEanJGVzVDdUxucTdfUXYycExqMUhDbi1KSWlSNmNzQURxV053R2pHWDBlRm14d2VLNFNFR3NUVVo1MHhkR25RTXdsVlpOX2JPUWI0aUNfR1ROQ2xUQ1Q0YWFPS3hWeExkcDdSZ3NUVU43VQ?oc=5",
+      "date": "2026-11-25"
+     }
+    ],
+    "checked": "2026-11-27"
+   },
+   "factors": [
+    {
+     "k": "growth",
+     "label": "Store growth (openings / remodels)",
+     "pts": 20,
+     "max": 30,
+     "why": "2 store opening/remodel stories in recent news"
+    },
+    {
+     "k": "printer",
+     "label": "Buys POP through a verified Gilman-capable printer",
+     "pts": 0,
+     "max": 25,
+     "why": "No documented printer partner yet: route via a nearby top-scored printer"
+    },
+    {
+     "k": "market",
+     "label": "POP-heavy segment",
+     "pts": 15,
+     "max": 15,
+     "why": "POP-heavy segment: QSR / restaurant"
+    },
+    {
+     "k": "size",
+     "label": "Size",
+     "pts": 3,
+     "max": 15,
+     "why": "size n/a (not found)"
+    },
+    {
+     "k": "social",
+     "label": "Social signals (official accounts)",
+     "pts": 0,
+     "max": 5,
+     "why": "No opportunity signals in recent official posts"
+    },
+    {
+     "k": "verified",
+     "label": "Verification strength",
+     "pts": 0,
+     "max": 10,
+     "why": "Unverified: 1 independent sources (news)"
+    }
+   ],
+   "score": 38,
+   "why": [
+    "POP-heavy segment: QSR / restaurant",
+    "2 store opening/remodel stories in recent news",
+    "size n/a (not found)"
+   ],
+   "best": {
+    "product": "InSite Reveal",
+    "url": "https://gilmanbrothers.com/insite-reveal-2/",
+    "value_prop": "Paper-faced foamboard for POP and signage that holds its thickness, gives strong ink coverage and gloss, UL-classified foam, clean Zünd cuts.",
+    "why_fit": "Fits their in-store, window and menu signage",
+    "proof": null,
+    "alt": []
+   },
+   "route_via": [
+    {
+     "name": "Slate Group",
+     "id": "slate-group",
+     "state": "TX",
+     "score": 59
+    },
+    {
+     "name": "Thomas Printworks",
+     "id": "thomas-printworks",
+     "state": "TX",
+     "score": 51
+    },
+    {
+     "name": "Federal Heath",
+     "id": "federal-heath",
+     "state": "TX",
+     "score": 50
+    }
+   ],
+   "route_note": "Nearest verified printers in the states where it is opening",
+   "rank": 118
   },
   {
    "id": "r-alltown",
@@ -41132,7 +41256,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41192,7 +41316,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 118
+   "rank": 119
   },
   {
    "id": "mele-printing",
@@ -41283,7 +41407,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41353,12 +41477,12 @@
      "EAGLECELL"
     ]
    },
-   "rank": 119
+   "rank": 120
   },
   {
-   "id": "r-hobby-lobby",
-   "name": "Hobby Lobby",
-   "orig_name": "Hobby Lobby",
+   "id": "r-academy-sports",
+   "name": "Academy Sports",
+   "orig_name": "Academy Sports",
    "type": "retailer",
    "segment": "Mass / big-box retail",
    "website": "",
@@ -41389,24 +41513,24 @@
       "result": "n/a",
       "detail": "could not be fetched by the checker (bot-blocked or down)",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "LinkedIn company page",
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "News coverage",
       "result": "pass",
-      "detail": "2 stories · latest Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3ItVEJaUHFqdFo1NFYtMHlRYm9PNzc1SGk0U19kNnQwQzJPWkZGRVdZTWlJSXRxaHhXakJDaFY1TEwxY3dnRjZsVUxYUEFJblZpY2NMa2NWTmVfamJFZm81S292ekNJRVVvd3VrNXRXTzd0b1FZa3Y4X0xYeFZPQnFtRVZTekRPbmc?oc=5",
-      "date": "2026-11-24"
+      "detail": "2 stories · latest Retail & Leisure International",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1BnalJXTXhzU09GRmlONWh5Mm1ScUpwNHpxU3ZMaFZPdUF4ZW9BR2ZzMHF3QV9CLUUxRkpjUTRORFhlOHpVSWg3MHg0Sjdlcnc3cmg1LWVpcWI5ODFTVEo5dlI5RG1FLXl2T0ZqMEtEeUZKVGlLenktd2UyaElZYQ?oc=5",
+      "date": "2026-11-26"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41487,7 +41611,141 @@
     }
    ],
    "route_note": "Nearest verified printers in the states where it is opening",
-   "rank": 120
+   "rank": 121
+  },
+  {
+   "id": "r-hobby-lobby",
+   "name": "Hobby Lobby",
+   "orig_name": "Hobby Lobby",
+   "type": "retailer",
+   "segment": "Mass / big-box retail",
+   "website": "",
+   "city": "",
+   "state": "",
+   "region": "",
+   "size": {
+    "employees": 0,
+    "label": "size n/a",
+    "source": "not found"
+   },
+   "printers": [],
+   "growth_only": true,
+   "social": {},
+   "signals": [],
+   "social_checked": false,
+   "verification": {
+    "badge": "Unverified",
+    "sources_n": 1,
+    "sources": [
+     "news"
+    ],
+    "issues": [],
+    "summary": "1 independent sources (news)",
+    "checks": [
+     {
+      "what": "Company website",
+      "result": "n/a",
+      "detail": "could not be fetched by the checker (bot-blocked or down)",
+      "url": "",
+      "date": "2026-11-27"
+     },
+     {
+      "what": "LinkedIn company page",
+      "result": "n/a",
+      "detail": "no public company page found that links back to the company site",
+      "url": "",
+      "date": "2026-11-27"
+     },
+     {
+      "what": "News coverage",
+      "result": "pass",
+      "detail": "2 stories · latest Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3ItVEJaUHFqdFo1NFYtMHlRYm9PNzc1SGk0U19kNnQwQzJPWkZGRVdZTWlJSXRxaHhXakJDaFY1TEwxY3dnRjZsVUxYUEFJblZpY2NMa2NWTmVfamJFZm81S292ekNJRVVvd3VrNXRXTzd0b1FZa3Y4X0xYeFZPQnFtRVZTekRPbmc?oc=5",
+      "date": "2026-11-24"
+     }
+    ],
+    "checked": "2026-11-27"
+   },
+   "factors": [
+    {
+     "k": "growth",
+     "label": "Store growth (openings / remodels)",
+     "pts": 20,
+     "max": 30,
+     "why": "2 store opening/remodel stories in recent news"
+    },
+    {
+     "k": "printer",
+     "label": "Buys POP through a verified Gilman-capable printer",
+     "pts": 0,
+     "max": 25,
+     "why": "No documented printer partner yet: route via a nearby top-scored printer"
+    },
+    {
+     "k": "market",
+     "label": "POP-heavy segment",
+     "pts": 12,
+     "max": 15,
+     "why": "POP-heavy segment: Mass / big-box retail"
+    },
+    {
+     "k": "size",
+     "label": "Size",
+     "pts": 3,
+     "max": 15,
+     "why": "size n/a (not found)"
+    },
+    {
+     "k": "social",
+     "label": "Social signals (official accounts)",
+     "pts": 0,
+     "max": 5,
+     "why": "No opportunity signals in recent official posts"
+    },
+    {
+     "k": "verified",
+     "label": "Verification strength",
+     "pts": 0,
+     "max": 10,
+     "why": "Unverified: 1 independent sources (news)"
+    }
+   ],
+   "score": 35,
+   "why": [
+    "POP-heavy segment: Mass / big-box retail",
+    "2 store opening/remodel stories in recent news",
+    "size n/a (not found)"
+   ],
+   "best": {
+    "product": "INFINITY",
+    "url": "https://gilmanbrothers.com/infinity/",
+    "value_prop": "Prints, ships flat and cold-bends into 3D POP; 22% lighter, no pre-cleaning, cuts up to 30% faster on Zünd, 100% recyclable, made in USA.",
+    "why_fit": "Fits their POP and display work",
+    "proof": null,
+    "alt": []
+   },
+   "route_via": [
+    {
+     "name": "Slate Group",
+     "id": "slate-group",
+     "state": "TX",
+     "score": 59
+    },
+    {
+     "name": "Thomas Printworks",
+     "id": "thomas-printworks",
+     "state": "TX",
+     "score": 51
+    },
+    {
+     "name": "Federal Heath",
+     "id": "federal-heath",
+     "state": "TX",
+     "score": 50
+    }
+   ],
+   "route_note": "Nearest verified printers in the states where it is opening",
+   "rank": 122
   },
   {
    "id": "almaden",
@@ -41588,10 +41846,10 @@
       "result": "partial",
       "detail": "graphics only: wall graphics & event signage, signage",
       "url": "https://almadenglobal.com/capabilities/wall-graphics-event-signage/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41660,7 +41918,7 @@
      "INFINITY"
     ]
    },
-   "rank": 121
+   "rank": 123
   },
   {
    "id": "postal-center-international-pci",
@@ -41731,10 +41989,10 @@
       "result": "pass",
       "detail": "flatbed: Jeti Titan HS (2023 equipment list)",
       "url": "https://pcibrands.com/wp-content/uploads/2023/04/290642-PCI-Equipment-List-2023.pdf",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41801,7 +42059,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 122
+   "rank": 124
   },
   {
    "id": "the-ygs-group",
@@ -41911,17 +42169,17 @@
       "result": "partial",
       "detail": "graphics only: signage, trade-show displays, retail/POP displays, wide format",
       "url": "https://theygsgroup.com/specialty-graphics/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Official X account",
       "result": "partial",
       "detail": "@theYGSgroup · not verified; linked from company site · last post 2018-12-04 (inactive)",
       "url": "https://x.com/theYGSgroup",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -41990,7 +42248,7 @@
      "InSite Reveal"
     ]
    },
-   "rank": 123
+   "rank": 125
   },
   {
    "id": "abs-graphics",
@@ -42093,7 +42351,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42160,7 +42418,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 124
+   "rank": 126
   },
   {
    "id": "american-litho",
@@ -42267,10 +42525,10 @@
       "result": "pass",
       "detail": "@AmericanLitho · not verified; linked from company site · last post 2026-07-02",
       "url": "https://x.com/AmericanLitho",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42339,7 +42597,7 @@
      "InSite Reveal"
     ]
    },
-   "rank": 125
+   "rank": 127
   },
   {
    "id": "ironmark",
@@ -42441,10 +42699,10 @@
       "result": "pass",
       "detail": "@IronmarkUSA · not verified; linked from company site · last post 2026-11-05",
       "url": "https://x.com/IronmarkUSA",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42514,7 +42772,7 @@
      "EAGLECELL"
     ]
    },
-   "rank": 126
+   "rank": 128
   },
   {
    "id": "peczuh-printing-paperbox",
@@ -42596,7 +42854,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42666,7 +42924,7 @@
      "EAGLECELL"
     ]
    },
-   "rank": 127
+   "rank": 129
   },
   {
    "id": "repacorp-label-products",
@@ -42755,10 +43013,10 @@
       "result": "pass",
       "detail": "@RepacorpI · not verified; linked from company site · last post 2026-06-19",
       "url": "https://x.com/RepacorpI",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42828,7 +43086,7 @@
      "EAGLECELL"
     ]
    },
-   "rank": 128
+   "rank": 130
   },
   {
    "id": "the-dot-corp",
@@ -42902,7 +43160,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -42972,7 +43230,7 @@
      "Gilco Styrene"
     ]
    },
-   "rank": 129
+   "rank": 131
   },
   {
    "id": "marketing-com",
@@ -43056,10 +43314,10 @@
       "result": "partial",
       "detail": "graphics only: large-format retail signage",
       "url": "https://www.linkedin.com/posts/marketingdotcom-us_seasonal-signage-should-do-more-than-decorateit-activity-7366469585430056960-p793",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43126,7 +43384,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 130
+   "rank": 132
   },
   {
    "id": "r-petco",
@@ -43186,7 +43444,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Printer case study / client list",
@@ -43196,7 +43454,7 @@
       "date": ""
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43256,7 +43514,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 131
+   "rank": 133
   },
   {
    "id": "graphic-village",
@@ -43355,17 +43613,17 @@
       "result": "partial",
       "detail": "graphics only: large format: dimensional signage, displays, trade-show booths",
       "url": "https://www.graphicvillage.com/our-capabilities/printing-solutions/large-format/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Official X account",
       "result": "pass",
       "detail": "@GraphicVillage · not verified; linked from company site · last post 2026-11-11",
       "url": "https://x.com/GraphicVillage",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43434,7 +43692,7 @@
      "InSite Reveal"
     ]
    },
-   "rank": 132
+   "rank": 134
   },
   {
    "id": "printmailpro",
@@ -43542,10 +43800,10 @@
       "result": "partial",
       "detail": "@printmailpro · not verified; linked from company site · last post 2019-06-18 (inactive)",
       "url": "https://x.com/printmailpro",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43615,7 +43873,7 @@
      "EAGLECELL"
     ]
    },
-   "rank": 133
+   "rank": 135
   },
   {
    "id": "r-macy-s",
@@ -43675,7 +43933,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Printer case study / client list",
@@ -43689,10 +43947,10 @@
       "result": "pass",
       "detail": "@Macys · verified business · last post 2026-11-13",
       "url": "https://x.com/Macys",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43752,7 +44010,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 134
+   "rank": 136
   },
   {
    "id": "nextpage",
@@ -43812,7 +44070,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -43826,10 +44084,10 @@
       "result": "pass",
       "detail": "rigid board / PVC signage",
       "url": "https://gonextpage.com/large-format-printing/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -43898,7 +44156,7 @@
      "InSite Reveal"
     ]
    },
-   "rank": 135
+   "rank": 137
   },
   {
    "id": "visions-inc",
@@ -43949,7 +44207,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -43963,10 +44221,10 @@
       "result": "pass",
       "detail": "acrylic, rigid signage",
       "url": "https://www.visionsfirst.com/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44035,7 +44293,7 @@
      "InSite Reveal"
     ]
    },
-   "rank": 136
+   "rank": 138
   },
   {
    "id": "christian-edwards-print-graphics",
@@ -44128,10 +44386,10 @@
       "result": "partial",
       "detail": "graphics only: wide format printing, wide format",
       "url": "https://www.ceprinter.com/home/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44198,7 +44456,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 137
+   "rank": 139
   },
   {
    "id": "robin-enterprises",
@@ -44274,7 +44532,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44341,7 +44599,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 138
+   "rank": 140
   },
   {
    "id": "the-phoenix-group",
@@ -44429,10 +44687,10 @@
       "result": "partial",
       "detail": "graphics only: wide-format roll printing (60/98/120 in.)",
       "url": "https://www.phoenixlitho.com/services/wide-format-printing/",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44499,7 +44757,7 @@
     "proof": null,
     "alt": []
    },
-   "rank": 139
+   "rank": 141
   },
   {
    "id": "worth-higgins-associates",
@@ -44585,7 +44843,7 @@
       "date": "2026-11-13"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44655,7 +44913,7 @@
      "EAGLECELL"
     ]
    },
-   "rank": 140
+   "rank": 142
   },
   {
    "id": "midstates-inc-print-media-solutions",
@@ -44716,7 +44974,7 @@
       "result": "n/a",
       "detail": "no public company page found that links back to the company site",
       "url": "",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      },
      {
       "what": "Trade list: Wide-Format Impressions 150 (2025)",
@@ -44730,10 +44988,10 @@
       "result": "partial",
       "detail": "graphics only: signage via QQP quick-print division",
       "url": "https://www.myqqp.com/signs-banners",
-      "date": "2026-11-26"
+      "date": "2026-11-27"
      }
     ],
-    "checked": "2026-11-26"
+    "checked": "2026-11-27"
    },
    "factors": [
     {
@@ -44800,10 +45058,108 @@
     "proof": null,
     "alt": []
    },
-   "rank": 141
+   "rank": 143
   }
  ],
  "signals": [
+  {
+   "id": "7ab3b676b0a9",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Whole Foods Market sets Dec. 17 opening date at The Promenade - Thousand Oaks Acorn",
+   "source": "Thousand Oaks Acorn",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcXlZQU9ieFBSSXhObFNDVUVWTWxpUkExWXhYekQ1S2hhWUZoN0ZidWFMWC16bTJ2alJIeG1YSERQX2t3QTV1a1JfRHBYZDdlU0Z3ejhwZFNXOFRNRTFVaTVuOXo3YlVlemlHTXpfQVBQSUxCQzdZeHNUYWMwd2FTbjdHOGtRUnFJSVZCd0FsSG52LU9ZckdlSV9n?oc=5",
+   "companies": [
+    {
+     "id": "r-whole-foods",
+     "name": "Whole Foods"
+    }
+   ],
+   "states": [
+    "CA"
+   ]
+  },
+  {
+   "id": "8d62b285e736",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Whole Foods Market sets Dec. 17 opening date at The Promenade - Camarillo Acorn",
+   "source": "Camarillo Acorn",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUjRGNHJkcnlhRkgyZTBZNDdVR0VxM1dLOUFIVWpuUEZPQno3TVQ0Z2FBdjhXdm1TTkc0dkpkUUJCNkZYTW1zZGFvTjZuNXlVeEZCdi1rRnB2S2hnZ3kwRk80U3dUVW9rOXF1T25EZjM1TnExamZmMzNxWnVham5FWmJRRHphbzJDYjBFNG1xbHV6bmpBS2R5eEg2MDllX3N1VEtHSEVJWQ?oc=5",
+   "companies": [
+    {
+     "id": "r-whole-foods",
+     "name": "Whole Foods"
+    }
+   ],
+   "states": [
+    "CA"
+   ]
+  },
+  {
+   "id": "7f39180f8f23",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Academy Sports + Outdoors on Course for 23 New Stores - Retail & Leisure International",
+   "source": "Retail & Leisure International",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNQ1BnalJXTXhzU09GRmlONWh5Mm1ScUpwNHpxU3ZMaFZPdUF4ZW9BR2ZzMHF3QV9CLUUxRkpjUTRORFhlOHpVSWg3MHg0Sjdlcnc3cmg1LWVpcWI5ODFTVEo5dlI5RG1FLXl2T0ZqMEtEeUZKVGlLenktd2UyaElZYQ?oc=5",
+   "companies": [
+    {
+     "id": "r-academy-sports",
+     "name": "Academy Sports"
+    }
+   ],
+   "states": []
+  },
+  {
+   "id": "06d378276a5d",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Costco, Target, Walmart and Trader Joe's are closed across L.A. on Thanksgiving Day: Here's which stores are open and their holiday hours - Secret Los Angeles",
+   "source": "Secret Los Angeles",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBHQ0Fpc0FuUVhtX3BQSzhXWUZCNU1Cb3BqRWpabE1vampYSGVuOWc2dDFpbDdQVHJzdnRIWjEtT3U1VjNjUUptdXNYYW4xLXFWUUxhaWxKaVFWbVhPNjNUNjhlQ2Nsc2RDdGM2TEtackZPUjFpRWV3?oc=5",
+   "companies": [
+    {
+     "id": "r-walmart",
+     "name": "Walmart"
+    },
+    {
+     "id": "r-target",
+     "name": "Target"
+    },
+    {
+     "id": "r-costco",
+     "name": "Costco"
+    },
+    {
+     "id": "r-trader-joe-s",
+     "name": "Trader Joe's"
+    }
+   ],
+   "states": [
+    "CA"
+   ]
+  },
+  {
+   "id": "07ed5e86f0a0",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Lidl opens SIX new stores before Christmas 2026 – is one near you? - The Sun",
+   "source": "The Sun",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE45bW43YXdYdXp6ODdMNlN4ZUxhVzF3bDJuR3gwdzNJdnpHQXp3U0ZqQkdxckNKRmZNUEhFNDhhRF9yeWhiWGFMVWFRRXRXaVJOendyX1JSUGdYUXdRVjhZaFlfV09wdFhOTjFjUDJCQS1DY2k1UlMzclpBLUE?oc=5",
+   "companies": [
+    {
+     "id": "r-lidl-us",
+     "name": "Lidl US"
+    }
+   ],
+   "states": []
+  },
   {
    "id": "2699e1a98ec0",
    "kind": "news",
@@ -44848,6 +45204,38 @@
     {
      "id": "r-kroger",
      "name": "Kroger"
+    }
+   ],
+   "states": []
+  },
+  {
+   "id": "402d8e012614",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Lidl has revealed its next wave of 36 store openings – here's where they're going - Bury Mercury",
+   "source": "Bury Mercury",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOTDhBOFZScU85bFR2cnRCUXdRQ3dmZFRMZm0tWGJVcnNGdm04ejBCSGhPbmZ4MEFtLVNMT2tQRjhiYVExOVZpdnp4VEVoZTlmMnRtWmJCblR4dDQzOWI5cE9EZldJNXRLcFdRb0xKZndFN2dweW5nSG5uaGo2YmJONU1tN3BtX2cxYWtCM0NWZzc3UFZvUHlhQU5VQkVFeFFYV2c?oc=5",
+   "companies": [
+    {
+     "id": "r-lidl-us",
+     "name": "Lidl US"
+    }
+   ],
+   "states": []
+  },
+  {
+   "id": "42bf13166adc",
+   "kind": "news",
+   "date": "2026-11-26",
+   "type": "opening",
+   "title": "Is Trader Joe's open on Black Friday 2026? Yes, regular hours on November 27 - Nacionale",
+   "source": "Nacionale",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPWkQwbXhER1J3ZE9OMVJhbkN0QXlhVmNFZ3hfbGpVNHI3WHY3aHUzWXNSX3VWYlMtTjJ1SFFUeHI3aXVWTFM3bVZzb0JINEdSNzhKdWxTVHhvX0UyUDRHbzBld1dPdE9uX2t2aF9uenBVeE1mUzZ5akJ4SVJKM0RnNEp3by1SdjFLQ3E4bmdyd01KRzh0LTlmSkJpVEc?oc=5",
+   "companies": [
+    {
+     "id": "r-trader-joe-s",
+     "name": "Trader Joe's"
     }
    ],
    "states": []
@@ -44904,6 +45292,24 @@
    ],
    "states": [
     "TX"
+   ]
+  },
+  {
+   "id": "01e603249ae3",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "opening",
+   "title": "Quickchek Opens New Sayreville Store Near Bass Pro Shops - News12 | New Jersey",
+   "source": "News12 | New Jersey",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPSGdVU3NIUDF5WXJ2NU52dTVVQXZKMmI5aWJzaE90VHAtTk5Gek5sQk9rVS14RUc2ajhZSV9fWWVyQnpKenh6aHpaUlhFUGUtbkxJR3Y3dUdrcjBSclA0SGJhM1doM0dYUmtnVHNOZGh2VVItTHVhOEZHQTlIaHlpVG5MM21vNy0tVTUwRzB2SFFQeHByZ3VrWVhWQjExV1VLSWU4NS15ejYzbzlub3pZM3Jxc0YzRldKN0NR?oc=5",
+   "companies": [
+    {
+     "id": "r-bass-pro-shops",
+     "name": "Bass Pro Shops"
+    }
+   ],
+   "states": [
+    "NJ"
    ]
   },
   {
@@ -44999,6 +45405,42 @@
    "states": []
   },
   {
+   "id": "a7e6ff70494d",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "opening",
+   "title": "New Texas Roadhouse, Tony C's and more open in Georgetown - Community Impact Newspaper",
+   "source": "Community Impact Newspaper",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZzZ1QW5HUG5Tdmd2LWtXOTAyTTluMVFlS0ZDUGxNQ2thS05VYjlLVDRNZkZVNExTQVJPOFM5WEsxRl9IaGlyb3JhTC1hSkN6ZllzRVB1aWVaYmw2WF9rcGxEanJGVzVDdUxucTdfUXYycExqMUhDbi1KSWlSNmNzQURxV053R2pHWDBlRm14d2VLNFNFR3NUVVo1MHhkR25RTXdsVlpOX2JPUWI0aUNfR1ROQ2xUQ1Q0YWFPS3hWeExkcDdSZ3NUVU43VQ?oc=5",
+   "companies": [
+    {
+     "id": "r-texas-roadhouse",
+     "name": "Texas Roadhouse"
+    }
+   ],
+   "states": [
+    "TX"
+   ]
+  },
+  {
+   "id": "e63625774634",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "opening",
+   "title": "New Texas Roadhouse, Tony C's and more open in Georgetown - Community Impact",
+   "source": "Community Impact",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOZzZ1QW5HUG5Tdmd2LWtXOTAyTTluMVFlS0ZDUGxNQ2thS05VYjlLVDRNZkZVNExTQVJPOFM5WEsxRl9IaGlyb3JhTC1hSkN6ZllzRVB1aWVaYmw2WF9rcGxEanJGVzVDdUxucTdfUXYycExqMUhDbi1KSWlSNmNzQURxV053R2pHWDBlRm14d2VLNFNFR3NUVVo1MHhkR25RTXdsVlpOX2JPUWI0aUNfR1ROQ2xUQ1Q0YWFPS3hWeExkcDdSZ3NUVU43VQ?oc=5",
+   "companies": [
+    {
+     "id": "r-texas-roadhouse",
+     "name": "Texas Roadhouse"
+    }
+   ],
+   "states": [
+    "TX"
+   ]
+  },
+  {
    "id": "44d42d31e8ad",
    "kind": "news",
    "date": "2026-11-25",
@@ -45014,6 +45456,56 @@
    ],
    "states": [
     "TN"
+   ]
+  },
+  {
+   "id": "7c37c3e80a47",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "opening",
+   "title": "Queens’ first-ever Whole Foods opens this December - Secret NYC",
+   "source": "Secret NYC",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNdVh5MnhlMU15TjZPeVRpQU5DOXVTUDk3X0dGQ2NIT1B5SlRkX2VvZHNvcjVTa3RtVEdIUmM3N2p3ZS00OExSa3BRbGZNWDdIZ2NVUnZ1NmVacmFOVE45VXFWbHNHbjBCdFlBd05uRE9wMlB3bnRaWFdZSmFWNGlhSnln?oc=5",
+   "companies": [
+    {
+     "id": "r-whole-foods",
+     "name": "Whole Foods"
+    }
+   ],
+   "states": []
+  },
+  {
+   "id": "15c17c60b2dd",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "opening",
+   "title": "McDonald’s opens second location in town - GRANT HAVEN MEDIA",
+   "source": "GRANT HAVEN MEDIA",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1Kci16V3FOcFVOMFRMa0pGbjQxWWJMNUpaYXBzUElOTFlIZTQzQUFVMTg4UUgtOTdVUzR1VmdkM1JmWmtkZ0RYVXdWY2NLeVE0dWtKbWZfcUtOWmxWbmdvbUcwMGtueXFyS2NlZ19Ta0p2SU54RUZseG0tYUQ?oc=5",
+   "companies": [
+    {
+     "id": "r-mcdonald-s",
+     "name": "McDonald's"
+    }
+   ],
+   "states": []
+  },
+  {
+   "id": "406c20a5981f",
+   "kind": "news",
+   "date": "2026-11-25",
+   "type": "expansion",
+   "title": "Walmart responds to Citizen report on possible new St. Johns County store, touts Northeast Florida investment - St. Johns Citizen",
+   "source": "St. Johns Citizen",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeU93a3dJdlE4N0hGVVJsSWdGaTF5eUxGSzQ0X3MxVllpVGJmMGRPMjE1VV8wVzQtdVhPdk50Y1RwbGtzbFZpS3FxbFc1M2ZBUGhQVWtaNGtTd2wyWDJrMWNweGt6VnE2UElUY042LVdwZElmakllclZCYzYxYU9KRDFjLWlxR09td2VjNVlEZTE4RFBLdTZFVGU5TUtJREtkWTBzN044WEtDQmVOZjhyRklCdDNTZGY5OE1pd3E3XzR2N3JZUGdNRmNR?oc=5",
+   "companies": [
+    {
+     "id": "r-walmart",
+     "name": "Walmart"
+    }
+   ],
+   "states": [
+    "FL"
    ]
   },
   {
@@ -45075,6 +45567,10 @@
    "source": "Yahoo",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQa3ItVEJaUHFqdFo1NFYtMHlRYm9PNzc1SGk0U19kNnQwQzJPWkZGRVdZTWlJSXRxaHhXakJDaFY1TEwxY3dnRjZsVUxYUEFJblZpY2NMa2NWTmVfamJFZm81S292ekNJRVVvd3VrNXRXTzd0b1FZa3Y4X0xYeFZPQnFtRVZTekRPbmc?oc=5",
    "companies": [
+    {
+     "id": "r-academy-sports",
+     "name": "Academy Sports"
+    },
     {
      "id": "r-hobby-lobby",
      "name": "Hobby Lobby"
@@ -48189,286 +48685,6 @@
     }
    ],
    "states": []
-  },
-  {
-   "id": "s-5595647933362177",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "Image Options LinkedIn post: POP/display work",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525595647933362177/",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "image-options",
-     "name": "Image Options"
-    }
-   ],
-   "states": [
-    "CA"
-   ]
-  },
-  {
-   "id": "s-5618417152733185",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "Salem One LinkedIn post: POP/display work",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525618417152733185/",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "salem-one",
-     "name": "Salem One"
-    }
-   ],
-   "states": [
-    "NC"
-   ]
-  },
-  {
-   "id": "s-9867909291827435",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "Baesman Group X post: POP/display work",
-   "source": "X (official)",
-   "url": "https://x.com/baesman/status/2119867909291827435",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "baesman-group",
-     "name": "Baesman Group"
-    }
-   ],
-   "states": [
-    "OH"
-   ]
-  },
-  {
-   "id": "s-5705330748485632",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "tradeshow",
-   "cats": [
-    "tradeshow"
-   ],
-   "title": "DCG ONE LinkedIn post: trade shows",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525705330748485632/",
-   "fit": "Exhibit work: light, rigid INFINITY or EAGLECELL graphics",
-   "companies": [
-    {
-     "id": "dcg-one",
-     "name": "DCG ONE"
-    }
-   ],
-   "states": [
-    "WA"
-   ]
-  },
-  {
-   "id": "s-5618244951498753",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "Prisma Graphic LinkedIn post: POP/display work",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525618244951498753/",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "prisma-graphic",
-     "name": "Prisma Graphic"
-    }
-   ],
-   "states": [
-    "AZ"
-   ]
-  },
-  {
-   "id": "s-5573149527068672",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "growth",
-   "cats": [
-    "growth"
-   ],
-   "title": "Kirkwood LinkedIn post: growth/awards",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525573149527068672/",
-   "fit": "Growth / recognition: budget is moving",
-   "companies": [
-    {
-     "id": "kirkwood",
-     "name": "Kirkwood"
-    }
-   ],
-   "states": [
-    "MA"
-   ]
-  },
-  {
-   "id": "s-5648176817659906",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "tradeshow",
-   "cats": [
-    "tradeshow"
-   ],
-   "title": "HATTERAS LinkedIn post: trade shows",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525648176817659906/",
-   "fit": "Exhibit work: light, rigid INFINITY or EAGLECELL graphics",
-   "companies": [
-    {
-     "id": "hatteras",
-     "name": "HATTERAS"
-    }
-   ],
-   "states": [
-    "NJ"
-   ]
-  },
-  {
-   "id": "s-5650953782341632",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "hiring",
-   "cats": [
-    "hiring"
-   ],
-   "title": "Chick-fil-A LinkedIn post: hiring",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525650953782341632/",
-   "fit": "Adding production staff: capacity is growing",
-   "companies": [
-    {
-     "id": "r-chick-fil-a",
-     "name": "Chick-fil-A"
-    }
-   ],
-   "states": [
-    "GA"
-   ]
-  },
-  {
-   "id": "s-5561326014750720",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "growth",
-   "cats": [
-    "growth"
-   ],
-   "title": "Little Caesars LinkedIn post: growth/awards",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525561326014750720/",
-   "fit": "Growth / recognition: budget is moving",
-   "companies": [
-    {
-     "id": "r-little-caesars",
-     "name": "Little Caesars"
-    }
-   ],
-   "states": [
-    "MI"
-   ]
-  },
-  {
-   "id": "s-5640860827324416",
-   "kind": "social",
-   "date": "2026-11-09",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "Food Lion LinkedIn post: POP/display work",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7525640860827324416/",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "r-food-lion",
-     "name": "Food Lion"
-    }
-   ],
-   "states": [
-    "NC"
-   ]
-  },
-  {
-   "id": "2b61e90e2009",
-   "kind": "news",
-   "date": "2026-11-07",
-   "type": "acquisition",
-   "title": "Granite Creek-backed Salem One scoops up printing and graphics firm iTek - PEI Private Equity",
-   "source": "PEI Private Equity",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQdDZtX3FnU1RMMnZPVWJncklyVGkwbWIzQm1nMlgyUUQ4NmVnTkVVaVpYX3lMRlhBc3lVazQxYWt0dURyUllZSU1ha2piaEsycFZ0ejZNam4tZGdUUXdlWGN3bllGQkx0b2JEbzBJcUJtZTVxODFwWnJTeW9MZUxnNGw0V0piWi03c01rbWdFem8xd3g4MDBVMkZNSW41YVBWMDJOWmtkMzUxal9PSF9ja0hyUjFDVEk?oc=5",
-   "companies": [
-    {
-     "id": "salem-one",
-     "name": "Salem One"
-    }
-   ],
-   "states": []
-  },
-  {
-   "id": "s-4725648133668864",
-   "kind": "social",
-   "date": "2026-11-07",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "ARC Document Solutions LinkedIn post: POP/display work",
-   "source": "LinkedIn (official)",
-   "url": "https://www.linkedin.com/feed/update/urn:li:activity:7524725648133668864/",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "arc-document-solutions",
-     "name": "ARC Document Solutions"
-    }
-   ],
-   "states": [
-    "CA"
-   ]
-  },
-  {
-   "id": "s-8840015384101278",
-   "kind": "social",
-   "date": "2026-11-06",
-   "type": "pop",
-   "cats": [
-    "pop"
-   ],
-   "title": "A3 Visual X post: POP/display work",
-   "source": "X (official)",
-   "url": "https://x.com/A3Visual/status/2118840015384101278",
-   "fit": "POP / display work: INFINITY cold-bends into 3D and ships flat",
-   "companies": [
-    {
-     "id": "a3-visual",
-     "name": "A3 Visual"
-    }
-   ],
-   "states": [
-    "CA"
-   ]
   }
  ],
  "removed": [
@@ -48478,7 +48694,7 @@
    "state": "TX",
    "reason": "Business forms, checks and labels sold through distributors; no rigid-board or large-format evidence (3% wide-format)",
    "url": "https://www.sec.gov/Archives/edgar/data/33002/000119312526213764/ebf-20260228.htm",
-   "date": "2026-11-26"
+   "date": "2026-11-27"
   },
   {
    "name": "Big Lots",
@@ -48486,7 +48702,7 @@
    "state": "",
    "reason": "Bankrupt in 2024; the 219 remaining stores under Variety Wholesalers are still closing (Oct 2026): not a growth buyer",
    "url": "https://www.bizjournals.com/triad/news/2026/10/20/roses-variety-wholesalers-closing-big-lots-stores.html",
-   "date": "2026-11-26"
+   "date": "2026-11-27"
   }
  ],
  "scoring": {
@@ -48627,18 +48843,18 @@
   }
  },
  "verification_meta": {
-  "checked": "2026-11-26",
+  "checked": "2026-11-27",
   "counts": {
    "Verified": 110,
    "Partial": 20,
-   "Unverified": 11
+   "Unverified": 13
   },
   "removed": 2,
-  "companies": 141,
+  "companies": 143,
   "by_type": {
    "printer": 64,
    "oem": 7,
-   "retailer": 61,
+   "retailer": 63,
    "equipment_oem": 9
   },
   "method": "Company websites, public LinkedIn company pages (no login; company facts only), official social accounts linked from company sites or verified, Wide-Format Impressions 150 (2025), trade press and OEM case studies.",
